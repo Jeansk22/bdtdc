@@ -1,0 +1,526 @@
+<h3 style="margin-top:2%;font-weight:bold;font-size: 22px" class="page-title">
+	Product Create <small>create &amp; edit product</small>
+</h3>
+
+<!-- END PAGE HEADER-->
+<!-- BEGIN PAGE CONTENT-->
+<div class="row">
+	<div style="padding-bottom:2%" class="col-md-12">
+	    <input type="hidden" name="hidden_payment_tearms" value="<?php echo e($products[0]->payment_method); ?>">
+		<form action="<?php echo e(URL::to('supplier/product_update', $products[0]->id,is_secured())); ?>" method="post" enctype="multipart/form-data" accept-charset="UTF-8" class="form-horizontal  form-row-seperated">
+			<input type="hidden" name="hidden_categorie">
+			<ul class="nav nav-tabs product_create_tab">
+				<li class="active"><a data-toggle="tab" href="#product_details_tab_content">Product Details</a></li>
+				<li><a data-toggle="tab" href="#product_page_info_tab_content">Product Page Info</a></li>
+				<li><a data-toggle="tab" href="#product_image_tab_content">Product Image</a></li>
+			</ul>
+			
+			<div class="tab-content">
+				<!-------------PRODUCT-DETAILS-TAB-CONTENT;------------------>
+			    <div id="product_details_tab_content" class="tab-pane fade in active">
+					<h4>Product-details</h4>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-2">
+			      			<span>Product Name</span>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<input type="text" name="product_name" validation="validated_false" class="form-control validate" value="<?php echo e($supplier_product->name); ?>" placeholder="Product Name">
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-2">
+			      			<span>Category</span>
+			      		</div>
+			      		<div class="col-md-7">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td><b>Parent</b></td>
+										<td><?php echo Form::select( 'parent_category',\App\Model\BdtdcCategory::where('parent_id',0)->lists('name','id'), '',array('class'=>'form-control')); ?></td>
+										<td><b>Sub</b></td>
+										<td>
+										    <?php echo Form::select( 'categories',\App\Model\BdtdcCategory::where('parent_id','!=',0)->lists('name','id'), $products[0]['category']->category_id,array('class'=>'form-control')); ?>
+
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<span class="help-block">select only one category </span>
+			      		</div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-2">
+			      			<label for="">Product Details</label>
+			      		</div>
+			      		<div class="col-md-7">
+			      			<textarea class="form-control validate product_desc" validation="validated_false" name="product_description"><?php echo e($supplier_product->description); ?></textarea>
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-2">
+			      			<label for="">Model</label>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<input type="text" name="product_model" validation="validated_false" class="form-control validate" value="<?php echo e($supplier_product->model); ?>" placeholder="Model">
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-2">
+			      			<label for="">Brand Name</label>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<input type="text" name="brand_name" validation="validated_false" value="<?php echo e($supplier_product->brandname); ?>" class="form-control validate">
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-2">
+			      			<label for="">Location of origin</label>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<?php echo Form::select( 'country',\App\Model\BdtdcCountry::lists('name','id'), $supplier_product->location,array('class'=>'form-control validate','validation'=>'validated_false')); ?>
+
+			      		</div>
+			      		<div class="col-xs-2 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row attribute_area margin_top1">
+			      		<div style="margin-top:2%" class="col-md-2">
+			      			<label for="">Attributes</label>
+			      		</div>
+			      		<div class="col-md-9">
+			      			<table class="table">
+			      				<tbody>
+			      				    <?php foreach($attributes as $attr): ?>
+			      					<tr>
+			      					    
+			      						<td>Name</td>
+			      						<td><input name="attr_id[]" type="hidden" value="<?php echo e($attr->bdtdcAttribute->id); ?>"><input type="text" name="product_att_name[]" value="<?php echo e(isset($attr->bdtdcAttribute->name) ? $attr->bdtdcAttribute->name : ''); ?>" class="form-control"></td>
+			      						<td>Value</td>
+			      						<td><input type="text" name="product_att_value[]" value="<?php echo e(isset($attr->bdtdcAttribute->value) ? $attr->bdtdcAttribute->value : ''); ?>" class="form-control"></td>
+			      						<td> <button class="btn btn-primary btn-xs add_more_attribute_btn_for_edit"><i class="fa fa-plus"></i></button> </td>
+			      					</tr>
+			      					<?php endforeach; ?>
+			      				</tbody>
+			      			</table>
+			      		</div>
+			      	</div>
+			      	<div class="row attribute_area margin_top1">
+			      		<div style="margin-top:2%" class="col-md-2">
+			      			<label for="">Trade Details</label>
+			      		</div>
+			      		<div class="col-md-7">
+			      			<table class="table">
+			      				<tbody>
+			      					<tr>
+			      						<td>Name</td>
+			      						<td>
+			      							<select class="form-control" name="unit_type" id="sel1">
+												<?php foreach($units as $u): ?>
+													<option value=<?php echo $u->id; ?>><?php echo $u->name; ?></option>
+												<?php endforeach; ?>
+											</select>
+			      						</td>
+			      						<td>Price</td>
+			      						<td><input type="text" name="product_price" validation="validated_false" value="<?php echo e(isset($prices->product_FOB) ? $prices->product_FOB : ''); ?>" class="form-control validate"></td>
+			      						<td><div class="col-xs-3 validation_status">
+				                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+				                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+				                            <span class="text-danger validation_message"></span>
+				                        </div></td>
+			      					</tr>
+			      					<?php foreach($product_price as $p): ?>
+			      					<tr>
+			      						<input type="hidden" name="product_price_id[]" value="<?php echo e($p->id); ?>">
+			      						<td>MOQ: <span></span></td>
+			      						<td>
+			      							<input style="height:27px;padding-bottom:1%;font-size:12px" type="text" name="product_MOQ[]" validation="validated_false" value="<?php echo e($p->product_MOQ); ?>" class="form-control validate">
+			      						</td>
+			      						<td>
+			      							<div class="col-xs-3 validation_status">
+					                            <i class="fa fa-check-square btn btn-sm btn-success hidden_icon validated_true"></i>
+					                            <i class="fa fa-exclamation-triangle btn btn-sm btn-danger hidden_icon validated_false"></i>
+					                            <span class="text-danger validation_message"></span>
+					                        </div>
+				                        </td>	
+				                        
+			      						<td>FOB Price: </td>
+			      						<td>
+			      							<input style="height:27px;padding-bottom:1%;font-size:12px" type="text" name="product_FOB[]" validation="validated_false" value="<?php echo e($p->product_FOB); ?>" class="form-control validate">
+			      						</td>
+			      						<td><i class="fa fa-plus btn btn-xs btn-primary add_price_btn"></i></td>
+			      						<td>
+			      							<div class="col-xs-3 validation_status">
+					                            <i class="fa fa-check-square btn btn-sm btn-success hidden_icon validated_true"></i>
+					                            <i class="fa fa-exclamation-triangle btn btn-sm btn-danger hidden_icon validated_false"></i>
+					                            <span class="text-danger validation_message"></span>
+					                        </div>
+				                        </td>
+			      					</tr>
+			      					<?php endforeach; ?>
+			      				</tbody>
+			      			</table>
+			      		</div>
+			      	</div>
+			      	<div class="row attribute_area margin_top1">
+			      		<div style="padding-right:0px;margin-top:2%" class="col-md-12">
+			      			<label for="">Product Group: <span class="summary">Grouping your products makes it easier for buyers to find them</span></label>
+			      		</div>
+			      		<div class="col-md-7">
+			      			<table class="table">
+			      				<tbody>
+			      					<tr>
+			      						<td align="right">Group Name:</td>
+			      						<td>
+			      							<select style="height:28px;padding-bottom:1%;font-size:12px;padding-top:0%" class="form-control" name="product_groups" id="sel1">
+											 	
+											 	<?php foreach($product_groups as $u): ?>
+											 		<?php if($supplier_product->product_groups == $u->id): ?>
+											 			<option value="<?php echo $u->id; ?>" selected><?php echo $u->name; ?></option>
+											 		<?php else: ?>
+											 		<option value="<?php echo $u->id; ?>"><?php echo $u->name; ?></option>
+											 		<?php endif; ?>	
+												<?php endforeach; ?>
+											</select>
+											
+			      						</td>
+			      						<td>
+			      							<span class="group_name_form_opener"> <i style="font-size: 25px;color: #19446F;" class="btn btn-xs fa fa-plus-square"></i></span>	
+			      						</td>
+			      					</tr>
+			      					
+			      				</tbody>
+			      			</table>
+			      		</div>
+			      		<div class="col-md-5 add_group_name_form_area" style="border:1px solid #ddd;padding:1%">
+			      				<div class="col-md-10">
+			      					<input type="text" name="add_group_name[]" placeholder="Group Name" class="form-control" style="height:30px;font-size:12px;margin-bottom: 1%">
+			      					<a href="" class="btn btn-success btn-sm product_group_submit_btn" >Save</a>
+			      				</div>
+			      				<div class="col-md-2 text-right" style="margin-bottom: 2%">
+			      					<a class="btn btn-xs btn-danger group_name_from_remover" href=""><i class="fa fa-remove"></i></a>
+			      				</div>
+			      			
+			      		</div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-2">
+			      			<label for="">Payments</label>
+			      		</div>
+			      		<div class="col-md-7">
+							<div class="form-control height-auto">
+								<ul class="list-unstyled">
+									<li>
+										<label><input type="checkbox" name="payment[]" value="Bkash">Bkash</label>
+										<label><input type="checkbox" name="payment[]" value="Paypal">Paypal</label>
+										<label><input type="checkbox" name="payment[]" value="DBBL">DBBL</label>
+										<label><input type="checkbox" name="payment[]" value="Western Union">Western Union</label>
+									</li>
+								</ul>
+							</div>
+							<span class="help-block">
+							select one or more options </span>
+						</div>
+			      	</div>
+			    </div>
+			    <!-------------PRODUCT-PAGE-TAB-CONTENT;------------------>
+			    <div id="product_page_info_tab_content" class="tab-pane fade">
+			      	<h4>Product-Page details</h4>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-3">
+			      			<label for="">Meta Title</label>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<input type="text" class="form-control maxlength-handler validate" validation="validated_false" name="product_meta_title" value="<?php echo e($supplier_product->meta_title); ?>" maxlength="100" placeholder="">
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-3">
+			      			<label for="">Meta Keyword</label>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<textarea class="form-control maxlength-handler validate" validation="validated_false"  name="product_meta_keywords" maxlength="255"><?php echo e($supplier_product->meta_keyword); ?></textarea>
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-3">
+			      			<label for="">Meta Description</label>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<textarea class="form-control maxlength-handler validate" validation="validated_false"  name="product_meta_description" maxlength="255"><?php echo e($supplier_product->meta_description); ?></textarea>
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			      	<div class="row margin_top1">
+			      		<div class="col-md-3">
+			      			<label for="">Product Tags</label>
+			      		</div>
+			      		<div class="col-md-4">
+			      			<textarea class="form-control maxlength-handler validate" validation="validated_false"  name="product_tags" maxlength="255"><?php echo e($supplier_product->tag); ?></textarea>
+			      		</div>
+			      		<div class="col-xs-3 validation_status">
+                            <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                            <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                            <span class="text-danger validation_message"></span>
+                        </div>
+			      	</div>
+			    </div>
+			    <!-------------PRODUCT-IMAGE-TAB-CONTENT;------------------>
+			    <div id="product_image_tab_content" class="tab-pane fade">
+			      	<h4>Product Image</h4>
+			      	<input style="height:27px;padding-bottom:3.8%;padding-top:.5% ; font-size:12px;width:86px" type="file" name="image" class="btn btn-danger btn-xs" id="p_img">
+					<div class="loading">
+					  	
+					 </div>
+					 <div class="hidden_img_name_field">
+					  	
+					 </div>	
+					<div class="col-xs-12 img_preview" style="border:1px solid #ddd;margin-top:1%;padding:1%">
+						<!----PREVIEW IMAGE HANDELED BY JAVASCRIPT----------->
+						<?php foreach($product_image as $img): ?>
+						<div style="border-right: 1px solid #ddd" class="col-sm-3 img_container">
+							<div class="col-xs-12 text-center" style="margin-bottom: 1%">
+								<i class="fa fa-remove btn btn-xs btn-danger remove_preview_img" ca_img_id="<?php echo e($img->image); ?>"></i>
+							</div>
+							<div class="col-xs-12">
+								<img src="<?php echo e(URL::asset('uploads/'.$img->image.'',is_secured())); ?>" alt="" class="img-responsive" style="height:102px;width:100%">
+							</div>
+							<div class="col-xs-12" style="padding-top: 2%">
+								<p class="img_details">Name: <span class="text-muted img_name"><?php echo e($img->image); ?></span></p>
+							</div>
+						</div>
+						<?php endforeach; ?>
+					</div>
+			    </div>
+			</div>
+			<div class="col-xs-12 bg-info text-center" style="padding:1%;margin-bottom:2%">
+				<input type="submit" class="btn btn-primary btn-lg" value="Save">
+			</div>
+			
+		</form>
+	</div>
+</div>
+<script type="text/javascript">
+	(function(){
+	
+		$('.hidden_icon').hide();
+		var payment_terms = $('[name="hidden_payment_tearms"]').val();
+        $('[name="payment[]"][value="'+payment_terms+'"]').prop('checked',true);
+        
+        $('.product_desc').jqte();
+        $('.add_group_name_form_area').hide();
+		// settings of status
+		var jqteStatus = true;
+		$(".status").click(function()
+		{
+			jqteStatus = jqteStatus ? false : true;
+			$('.jqte-test').jqte({"status" : jqteStatus})
+		});
+        
+		$(document).on({blur:function(){
+            var relative_row = $(this).parent().parent();
+            if(!$.trim(this.value).length){
+                $(this).attr('validation','validated_false');
+                relative_row.find('.validated_true').hide(500);
+                relative_row.find('.validated_false').show(500);
+            }else{
+                $(this).attr('validation','validated_true');
+                relative_row.find('.validated_false').hide(500);
+                relative_row.find('.validated_true').show(500);
+                $(this).attr('style',"border:1px solid #e5e5e5");
+            }
+            return;
+        }},'.validate');
+        
+        $(document).on({click:function(e){
+            e.preventDefault();
+            var cross_brouser_support_animation = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            var current_active_form = $('#animatedModal .product_create_tab li.active a').attr('href');
+            $(current_active_form+' .validate[validation="validated_true"]').attr('style',"border:1px solid #e5e5e5");
+            if($('#animatedModal '+current_active_form+' .validate[validation="validated_false"]').length>0){
+                $('#animatedModal '+current_active_form+' .validate[validation="validated_false"]').attr('style',"border:1px solid red");
+                //console.log($('#animatedModal '+current_active_form+' .validate[validation="validated_false"]'));
+            }else{
+                var animation_class = 'animated zoomOut';
+                var submission_checker = $('#animatedModal .product_create_tab li.active a').attr('href');
+                $(current_active_form).addClass(animation_class).one(cross_brouser_support_animation, function(){
+                    $(this).removeClass(animation_class);
+                    $('#animatedModal .product_create_tab li.active').next().find('a').click();
+                    var next_active_form = $('#animatedModal .product_create_tab li.active a').attr('href');
+                    var animation_class_next = "animated bounceIn";
+                    $(next_active_form).addClass(animation_class_next).one(cross_brouser_support_animation,function(){
+                        $(this).removeClass(animation_class_next);
+                    })
+                });
+                if(submission_checker == "#product_image_tab_content"){
+                	$(this).closest('form').submit();
+                }
+            }
+        }},'.product_create_submit_btn');
+        
+        $(document).on({click:function(e){
+            var target_area,data_template,prev_name,prev_value;
+            e.preventDefault();
+            prev_name = $(this).parent().parent().find('[name="product_att_name[]"]').val();
+            prev_value = $(this).parent().parent().find('[name="product_att_value[]"]').val();
+            tempalte = "<tr><td>Name</td>\
+      						<td><input name='attr_id[]' type='hidden'><input type='text' name='product_att_name[]' class='form-control'></td>\
+      						<td>Value</td>\
+      						<td><input type='text' name='product_att_value[]' class='form-control'></td>\
+      						<td> <a href='' class='btn btn-primary btn-xs add_more_attribute_btn_for_edit pull-left'><i class='fa fa-plus'></i></a> <a href='' class='btn btn-xs btn-danger remove_attributes pull-right'><i class='fa fa-minus'></i></a> </td>\
+      					</tr>";
+            (prev_name.length>0 && prev_value.length>0)?$('.copied_template').append(data_template) : false;
+            $(this).closest('tbody').append(tempalte);
+        }},'.add_more_attribute_btn_for_edit');
+        
+        $('[name="image"]').change(function(e) {
+        	var template,size="",name="",type="",src="",reader,data,animation,animation_end,base_url=window.location.origin,file;
+			
+        	if (this.files && this.files[0]) {
+        		
+        		file = document.getElementById('p_img').files[0];
+        		$('.loading').html('<i class="fa fa-spinner fa-pulse" style="font-size: 30px;display:inline-block;margin-top:1.5%;color:#4A6C8D"></i>Image Is uploading.....');
+                data = new FormData();
+                data.append('image', file);
+                $.ajax({
+					url: base_url+'/upload_p_image',
+					type: "POST",
+					data: data,
+					processData: false,
+					contentType: false,
+					success: function(data, textStatus, jqXHR) {
+						if(data != 0){
+							$('#product_image_tab_content').append('<input type="hidden" name="p_image[]" value="'+data+'"/>');
+							$('.loading').html('<i class="fa fa-check-square" style="font-size: 30px;display:inline-block;margin-top:1.5%;color:#4A6C8D"></i> Image Uploaded...');
+							$('.remove_preview_img').attr('ca_img_id',data);
+						}
+					},
+                });
+        		name=this.files[0].name;
+        		type=this.files[0].type;
+        		size=this.files[0].size;
+        		reader = new FileReader();
+        		animation = "animated flip"
+        		animation_end = "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
+        		reader.readAsDataURL(this.files[0]);
+        		reader.onload = function(e) {
+        			
+        			src=e.target.result;
+					template = '<div style="border-right: 1px solid #ddd" class="col-sm-3 img_container">\
+    								<div class="col-xs-12 text-center" style="margin-bottom: 1%">\
+    									<i class="fa fa-remove btn btn-xs btn-danger remove_preview_img" ca_img_id=""></i>\
+    								</div>\
+    								<div class="col-xs-12">\
+										<img src="'+src+'" alt="" class="img-responsive" style="height:102px;width:100%">\
+									</div>\
+									<div class="col-xs-12" style="padding-top: 2%">\
+										<p class="img_details">Name: <span class="text-muted img_name">'+name+'</span></p>\
+										<p class="img_details">Size: <span class="text-muted img_size">'+size+'</span></p>\
+										<p class="img_details">Type: <span class="text-muted img_type">'+type+'</span></p>\
+									</div>\
+								</div>';
+    				$('.img_preview').append(template);
+        		}
+        	}
+        });
+        
+        $(document).on({click:function(e){
+			$(this).closest('.img_container').remove();
+			var img_name = $(this).attr('ca_img_id');
+			url = window.location.origin+'/delete_p_image/'+img_name;
+			$.get(url,function(r){
+				console.log(r);
+			})
+		}},'.remove_preview_img');
+		
+		$(document).on({
+					click: function(e) {
+							template = '<tr>\
+					      						<input type="hidden" name="product_price_id[]" value="0">\
+					      						<td>MOQ: <span></span></td>\
+					      						<td>\
+					      							<input style="height:27px;padding-bottom:1%;font-size:12px" type="text" name="product_MOQ[]" validation="validated_false" value="" class="form-control validate">\
+					      						</td>\
+						                         <td> FOB Price: </td>\
+						                         <td>\
+													<input style="height:27px;padding-bottom:1%;font-size:12px" type="text" name="product_FOB[]" validation="validated_false" class="form-control validate">\
+					      						</td>\
+					      						<td><i class="fa fa-plus btn btn-xs btn-primary add_price_btn"></i></td>\
+					      					</tr>'
+		  $(this).closest('tbody').append(template);
+		  
+		}},'.add_price_btn');
+		
+		$(document).on({
+        	click: function() {
+        		$('.add_group_name_form_area').show(300)
+        	}
+        }, '.group_name_form_opener')
+        $(document).on({
+        	click: function(e) {
+        		e.preventDefault();
+        		$('.add_group_name_form_area').hide(300)
+        	}
+        }, '.group_name_from_remover');
+        $(document).on({
+        	click: function(e) {
+        		e.preventDefault();
+        		var url = window.location.origin + "/add_product_group/" + $("[name='add_group_name[]']:first").val();
+        		
+        		$.get(url, function(r) {
+        			console.log(r);
+        			$('.table select[name="product_groups[]"]:first').append("<option value='"+r.id+"'>"+r.name+"</option>");
+        		});
+        	}
+        }, '.product_group_submit_btn');
+        
+		
+	})()
+</script>
+
+
+
+
+
+
+
+
+
+<!-- END JAVASCRIPTS -->
+

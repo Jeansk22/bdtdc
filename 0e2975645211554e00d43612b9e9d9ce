@@ -1,0 +1,310 @@
+<?php $__env->startSection('content'); ?>
+<div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                    <ul class="top-path" style="padding-bottom: 8px;">
+                        <li class="top-path-li"><a href="<?php echo e(URL::to('/')); ?>" class="top-path-li-a">Quotation <i class="fa fa-angle-right top-path-icon"></i></a></li>
+                        <?php if($quotations->inq_products_description): ?>
+                        <li class="top-path-li"><a href="<?php echo e(URL::to('BuyerChannel/pages/trade_assurance/5')); ?>" class="top-path-li-a"><?php echo e(preg_replace('/[^A-Za-z0-9\.-]/', '-',$quotations->inq_products_description->name or '')); ?><i class="fa fa-angle-right top-path-icon"></i></a></li>
+                        <?php else: ?>
+                        <li class="top-path-li"><a href="<?php echo e(URL::to('BuyerChannel/pages/trade_assurance/5')); ?>" class="top-path-li-a"><?php echo e($quotations->inquery_title); ?><i class="fa fa-angle-right top-path-icon"></i></a></li>
+                        <?php endif; ?>
+                    </ul>
+            </div>
+            </div>
+
+            <div class="row" style="background-color:#fff; padding-bottom:0;margin-bottom:1%;">
+                <div class="col-md-12 col-sm-12 col-lg-12" style="padding-top:3%;">
+               
+         <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12" style="padding:0;">
+                <ul id="etalage">
+
+                            <li>
+
+                                <a href="optionallink.html">
+                                <?php if($quotations->inq_products_images): ?>
+                                    <img class="etalage_thumb_image" src="<?php echo e(URL::to('bdtdc-product-image/'.trim($quotations->inq_products_category->pro_parent_cat->name).'/'.trim($quotations->inq_products_category->bdtdcCategory->name),$quotations->inq_products_images->image,is_secured())); ?>" />
+
+                                    <img class="etalage_source_image" src="<?php echo e(URL::to('bdtdc-product-image/'.trim($quotations->inq_products_category->pro_parent_cat->name).'/'.trim($quotations->inq_products_category->bdtdcCategory->name),$quotations->inq_products_images->image,is_secured())); ?>" />
+
+                                <?php elseif($quotations->inq_products_image): ?>
+                                    <img class="etalage_thumb_image" src="<?php echo e(URL::to('uploads',$quotations->inq_products_image->image,is_secured())); ?>" />
+
+                                    <img class="etalage_source_image" src="<?php echo e(URL::to('uploads',$quotations->inq_products_image->image,is_secured())); ?>" />
+
+                                <?php elseif($quotations->inq_docs_one): ?>
+                                    <img class="etalage_thumb_image" src="<?php echo e(URL::to('buying-request-docs',$quotations->inq_docs_one->docs,is_secured())); ?>" />
+
+                                    <img class="etalage_source_image" src="<?php echo e(URL::to('buying-request-docs',$quotations->inq_docs_one->docs,is_secured())); ?>" />
+                                <?php endif; ?>
+                                </a>
+
+                            </li>
+
+                            <?php if(count($quotations->inq_products_images_all) > 0): ?>
+                                <?php foreach($quotations->inq_products_images_all as $image): ?>
+                                <li>
+                                    <img class="etalage_thumb_image" src="<?php echo e(URL::to('bdtdc-product-image/'.trim($quotations->inq_products_category->pro_parent_cat->name).'/'.trim($quotations->inq_products_category->bdtdcCategory->name),$image->image,is_secured())); ?>" />
+
+                                    <img class="etalage_source_image" src="<?php echo e(URL::to('bdtdc-product-image/'.trim($quotations->inq_products_category->pro_parent_cat->name).'/'.trim($quotations->inq_products_category->bdtdcCategory->name),$image->image,is_secured())); ?>" />
+                                </li>
+                                <?php endforeach; ?>
+                            <?php elseif(count($quotations->inq_products_image_all) > 0): ?>
+                                <?php foreach($quotations->inq_products_image_all as $image): ?>
+                                <li>
+                                    <img class="etalage_thumb_image" src="<?php echo e(URL::to('uploads',$image->image,is_secured())); ?>" alt="<?php echo e(isset($image->image) ? $image->image : ''); ?>" />
+
+                                    <img class="etalage_source_image" src="<?php echo e(URL::to('uploads',$image->image,is_secured())); ?>" alt="<?php echo e(isset($image->image) ? $image->image : ''); ?>" />
+                                </li>
+                                <?php endforeach; ?>
+                            <?php elseif(count($quotations->inq_docs) > 0): ?>
+                                <?php foreach($quotations->inq_docs as $image): ?>
+                                <li>
+                                    <img class="etalage_thumb_image" src="<?php echo e(URL::to('buying-request-docs',$image->docs,is_secured())); ?>" alt="<?php echo e(isset($image->docs) ? $image->docs : ''); ?>" />
+
+                                    <img class="etalage_source_image" src="<?php echo e(URL::to('buying-request-docs',$image->docs,is_secured())); ?>" alt="<?php echo e(isset($image->docs) ? $image->docs : ''); ?>" />
+                                </li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+
+                        </ul>
+
+         </div>
+         <?php //dd($quotations->bdtdc_product_attribute); ?>
+         <div class="col-md-8 col-sm-8 col-lg-8 col-xs-12" style="padding:0px;">
+            <p style="padding-top:0px" class="p-name-heading"><?php if($quotations->inq_products_description): ?>
+            <?php echo e($quotations->inq_products_description->name); ?>
+
+            <?php else: ?>
+            <?php echo e($quotations->inquery_title); ?>
+
+            <?php endif; ?>
+            </p>
+            <p class="title-price">FOB <span style="font-size: 16px;font-weight: 600;color: #2192D9;"><?php if($quotations->p_price){if(trim($quotations->p_price->currency) != ''){echo $quotations->p_price->currency;}else{echo "USD";}}else{echo "USD";} ?> <?php if($quotations->p_price): ?>
+            <?php echo e($quotations->p_price->product_FOB); ?>
+
+            <?php else: ?>
+            FOB not available
+            <?php endif; ?>
+            </span> / <?php if($quotations->inq_unit_id): ?>
+            <?php echo e($quotations->inq_unit_id->name); ?>
+
+            <?php else: ?>
+            Pieces
+            <?php endif; ?>
+            </p>
+
+            <?php
+                $attr_count = count($quotations->bdtdc_product_attribute);
+                $repeat_array = [];
+                /*if($attr_count > 0){
+                    for($i=0; $i < $attr_count; $i++,$i++){
+                        if($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute){
+                            if (array_key_exists($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name,$repeat_array))
+                            {}else{
+                                $repeat_array[$quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name] = $quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->value;
+                            }
+                        }
+                    }
+                }echo "<pre>";print_r($repeat_array);echo "</pre>";echo count($repeat_array);*/
+            ?>
+            <div class="com-md-12 padding_0">
+            <?php if($quotations->bdtdc_product_attribute): ?>
+                <?php if(count($quotations->bdtdc_product_attribute) > 0): ?>
+                <div class="col-md-6">
+                        <ul class="attribute-list">
+                        <?php for($i=0; $i < $attr_count; $i++,$i++){
+                            if($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute){ ?>
+                                <?php if (array_key_exists($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name,$repeat_array))
+                                  {}else{ ?>
+                            <li><span style="color:#999;height:40px;"><?php echo e($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name); ?></span> <?php echo e($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->value); ?></li>
+                        <?php $repeat_array[$quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name] = $quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->value; } }} ?>
+                        </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="attribute-list" style="padding-left:5%;">
+                    <?php for($i=1; $i < $attr_count; $i++,$i++){
+                        if($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute){ ?>
+                            <?php if (array_key_exists($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name,$repeat_array))
+                                  {}else{ ?>
+                        <li><span style="color:#999;"><?php echo e($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name); ?></span> <?php echo e($quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->value); ?></li>
+                    <?php $repeat_array[$quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->name] = $quotations->bdtdc_product_attribute[$i]->bdtdcAttribute->value; } }} ?>
+                    </ul>
+                </div>
+                <?php endif; ?>
+            <?php endif; ?>
+                
+            </div>
+            <div class="row">
+             <div class="col-md-8 col-sm-8 col-lg-8" style="padding:0;padding-left: 33px;">
+            <p class="ppp-des"><span style="color: #1DC11D;line-height:18px;padding-right: 10px;"><?php echo e(count($suppliers)); ?></span> Suppliers can give quotations </p>
+            <p class="ppp-des"><span style="color: #1DC11D;line-height:18px;padding-right: 10px;"><?php echo e($quotations_no); ?></span> <span style="color:#000;font-weight:600;"> Quotes have been received for this product</span></p>
+            <?php echo csrf_field(); ?>
+
+            <p style="float: left;width: 50%;margin-left: 12%;margin-top: 20px;">
+                <a target="_blank" href="<?php echo e(URL::route('postBuyRequest.form',$quotations->id)); ?>" id="filter_by_quote" class="btn btn-primary btn-join filter_by_quote">Add to Buying Request</a>
+            
+                
+
+            </p>
+
+             <p style="float: right;width: 32%;margin-left: -6%;margin-top: 20px;">               
+            
+                <a target="_blank" href="<?php echo e(URL::route('postQuote.form',$quotations->id)); ?>" id="filter_by_quote" class="btn btn-primary btn-join filter_by_quote">Send Quote</a>
+               
+            </p>
+            </div>
+            </div>
+
+
+         </div>
+    
+       
+        
+       </div> 
+</div>
+
+
+<div class="row" style="margin-top:3%;padding-bottom: 2%">
+    <div class="category-tab"><!--category-tab-->
+        
+            <ul class="nav nav-tab nav-pills trade-show-ul " style="background:none;border-bottom: 1px solid #dae2ed;">
+                <li style="padding-top: 11px;font-size: 15px;font-weight: 600;">Selected Brand</li>
+                <li class="active" style="margin-left: 9.5%;"><a class="padding_0 catTarget" catid="all" href="#forbuyer" data-toggle="tab" aria-expanded="true">Hot Brands</a></li>
+                <?php
+                $chunked_cat_array = array_chunk($categorys, 5);
+                ?>
+                <?php if(isset($chunked_cat_array[0])): ?>
+                <?php foreach($chunked_cat_array[0] as $cat): ?>
+                <li><a style="font-size: 13px;" class="padding_0 catTarget" catid="<?php echo e($cat->cat_id); ?>" 
+                href="#forbuyer" data-toggle="tab" aria-expanded="false"><?php echo e($cat->cat_name); ?></a></li>
+                <?php endforeach; ?>
+                <?php endif; ?>
+              
+                   
+            </ul>
+    </div>
+    
+    <div class="tab-content">
+        <input type="hidden" name="section" value="">
+        <div class="tab-pane fade active in" id="forbuyer">
+            <div class="col-sm-12 padding_0 replace_area">
+                <div style="text-align:center;margin-top:50px;margin-bottom:50px;">
+                    <img src="http://www.bdtdc.com/resources/assets/images/circle_preloader.gif" alt="Loading..." />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript">
+
+    jQuery(document).ready(function($){
+
+            
+
+                            $('#etalage').etalage({
+
+                                thumb_image_width: 350,
+
+                                thumb_image_height: 350,
+
+                                
+
+                                show_hint: true,
+
+                                click_callback: function(image_anchor, instance_id){
+
+                                    alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+
+                                }
+
+                            });
+
+                            // This is for the dropdown list example:
+
+                            $('.dropdownlist').change(function(){
+
+                                etalage_show( $(this).find('option:selected').attr('class') );
+
+                            });
+
+
+
+                    });
+
+    
+
+</script>
+
+ <script>
+
+$(function(){
+          
+
+        $("#filter_by_quote").change(function(){ 
+            window.alert("sometext");
+            var value=$("#quote").val();
+            console.log(value);
+            var url = window.location.href.split('/');
+            var cat_id = url[url.length-1]
+            $('[name="cat_id"]').val(cat_id)
+            $("#product_view").show();
+            $("#pro_v").hide();
+            var _token = $("input[name='_token']").val();
+            get_cat_filtered_product_list();
+            if(value=="examRoutine"){
+                $("#eRoutine").show();
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo e(URL::to('category/products',null,is_secured())); ?>",
+                    // data: "type="+this.value+"&option=eRoutine",
+                    data: "type="+this.value+"&option=eRoutine&_token="+_token,
+                    success:function(result){
+                    $("#eRoutine").html(result);
+                    $("#eRoutine").focus();
+                    }
+                })
+
+            }
+            else{ 
+                $("#eRoutine").hide();
+            }
+           
+        });
+
+        $('.catTarget').click(function(e){
+            e.preventDefault();
+            $(".replace_area").html('<div style="text-align:center;margin-top:50px;margin-bottom:50px;"><img src="http://www.bdtdc.com/resources/assets/images/circle_preloader.gif" alt="Loading..." /></div>');
+            var catid = $(this).attr('catid');
+            var href = window.location.href;
+            var inq_id = href.substr(href.lastIndexOf('/') + 1);
+            $.ajax({
+                    type: "GET",
+                    url: "<?php echo e(URL::to('product-sourcing/view',null,is_secured())); ?>"+"/"+inq_id+"/"+catid,
+                    // data: "type="+this.value+"&option=eRoutine",
+                    // data: "category_id="+$(this).attr('catid'),
+                    success:function(result){
+                        // alert (result);
+                    if(result == ''){
+                        $(".replace_area").html('<p style="font-size:25px;color:green;">No Product to show...</p>');
+                    }else{
+                        $(".replace_area").html(result);
+                    }
+                    }
+                })
+        });
+
+        $('[catid="all"]').click();
+
+
+
+   
+
+    });
+</script>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fontend.master4', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

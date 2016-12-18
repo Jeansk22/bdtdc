@@ -1,0 +1,394 @@
+<?php $__env->startSection('content'); ?>
+<div style="clear:both"></div>
+<div class="row" style="margin-top:30px;margin-bottom:30px;">
+      <div class="col-sm-1" style="padding-left:16px;">
+            <a href="#">Home</a>
+      </div>
+      <div class="col-sm-2" style="margin-left:-53px;">
+            <strong> > Secure Payment</strong>
+      </div>
+</div>
+<div id="secure" class="row" style="background-color:#fff!important;">
+      <div class="col-sm-12">
+            <p style="font-size:50px;color:#fff!important;font-weight:598;margin-top:35px;padding-left:40px;">
+                  Bdtdc.com Secure Payment
+            </p>
+      </div>
+      <div class="col-sm-12" style="margin-bottom:35px">
+            <p style="padding-left:40px;color:#fff!important;">
+                  <i class="fa fa-check-square-o"></i>
+                  Safe Payments
+            </p>
+            <p style="padding-left:40px;color:#fff!important;">
+                  <i class="fa fa-check-square-o"></i>
+                  Quick & Easy Transactions
+            </p>
+            <p style="padding-left:40px;color:#fff!important;">
+                  <i class="fa fa-check-square-o"></i>
+                  Multiple Payment Methods
+            </p>
+      </div>
+      <div class="row">
+            <a href="#" style="color:#fff!important;padding-left:69px;">Buy Wholesale ></a>
+      </div>
+</div>
+<div class="row" style="background-color:#333333;height:50px;">
+      <p style="color:#E8F1FA;padding-left:9%;padding-top:9px;font-size: 16px;line-height: 30px;">
+            On 22 Jan. 2015, Escrow Service changed its name to Bdtdc.com Secure Payment. The service remains the same.</p>
+</div>
+<div class="row" style="background-color:#E8F1FA;">
+      <div class="col-sm-4" style="padding-top:20px;padding-bottom:20px;">
+            <div class="col-sm-12">
+                  <div class="col-sm-3">
+                        <img style="height:1%;" src="<?php echo asset('resources/assets/helpcenter/images/l.png',is_secured()); ?>" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                        <p style="font-weight: 400;font-size: 1.5em;color: #333;">
+                              Safe payments
+                        </p>
+                        <p style="font-size: 10px;color: rgb(102, 102, 102)!important;">
+                              Payment is only released after you confirm order delivery.
+                        </p>
+                  </div>
+            </div>
+      </div>
+      <div class="col-sm-4" style="padding-top:20px;padding-bottom:20px;">
+            <div class="col-sm-12">
+                  <div class="col-sm-3">
+                        <img style="height:1%;" src="<?php echo asset('resources/assets/helpcenter/images/k.png',is_secured()); ?>" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                        <p style="font-weight: 400;font-size: 1.5em;color: #333;">
+                              Quick and easy transactions
+                        </p>
+                        <p style="font-size: 10px;color: rgb(102, 102, 102)!important;">
+                             Complete online ordering, payment and delivery management for express shipping. 
+                        </p>
+                  </div>
+            </div>
+      </div>
+      <div class="col-sm-4" style="padding-top:20px;padding-bottom:20px;">
+            <div class="col-sm-12">
+                  <div class="col-sm-3">
+                        <img style="height:1%;" src="<?php echo asset('resources/assets/helpcenter/images/m.png',is_secured()); ?>" alt="" />
+                  </div>
+                  <div class="col-sm-9">
+                        <p style="font-weight: 400;font-size: 1.5em;color: #333;">
+                              Multiple payment methods
+                        </p>
+                        <p style="font-size: 10px;color: rgb(102, 102, 102)!important;">
+                             Support credit card payments and bank transfers (T/T), without disclosing your details. 
+                        </p>
+                  </div>
+            </div>
+      </div>
+</div>
+<div class="row" style="background-color:#fff!important;margin-top:30px;margin-bottom:30px;">
+      <div class="col-sm-8" style="border: 1px solid rgb(221, 221, 221);padding: 20px 10px 20px 30px;vertical-align: top;">
+            <p style="font-size: 2em;font-weight: 400;line-height: 1;">             
+                  What is Bdtdc.com’s Secure Payment service? 
+            </p>
+            <p style="color: #333;font: inherit;font-size: 12px;line-height: 1.5em;">
+                  Alibaba.com Secure Payment aims to provide a safe payment service for all parties engaged in international
+                  trade. By partnering with an independent online payment platform (Alipay), Alibaba.com provides payment 
+                  security to both buyers and suppliers. 
+            </p>
+      </div>
+      <div class="col-sm-4" style="border: 1px solid rgb(221, 221, 221);padding: 20px 10px 20px 30px;vertical-align: top;">
+            
+             <p style="font-size: 2em;font-weight: 400;line-height: 1;">             
+                  Notice
+            </p>
+            <p style="color: #333;font: inherit;font-size: 12px;line-height: 1.5em;padding-bottom:17px;">
+                 On 22 Jan. 2015, Escrow Service changed its name to Alibaba.com Secure Payment.  
+            </p>
+            
+      </div>
+      
+</div>
+<div class="row" style="background-color:#fff!important;margin-top:30px;margin-bottom:30px;border: 1px solid rgb(221, 221, 221);padding: 20px 10px 20px 30px;vertical-align: top;">
+      <p style="float: left;font-size: 2em;font-weight: 400;line-height: 1">
+            How Secure Payment works
+            <p style="font-size: 14px;display: inline-block;padding-top: 5px;margin-left: 10px;color: #666;"> 
+            Start order /Wholesale order</p>
+      </p>
+      
+      <div class="col-sm-12 padding_0" style="">
+            <div class="col-sm-2 page_scecure" style="">
+                  <div class="step-item-box">
+                   <i class="step-label">1</i> Buyer Places Order Online
+                   </div>
+            </div>
+            <div class="col-sm-2 page_scecure" style="">
+                  <div class="step-item-box">
+                   <i class="step-label">2</i> Buyer Payment
+                   </div>
+            </div>
+            <div class="col-sm-2 page_scecure" style="">
+                  <div class="step-item-box">
+                   <i class="step-label">3</i>Supplier Ships Order
+                   </div>
+            </div>
+            <div class="col-sm-3 page_scecure" style="">
+                  <div class="step-item-box">
+                   <i class="step-label">4</i> Buyer Receives Order & Confirms Online
+                   </div>
+            </div>
+              <div class="col-sm-3 page_scecure2" style="">
+                  <div class="step-item-box">
+                   <i class="step-label">5</i> Payment Released To Supplier
+                   </div>
+            </div>
+                 
+           
+            
+            <!--<div class="col-sm-1" style="background-color:#2A93D4;">-->
+            <!--      <img style="height:50px;width:5px;" src="<?php echo asset('resources/assets/helpcenter/images/bl.jpg',is_secured()); ?>" alt="" />-->
+            <!--</div>-->
+            <!--<div class="col-sm-2" style="background-color:#2A93D4;padding-bottom:2px;color:#fff!important;">-->
+            <!--      <p> <i>1</i> Buyer Places Order Online-->
+            <!--</div>-->
+            <!--<div class="col-sm-1" style="background-color:#2A93D4;">-->
+            <!--      <img style="height:50px;width:5px;" src="<?php echo asset('resources/assets/helpcenter/images/bl.jpg',is_secured()); ?>" alt="" />-->
+            <!--</div>-->
+            <!--<div class="col-sm-2" style="background-color:#2A93D4;padding-bottom:2px;color:#fff!important;">-->
+            <!--      <p> <i>1</i> Buyer Places Order Online-->
+            <!--</div>-->
+            <!--<div class="col-sm-1" style="background-color:#2A93D4;">-->
+            <!--      <img style="height:50px;width:5px;" src="<?php echo asset('resources/assets/helpcenter/images/bl.jpg',is_secured()); ?>" alt="" />-->
+            <!--</div>-->
+            <!--<div class="col-sm-2" style="background-color:#2A93D4;padding-bottom:2px;color:#fff!important;">-->
+            <!--      <p> <i>1</i> Buyer Places Order Online-->
+            <!--</div>-->
+           
+            
+           <!-- <div class="col-sm-2" style="background-color:#2A93D4;padding-bottom:18px;">
+                  <p> 2 Buyer Payment
+                        <img style="height:50px;width:1px;" src="<?php echo asset('resources/assets/helpcenter/images/bl.jpg',is_secured()); ?>" alt="" />
+                  </p>
+            </div>
+            <div class="col-sm-2" style="background-color:#2A93D4;padding-bottom:18px;">
+                  <p> 3 Supplier Ships Order
+                        <img style="height:50px;width:1px;" src="<?php echo asset('resources/assets/helpcenter/images/bl.jpg',is_secured()); ?>" alt="" /></p>
+            </div>
+            <div class="col-sm-3" style="background-color:#2A93D4;">
+                  <p> 4 Buyer Receives Order & Confirms Online
+                        <img style="height:50px;width:1px;" src="<?php echo asset('resources/assets/helpcenter/images/bl.jpg',is_secured()); ?>" alt="" />
+                  </p>
+            </div>
+            <div class="col-sm-3" style="background-color:#2A93D4;padding-bottom:18px;">
+                  <p> 5 Payment released to Supplier
+                        <img style="height:50px;width:1px;" src="<?php echo asset('resources/assets/helpcenter/images/bl.jpg',is_secured()); ?>" alt="" /></p>
+            </div>-->
+      </div>
+</div>
+
+<div class="row" style="background-color:#fff!important;margin-top:30px;margin-bottom:30px;">
+      <div class="col-sm-9" style="border: 1px solid rgb(221, 221, 221);padding: 20px 10px 20px 30px;vertical-align: top;">
+            <p style="font-size: 2em;font-weight: 400;line-height: 1;">             
+                  Payment Security and Refund Options
+            </p>
+            
+            <p style="font-size: 1.2em;line-height: 1;font-weight: 400;padding-top:20px;">
+                  <span class="badge" style="margin-right:10px;">1</span>Payment Security </p> 
+            <p style="font-size: 14px;color: #333;">
+                  Your money is held by Alipay, an independent online payment platform, until you confirm delivery.
+                  Once you have confirmed delivery, we will then notify Alipay to release the payment to the supplier. 
+            </p>
+            <p style="font-size: 1.2em;line-height: 1;font-weight: 400;padding-top:20px;">
+                  <span class="badge" style="margin-right:10px;">2</span>Full Refund</p> 
+            <p style="font-size: 14px;color: #333;">
+                  If the supplier doesn't ship your order on time, or if you don't receive it and it is determined to be
+                  the fault of the supplier, you'll get your payment returned directly 
+            </p>
+            <p style="font-size: 1.2em;line-height: 1;font-weight: 400;padding-top:20px;">
+                  <span class="badge" style="margin-right:10px;">3</span> Partial Refund & Keeping Products</p> 
+            <p style="font-size: 14px;color: #333;">
+                 If the products you receive are significantly different from the product requirements agreed in the
+                 contract with the supplier, you may choose to receive a partial refund and also keep the products. 
+            </p>
+      </div>
+      <div class="col-sm-3" style="border: 1px solid rgb(221, 221, 221);padding: 20px 10px 20px 30px;vertical-align: top;padding-bottom:77px;">
+            
+             <p style="font-size: 2em;font-weight: 400;line-height: 1;margin-bottom:30px;">             
+                  FAQ
+            </p>
+            
+                  <li>
+                        <a href="#" Style="color: rgb(51, 51, 51)!important;font-size: 14px;">
+                              Where can I use Secure Payment? </a>
+                  </li>
+                   <li>
+                        <a href="#" Style="color: rgb(51, 51, 51)!important;font-size: 14px;">How do I pay using bank transfer (T/T payment)? </a>
+                  </li>
+                   <li>
+                        <a href="#" Style="color: rgb(51, 51, 51)!important;font-size: 14px;">How do I pay with my credit card?</a>
+                  </li>
+                   <li>
+                        <a href="#" Style="color: rgb(51, 51, 51)!important;font-size: 14px;">My supplier doesn't accept Secure Payment, what should I do? </a>
+                  </li>
+                   <li>
+                        <a href="#" Style="color: rgb(51, 51, 51)!important;font-size: 14px;">How to pay on Bdtdc.com? </a>
+                  </li>
+                   <li>
+                        <a href="#" Style="color: rgb(51, 51, 51)!important;font-size: 14px;">What can I do if my supplier didn't approve my Refund Request? </a>
+                  </li>
+                  <br>
+                   <a href="#" style="margin-top:80px;color: #06c;">View More ></a>
+           
+            
+      </div>
+      
+</div>
+<div class="row" style="background-color:#fff!important;margin-top:30px;margin-bottom:30px;border: 1px solid rgb(221, 221, 221);padding: 20px 10px 20px 30px;vertical-align: top;">
+     <div class="col-sm-12">
+           <p style="font-size: 2em;font-weight: 400;color: #333;">Resolving Disputes</p>
+     </div> 
+     <div class="col-sm-12">
+           <div  id="footer-shadow" class="col-sm-4" style="padding-top:20px;">
+                 <div class="col-sm-2">
+                        <img src="#">
+                 </div>
+                 <div class="col-sm-10">
+                       <p style="font-size:14px;line-height: 1;font-weight: 400;color: #333;">
+                             Contact the supplier
+                       </p>
+                       <p>
+                             If your order hasn't arrived within the agreed timeframe, or is delivered but isn't as
+                             described, contact the supplier via email or TradeManager. Most suppliers will quickly 
+                             resolve any issues.
+                       </p>
+                 </div>
+            </div>
+           <div  id="footer-shadow" class="col-sm-4" style="padding-top:20px;">
+                 <div class="col-sm-2">
+                        <img src="#">
+                 </div>
+                 <div class="col-sm-10">
+                 <p style="font-size:14px;line-height: 1;font-weight: 400;color: #333;">
+                       Open a dispute to get a refund
+                 </p>
+                 <p>
+                       If you were unable to resolve the issue with the supplier, you can submit a refund request by
+                       clicking Open Dispute before the applicable deadline. This function is available 5 days after
+                       the shipping date, and allows you to formally discuss solutions with the supplier.
+                 </p>
+                 </div>
+           </div>
+           <div class="col-sm-4" style="padding-top:20px;">
+                 <div class="col-sm-2">
+                        <img src="#">
+                 </div>
+                 <div class="col-sm-10">
+                       <p style="font-size:14px;line-height: 1;font-weight: 400;color: #333;">Escalate the dispute to Alibaba.com’s Customer Service Team
+                       </p>
+                       <p>
+                             If you are not satisfied with the supplier’s solution, you can Escalate the Dispute to our
+                             Customer Service team. We will mediate between you and the supplier to resolve the problem.
+                       </p>
+                 </div>
+                 
+           </div>
+     </div>
+</div>
+
+<div class="row" style="background-color:#fff!important;margin-top:30px;margin-bottom:10px;border: 1px solid rgb(221, 221, 221);padding: 20px 10px 20px 30px;vertical-align: top;">
+      <div class="col-sm-12">
+            <p style="font-size: 1.6em;line-height: 1;font-weight: 400;padding-bottom:10px;padding-top:10px;">
+                  Bdtdc.com Secure Payment supports the following payment methods:</p>
+      </div>
+      <div class="col-sm-12">
+            <div class="col-sm-2">
+                  <a href="#">
+                     <p>
+                  <img style="height:80px;width:50px;" src="<?php echo asset('resources/assets/helpcenter/images/master.jpg',is_secured()); ?>" alt="" />
+                  MasterCard</p>    
+                  </a>
+                 
+            </div>
+            <div class="col-sm-2">
+                  <a href="#">
+                     <p>
+                        <img style="height:80px;width:50px;" src="<?php echo asset('resources/assets/helpcenter/images/maesto.png',is_secured()); ?>" alt="" />
+                        Maestro</p>   
+                  </a>
+                  
+            </div>
+            <div class="col-sm-2">
+                  <a href="#">
+                       <p>
+                        <img style="height:80px;width:70px;" src="<?php echo asset('resources/assets/helpcenter/images/visa.jpg',is_secured()); ?>" alt="" />
+                        Visa</p>   
+                  </a>
+                
+            </div>
+            <div class="col-sm-2" style="padding-top:30px;">
+                
+                        <img style="height:40px;width:120px;" src="<?php echo asset('resources/assets/helpcenter/images/western.png',is_secured()); ?>" alt="" />
+                        
+            </div>
+            <div class="col-sm-1" style="padding-top:30px;">
+                  
+                        <img style="height:40px;width:80px;" src="<?php echo asset('resources/assets/helpcenter/images/bank.jpg',is_secured()); ?>" alt="" />
+                       
+            </div>
+            <div class="col-sm-2" style="padding-top:30px;">
+                
+                        <img style="height:40px;width:130px;padding-left:20px;" src="<?php echo asset('resources/assets/helpcenter/images/web.png',is_secured()); ?>" alt="" />
+                        
+            </div>
+            <div class="col-sm-1" style="padding-top:30px;">
+                  
+                        <img style="height:40px;width:80px;" src="<?php echo asset('resources/assets/helpcenter/images/qiwi.png',is_secured()); ?>" alt="" />
+                       
+            </div>
+            
+      </div>
+</div>     
+
+
+	<?php $__env->stopSection(); ?>
+        <?php $__env->startSection('scripts'); ?>
+            <script type="text/javascript">
+                $(function() {
+                    /**
+                     * the element
+                     */
+                    var $ui 		= $('#ui_element');
+
+                    /**
+                     * on focus and on click display the dropdown,
+                     * and change the arrow image
+                     */
+                    $ui.find('.sb_input').bind('focus click',function(){
+                        $ui.find('.sb_down')
+                                .addClass('sb_up')
+                                .removeClass('sb_down')
+                                .andSelf()
+                                .find('.sb_dropdown')
+                                .show();
+                    });
+
+                    /**
+                     * on mouse leave hide the dropdown,
+                     * and change the arrow imagek
+                     */
+                    $ui.bind('mouseleave',function(){
+                        $ui.find('.sb_up')
+                                .addClass('sb_down')
+                                .removeClass('sb_up')
+                                .andSelf()
+                                .find('.sb_dropdown')
+                                .hide();
+                    });
+
+                    /**
+                     * selecting all checkboxes
+                     */
+                    $ui.find('.sb_dropdown').find('label[for="all"]').prev().bind('click',function(){
+                        $(this).parent().siblings().find(':checkbox').attr('checked',this.checked).attr('disabled',this.checked);
+                    });
+                });
+            </script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

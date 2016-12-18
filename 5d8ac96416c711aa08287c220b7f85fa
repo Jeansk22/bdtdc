@@ -1,0 +1,333 @@
+	<?php $__env->startSection('content'); ?>
+	
+
+<div class="row" style="margin-top:15px; padding:0; background:#fff;">
+       <ul class="nav nav-tabs">
+          <li class="footer-shadow"><a style="border-radius: 5px !important;" href="<?php echo URL::to('SupplierChannel/pages/seller_channel',40,is_secured()); ?>">Home</a></li>
+          <li class="footer-shadow"><a href="#">Trade Intelleigence</a></li>
+          <li class="footer-shadow"><a href="#">Value Added Services</a></li>
+          <li class="footer-shadow"><a href="#">Think Business</a></li>
+          <li class="footer-shadow"><a href="#">Discussion Forums</a></li>
+          <li class="footer-shadow"><a href="#">Site Resources</a></li>
+          <li class="footer-shadow active"><a style="border-radius:5px !important;" href="#">Trade Answers</a></li>
+       </ul>
+</div>
+
+<div class="row"  style="background:#fff;">
+<p  style="margin-top:3px; margin:0; border:1px solid #3175af; padding:5px 0;">
+<a style="margin-left:10px;" href="#">close</a>
+<span class="ui-notice-body"> Trade Answers, a new and comprehensive global trade question-answer platform. All the answers are here. </span>
+</p>
+</div>
+<div class="row" style="width:100%;padding-top:2%; padding-bottom:3%; margin-top:20px; background:#fff;">
+            <div class="col-sm-3">
+                <h4 class="left-h4">Trade Answers 进入中文版<span class="glyphicon glyphicon-play"></span> </h4>
+            </div>
+            <div class="col-sm-6">
+                    <div class="data-search">
+                     <form role="form">
+                         <div class="form-group">
+                           <input type="text" class="form-control" id="keyword" placeholder="Input keyword here">
+                        </div>
+                     </<form>
+                 </div>
+                 <div class="data-search-button">
+                         <label for="" class="btn btn-warning">Search</label>
+                    </div>
+            </div>
+            <div class="col-sm-3" style="display:inline block;">
+                    <div>
+                  <div style="float:left; padding-left:0; padding-right:10px;color:#000;
+    font-weight:bold; font-size:14px; margin-top:3%;">Or</div>
+                      <div class="ask">
+                      <button type="button" class="btn btn-default ask" aria-label="Left Align">Ask a Question</button>
+                 </div>
+                 <div class="sign"><a class="sign-a" href="">Sign In</a></div>
+                </div>
+            </div>
+</div>
+<div class="row" style="background:#fff;">
+    <div class="col-md-8">
+    <div class="trade-left">
+        <!-- slider start -->
+       
+ <!---- slider end -->
+<img class="trade-left-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/trtade-answer.jpg',is_secured()); ?>" alt="trade answer">
+</div>
+</div>
+<div class="col-md-4">
+    <div class="trade-right">
+        <h3 class="trade-right-h3"><a class="trade-right-h3-a" href="#">How is modern Chinese Trade?</a></h3>
+        <p class="trade-right-p">Trading in large amount at unbeatable price.<br> their currency is everything they need to..</p>
+        <h3 class="trade-right-h3"><a class="trade-right-h3-a" href="#">Question about american apparel em</a></h3>
+        <h3 class="trade-right-h3"><a class="trade-right-h3-a" href="#">How did trade influence societies in</a></h3>
+    </div>
+</div>
+</div>
+
+<div class="row" id="home_b">
+    <div class="col-md-2" style="padding-left:0;margin-left:0;">
+        <ul class="left-ul" style="margin-top:7%;">
+           <li class="left-ul-li">About bdtdc.com</li>
+           <li class="left-ul-li"><a class="left-ul-li-a" href="#">About bdtdc.com</a></li>
+       </ul>
+       
+       <div class="col-sm-12 col-xs-12 mobo-categories hr-gap no-padding">
+           
+            
+            <ul id="bazar-list" class="pull-left">
+                <li class="" data-id="market">
+                   <a href="">Trade<br>
+                   Finding Suppliers
+                   </a>
+                   
+                    <span class="pull-right"><i class="fa fa-angle-right"></i></span>
+                </li>
+            </ul>
+            
+            
+            <div class="col-lg-offset-12 col-md-offset-12 col-sm-offset-12 cacostos util-clearfix" id="market">
+                <ul class="cacostos-list">
+                    <li>
+                        <a href="#" class="prothom-cacostos">
+                            
+                        <div class="ditio-cacostos">
+                            fdsfsdfdsf
+                            
+                        </div>
+                        </a>
+                    </li>
+
+                </ul>
+                
+            </div>
+           
+
+        </div>
+            <div id="td-ans-menu1">
+                    <h4 class="head-h4">Trade</h4>
+                   <ul class="menu-list-ul">
+                       <li class="menu-list-li"><a href="#">Finding Suppliers</a></li>
+                       <li class="menu-list-li"><a href="#">Finding Buyers</a></li>
+                       <li class="menu-list-li"><a href="#">Buyer & Supplier </a></li>
+                       <li class="menu-list-li"><a href="#">Communication</a></li>
+                       <li class="menu-list-li"><a href="#">Documentation</a></li>
+                   </ul>
+            </div>
+            <div id="td-ans-menu2">
+                    <h4 class="head-h4">Countries & Regions</h4>
+                   <ul class="menu-list-ul">
+                       <li class="menu-list-li"><a href="#">North America</a></li>
+                       <li class="menu-list-li"><a href="#">South America</a></li>
+                       <li class="menu-list-li"><a href="#">Europe </a></li>
+                       <li class="menu-list-li"><a href="#">Asia</a></li>
+                       
+                   </ul>
+            </div>
+            <div id="td-ans-menu3">
+                <h4 class="head-h4">Industry</h4>
+                   <ul class="menu-list-ul">
+                       <li class="menu-list-li"><a href="#">Agriculture & Food</a></li>
+                       <li class="menu-list-li"><a href="#">Apparel, Textiles & </a></li>
+                       <li class="menu-list-li"><a href="#">Auto & Transport</a></li>
+                       <li class="menu-list-li"><a href="#">Electrical Equipment & </a></li>
+                       <li class="menu-list-li"><a href="#">Telecoms</a></li>
+                       
+                   </ul>
+                
+            </div>
+            <div id="td-ans-menu4">
+                <h4 class="head-h4">Guide</h4>
+            </div>
+    </div>
+     <div class="col-md-8">
+                      <ul class="nav nav-tabs" role="tablist">
+                          <li class="active"><a href="#" style="border-radius:5px !important;">Latest</a></li>
+                          <li><a href="#">Most Popular</a></li>
+                          <li><a href="#">Answered</a></li>
+                          <li><a href="#">Unanswered</a></li> 
+                          <li><a href="#">Ask Experts</a></li> 
+                     </ul>
+                    <div class="fst">
+                    <p class="fst-p"><span><i class="fa fa-lightbulb-o"></i>
+</span>Answer the question within 30 mins, you will get double points  x2!</p>
+                </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">Estimated Delivery Time</a> </h4>
+                 <p class="td-ans-cont-p">How can i find also the product that come in my country for estimated delivery time 15 days ? Thanks...<br> Asked by <a href="#">Lorik Mustafa</a> in <a href="#">Other Trade Processes</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">why I couldnt get any answers from the suppliers?</a> </h4>
+                 <p class="td-ans-cont-p">yesterday I sent messages to the suppliers asking for some details of their products but i didnt rec...<br> Asked by <a href="#"> sandra cruz brizuela</a> in <a href="#"> Buyer & Supplier Communication</a> 17 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">help pleasde</a> </h4>
+                 <p class="td-ans-cont-p">help please , i cant find an honest wholesaler for iphone 6 s plus 64 gb unlocked new original , pri...<br> Asked by <a href="#"> kamlesh makwana</a> in <a href="#"> About bdtdc.com </a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="">CAn we use a prepaid card from walmart?</a>  </h4>
+                 <p class="td-ans-cont-p"> Asked by <a href="#"> Chris Ly</a> in <a href="#"> Payment 1</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+              <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">Mr.hellos I have a huge doubt </a> </h4>
+                 <p class="td-ans-cont-p">I found a site on alibaba TRADING LIMITED 2 TRADE for the purchase of fishing reel the transaction w....<br> Asked by <a href="#">Lorik Mustafa</a> in <a href="#">Other Trade Processes</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">Payment being verified</a> </h4>
+                 <p class="td-ans-cont-p">How can i find also the product that come in my country for estimated delivery time 15 days ? Thanks...<br> Asked by <a href="#">Lorik Mustafa</a> in <a href="#">Other Trade Processes</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">How do i make a transfer with trade assurance? </a> </h4>
+                 <p class="td-ans-cont-p">How can i find also the product that come in my country for estimated delivery time 15 days ? Thanks...<br> Asked by <a href="#">Lorik Mustafa</a> in <a href="#">Other Trade Processes</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">ICQ:12777127|Sell CC USA,UK,FR,CA,EU Fullz Info,Track1&2,WU Transfer,Bank Login</a> </h4>
+                 <p class="td-ans-cont-p">How can i find also the product that come in my country for estimated delivery time 15 days ? Thanks...<br> Asked by <a href="#">Lorik Mustafa</a> in <a href="#">Other Trade Processes</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">ICQ:12777127|Sell Cc US,UK,FR,CA,EU Fullz Info,Track1&2,WU Transfer,Bank Login 10</a> </h4>
+                 <p class="td-ans-cont-p">How can i find also the product that come in my country for estimated delivery time 15 days ? Thanks...<br> Asked by <a href="#">Lorik Mustafa</a> in <a href="#">Other Trade Processes</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>Answers 0 </a></p>
+             </div>
+             <div class="td-ans-cont">
+                 <h4 class="td-ans-cont-h4"><a href="#">Someone knows what happens with the company:Demonstrate Time(Ms.Shirley Chan)I cannot contact them and I have a product that have not processed yet.Thanks </a> </h4>
+                 <p class="td-ans-cont-p">How can i find also the product that come in my country for estimated delivery time 15 days ? Thanks...<br> Asked by <a href="#">Lorik Mustafa</a> in <a href="#">Other Trade Processes</a> 9 hours ago</p>
+                 <p class="p-answer"><a href="#"><i class="fa fa-commenting"></i>
+Answers 0 </a></p>
+             </div>
+     </div>
+      <div class="col-md-2">
+          <div classs="tit">Questions Answered</div>
+         <div class="ans-no">
+              <ul>
+                  <li>0,</li>
+                   <li>0,</li>
+                    <li>6,</li>
+                     <li>9,</li>
+                     <li>6,</li>
+                     <li>7,</li>
+                     <li>6,</li>
+              </ul>
+      </div>
+          <div class="ans-btun">
+                 <button type="button" class="btn btn-default" style="width:44%; font-size:100%; text-align:center;">Answers</button>
+                <button type="button" class="btn btn-default" style="width:47%; font-size:100%;">Question</button>
+             
+          </div>
+          <div class="ans-btun">
+                 <a href="#"> <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer1.jpg',is_secured()); ?>" alt="answer"></a>
+                 <p class="answer-cont"><a href="#">Christain Liza Answers </a></p>
+                  
+          </div>
+          <div class="ans-btun">
+                 <a href="#"> <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer2.png',is_secured()); ?>" alt="answer"></a>
+                 <p class="answer-cont"><a href="#">Sky Yan Answer</a></p>
+                  
+          </div>
+          <div class="ans-btun">
+                 <a href="#"> <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer2.png',is_secured()); ?>" alt="answer"></a>
+                 <p class="answer-cont"><a href="#">Echo Pan Answers </a></p>
+                  
+          </div>
+          <div class="ans-btun">
+                 <a href="#"> <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer2.png',is_secured()); ?>" alt="answer"></a>
+                 <p class="answer-cont"><a href="#">Ivan Chen Answers </a></p>
+                  
+          </div>
+          <div class="ans-btun">
+                 <a href="#"> <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer2.png',is_secured()); ?>" alt="answer"></a>
+                 <p class="answer-cont"><a href="#">Frank Williams Answers </a></p>
+                  
+          </div>
+          <div class="ans-btun">
+                 <a href="#"> <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer2.png',is_secured()); ?>" alt="answer"></a>
+                 <p class="answer-cont"><a href="#">Christain Liza Answers </a></p>
+                  
+          </div>
+          <div class="ans-btun" style="margin-top:10%;">
+                 
+                 <h3 class="expt-h3">Expert Online</h3>
+                
+                  
+          </div>
+          <div class="ans-btun-btom">
+                  <a href="#">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/td-ans-exp1.jpg',is_secured()); ?>" alt="answer">
+                    <p class="answer-cont" style="color:#000; font-size:80%; float:left;">Designer Jewelry</p>
+                    <div class="symbol">
+                     <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/ex.png',is_secured()); ?>" alt="answer">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exa.png.jpg',is_secured()); ?>" alt="answer">
+                       <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exl.jpg',is_secured()); ?>" alt="answer">
+                       <p style="color:#333; font-size:100%; font-weight:normal; float:left;">Logistics Answer 290</p>
+                      </div>
+                  </a>
+                  
+          </div>
+          <div class="ans-btun-btom">
+                  <a href="#">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer1.jpg',is_secured()); ?>" alt="answer">
+                    <p class="answer-cont" style="color:#000; font-size:80%; float:left;">Christain Liza </p>
+                    <div class="symbol">
+                     <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/ex.png',is_secured()); ?>" alt="answer">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exa.png.jpg',is_secured()); ?>" alt="answer">
+                       <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exl.jpg',is_secured()); ?>" alt="answer">
+                       <p style="color:#333; font-size:100%; font-weight:normal; float:left;">Logistics Answer 290</p>
+                      </div>
+                  </a>
+                  
+          </div>
+          <div class="ans-btun-btom">
+                  <a href="#">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer2.png',is_secured()); ?>" alt="answer">
+                    <p class="answer-cont" style="color:#000; font-size:80%; float:left;">Florin Fenaru</p>
+                    <div class="symbol">
+                     <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/ex.png',is_secured()); ?>" alt="answer">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exa.png.jpg',is_secured()); ?>" alt="answer">
+                       <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exl.jpg',is_secured()); ?>" alt="answer">
+                       <p style="color:#333; font-size:100%; font-weight:normal; float:left;">Logistics Answer 290</p>
+                      </div>
+                  </a>
+                  
+          </div>
+          <div class="ans-btun-btom">
+                  <a href="#">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/answer2.png',is_secured()); ?>" alt="answer">
+                    <p class="answer-cont" style="color:#000; font-size:80%; float:left;">Designer Jewelry</p>
+                    <div class="symbol">
+                     <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/ex.png',is_secured()); ?>" alt="answer">
+                      <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exa.png.jpg',is_secured()); ?>" alt="answer">
+                       <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/exl.jpg',is_secured()); ?>" alt="answer">
+                       <p style="color:#333; font-size:100%; font-weight:normal; float:left;">Logistics Answer 290</p>
+                      </div>
+                  </a>
+                  
+          </div>
+      </div>
+</div>
+<div class="row" style="padding-bottom:5%;padding-top:5%;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="fst" style="border:1px solid #ccc;">
+            <p class="fst-p" >Red All</p>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+    
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

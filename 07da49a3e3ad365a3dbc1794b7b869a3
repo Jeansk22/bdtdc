@@ -1,0 +1,68 @@
+<html>
+    <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+         <meta name="viewport" content="target-densitydpi=device-dpi, width=1000" />
+         <title>About Bditdc</title>
+         <link rel='shortcut icon' type='image/x-icon' href='http://aboutus.bditdc.com/favicon.ico' />
+         <link rel="stylesheet" type="text/css" href="../js/vendor/fancyBox/jquery.fancybox.css">
+         <link href="../js/vendor/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" type="text/css" media="all" />
+         <link rel="stylesheet" type="text/css" href="../js/vendor/OwlCarousel/owl-carousel/owl.carousel.css">
+         <link rel="stylesheet" type="text/css" href="../js/vendor/OwlCarousel/owl-carousel/owl.transitions.css">
+         <link rel="stylesheet" type="text/css" href="../js/vendor/powerTip/css/jquery.powertip.min.css">
+         <link href="../css/base.css" rel="stylesheet" type="text/css" media="all" />
+         <link href="../css/content.css" rel="stylesheet" type="text/css" media="all" />
+         <link href="../css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+         <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+         <script type="text/javascript" src="../js/config.js"></script>
+         <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+         <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+         <script type="text/javascript" src="../js/modernizr.js"></script>
+         <script type="text/javascript" src="../js/vendor/jquery.transit.min.js"></script>
+         <script type="text/javascript" src="../js/vendor/handlebars-v1.3.0.js"></script>
+         <script type="text/javascript" src="../js/vendor/skrollr/src/skrollr.js"></script>
+         <script type="text/javascript" src="../js/vendor/fancyBox/jquery.fancybox.js"></script>
+         <script type="text/javascript" src="../js/vendor/imagesloaded.pkgd.min.js"></script>
+         <script type="text/javascript" src="../js/managment.js"></script>
+         <script type="text/javascript" src="../js/vendor/jquery.jcarousel.min.js"></script>
+         <script type="text/javascript" src="../js/vendor/jquery.backgroundpos.min.js"></script>
+         <script type="text/javascript" src="../js/vendor/jscrollpane/jquery.jscrollpane.min.js"></script>
+         <script type="text/javascript" src="../js/vendor/jscrollpane/jquery.mousewheel.js"></script>
+         <script type="text/javascript" src="../js/vendor/powerTip/jquery.powertip.min.js"></script>
+         <script type="text/javascript" src="../js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+         <script type="text/javascript" src="../js/vendor/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
+        
+         <script type="text/javascript" src="../js/gallery.js"></script>
+         <script type="text/javascript" src="../js/tubePlayer.js"></script>
+         <script type="text/javascript" src="../js/putJson.js"></script>
+         <script type="text/javascript" src="../js/bg-video.js"></script>
+         <script type="text/javascript" src="../js/loadMap.js"></script>
+         <script type="text/javascript" src="../js/sections.js"></script>
+         <script type="text/javascript" src="../js/functions.js"></script>
+         <script type="text/javascript" src="../js/base.js"></script>
+        
+        
+        <script src="../home/js/dcs_tag.js" type="text/javascript"></script>
+        <script src="../home/js/webtrends_custom_tag.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../js/webtrends_func.js"></script>
+        <script type="text/javascript">
+        
+        //<![CDATA[
+        var _tag=new WebTrends();
+        _tag.dcsGetId();
+        //]]>
+        </script>
+        <script type="text/javascript">
+        		$(document).ready(function(){
+        			$(".BLKvideo").css('height','870px');
+        		});
+        	</script>
+        
+    </head>
+    <body>
+      
+
+        <div class="container">
+            <?php echo $__env->yieldContent('content'); ?>
+        </div>
+    </body>
+</html>

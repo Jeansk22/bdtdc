@@ -1,0 +1,110 @@
+<?php $__env->startSection('content'); ?>
+<br>
+
+
+<div class="row" style="margin-top:15px; padding:0;">
+       <ul class="nav nav-tabs">
+          <li class="active"><a style="border-radius: 5px !important;" href="<?php echo URL::to('SupplierChannel/pages/seller_channel',40,is_secured()); ?>">Home</a></li>
+          <li><a href="#">Seller Memberships</a></li>
+          <li><a href="#">Value Added Services</a></li>
+          <li><a href="<?php echo URL::to('FooterPage/pages/Training_Center',33,is_secured()); ?>">Training</a></li>
+         <!-- <li class = "dropdown">-->
+         <!--   <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">-->
+         <!--     Learning Center-->
+         <!--      <b class = "caret"></b>-->
+         <!--   </a>-->
+            
+         <!--   <ul class = "dropdown-menu">-->
+         <!--      <li><a href = "#">Quick Start</a></li>-->
+         <!--      <li><a href = "#">Advanced Tips</a></li>-->
+         <!--      <li><a href="#">Safe Trading Tips</a></li>-->
+         <!--   </ul>-->
+            
+         <!--</li>-->
+          <li><a href="<?php echo URL::to('FooterPage/pages/Learning_Center',32,is_secured()); ?>">Learning Center</a></li>
+          <li><a href="#">Success Stories</a></li>
+          <li><a href="#">Buyer Demand Report</a></li>
+       </ul>
+</div>
+<div class="row" style="margin-top:10px;">
+       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item"><img src="<?php echo asset('resources/assets/fontend/bdtdc-images/seller-slider1.jpg',is_secured()); ?>" alt="seller1" style="width=100%; min-height:400px;"></div>
+                <div class="item"><img src="<?php echo asset('resources/assets/fontend/bdtdc-images/seller-slider2.jpg',is_secured()); ?>" alt="seller2" style="width:100%; min-height:400px;"></div>
+                <div class="item"><img src="<?php echo asset('resources/assets/fontend/bdtdc-images/seller-slider3.jpg',is_secured()); ?>" alt="seller3" style="width:100%; min-height:400px;"></div>
+            </div>
+            <!-- Carousel nav -->
+            <!--<a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>-->
+            <!--<a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>-->
+</div>
+
+</div>    
+<div class="row seller-uptitle">
+      <div class="col-md-4"><h3>Training</h3></div>
+      <div class="col-md-4"><h3>Learning Center</h3></div>
+      <div class="col-md-4"><h3>Seller Memberships</h3></div>
+      
+</div>
+<div class="row">
+      <div class="col-md-4">
+            <p class="sell-words">Online Training gives you the key operational steps & skills to develop your international trade business.<a href="#"> Learn more</a></p>
+            <p class="sell-words" style="font-size:14px; color:#060606;font-style:bold;">Upcoming Training Events:</p>
+            <br>
+            <p class="sell-words">
+                  <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/dective-icon.jpg',is_secured()); ?>" alt="seller3" style="width:50px;height:50px;" ><br><label class="title10">APR</label>
+                  <br>
+                   
+                  <p class="sell-words-join">
+                        <a href="#" style="font-size:12px;">
+How to Attract More Buyers On bdtdc.com</a><br>
+                        Tutor: Serena & Maomao<br>
+                       <a href="#"> Join now </a>
+                </p>
+               
+            </p>
+              
+            
+      </div>
+      <div class="col-md-4">
+            <p class="sell-words">Learning center for you to grab quick tips and guidance to help you gain good business on Alibaba.com.<a href="#"> Learn more</a> </p>
+            <p class="sell-words " style="font-size:14px; color:#060606;font-style:bold;">Hot Video Tutorials:</p>
+            <br>
+            <p class="sell-words">
+                  <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/Icon_6.png',is_secured()); ?>" alt="seller3" style="width:50px;height:50px;" ><br><label class="title11">VIDEO</label>
+                  <p class="sell-words-join" style="margin-right:40px;">
+                        <a href="#" style="font-size:12px;">
+                        Search & Get in Touch with Buyers</a><br>
+                        Tutor: Serena & Maomao<br>
+                       <a href="#"> Join now </a>
+                </p>
+               
+            </p>
+             
+      </div>
+      <div class="col-md-4">
+            <p class="sell-words-g"><img src="<?php echo asset('resources/assets/fontend/bdtdc-images/ggs_icon.png',is_secured()); ?>" alt="gold">
+                  <a class="sell-word-a" href="#" style="">Gold Supplier Membership</a>
+                  
+                  </p>
+            <p class="sell-words-gold">Maximize your company's exposure and<br> business opportunities</p>
+             <p class="sell-words-gold-rank"> -Top-tier ranking</p>
+             <p class="sell-words-gold-rank"> -Unlimited products display</p>
+             <p class="sell-words-gold-rank"> -Exclusive access to buyers</p>
+             <p class="sell-words-gold-rank"><a href="#">Learn more </a>about seller memberships</p>
+      </div>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
+<script>
+      $('.carousel').carousel();
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

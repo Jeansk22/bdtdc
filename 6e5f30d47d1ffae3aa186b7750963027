@@ -1,0 +1,106 @@
+<form action="<?php echo e(URL::to('post_conversation',null,is_secured())); ?>" method="post" class="form conversation_form">
+    <div class="col-sm-12 padding_0">
+        <p style="font-size:15px;font-weight:bold;color:#666" class="pull-left">Product</p>
+        <a href="#" class="btn btn-sm btn-warning pull-right">Modify & Submit</a>
+        <div class="container_of_inquery_action_btn">
+        <?php if($user_id == $product->sender): ?>
+            <a class="pull-right text-danger inquery_action" href="#" ca_inquery_id="<?php echo e($product->id); ?>" style="margin-top:.5%;margin-right:2%" ca_action="single_trush"><i class="fa fa-trash"></i> Trush</a>
+        <?php else: ?>
+            <a class="pull-right text-danger inquery_action" href="#" ca_inquery_id="<?php echo e($product->id); ?>" style="margin-top:.5%;margin-right:2%" ca_action="single_spam"><i class="fa fa-thumbs-down"></i> Spam</a>
+            <a class="pull-right text-danger inquery_action" href="#" ca_inquery_id="<?php echo e($product->id); ?>" style="margin-top:.5%;margin-right:2%" ca_action="single_flag"><i class="fa fa-flag-checkered"></i> Flag</a>
+        <?php endif; ?>
+        </div>
+
+    </div>
+    <table class="table" style="background:#F0F0F0">
+        <thead style="border:1px solid #ddd!important">
+            <tr class="text-muted" style="font-weight:bold">
+                <td>Product Information</td>
+                <td>Quantity</td>
+                <td>Unit</td>
+                <td>Unit Price (Asking)</td>
+                <td>Total</td>
+            </tr>
+        </thead>
+        <tbody style="border:1px solid #dce2e6!important">
+            <tr style="font-size:13px">
+                <input type="hidden" name="product_owner_id" value="<?php echo e($product->product_owner_id); ?>">
+                <input type="hidden" name="inquery_id" value="<?php echo e($product->id); ?>">
+                <input type="hidden" name="product_id" value="<?php echo e($product->product_id); ?>">
+                <td><a href="" style="border:1px solid #ddd;padding:0%" class="col-xs-2 padding_0"><img src="<?php echo e(URL::asset('uploads/'.$product->image.'',is_secured())); ?>" alt="" class="img-responsive" style="height:52px;width:100%"></a><a href="" class="col-xs-9 btn-link"><?php echo e($product->name); ?></a></td>
+                <td><input type="text" name="quantity" class="form-control quantity" value="<?php echo e($product->quantity); ?>"></td>
+                <td><?php echo e($product->unit); ?></td>
+                <td><input type="text" name="unit_price" class="form-control unit_price" placeholder="Asking Unit Price"></td>
+                <td><input type="text" name="total" class="form-control total" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <?php
+                        $person_who_wrote  = ($user_id == $product->sender) ? "<span style='color:#666;font-weight:bold'>You</span>" : "<span style='color:red;font-weight:bold'>Supplier</span>";
+                        if($user_id == $product->sender){
+                            ?><span class="badge" style="background: #F1F1F1;color: #666;font-weight: bold">You wrote </span><?php
+                        }else{
+                        ?><span class="badge" style="background: #F1F1F1;color: darkred;font-weight: bold">Supplier wrote </span><?php
+                        }
+                    ?>
+                    <span class="badge pull-right">at <?php echo e($product->created_at); ?></span><div class="prev_msg"><?php echo e($product->message); ?></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <?php $_id = 1 ?>
+    <?php foreach($prev_quotation as $pq): ?>
+        <table class="table show_prev_quotation_tbl" class="collapsed" style="background:#F0F0F0;height:50px">
+            <thead style="border:1px solid #ddd!important" data-toggle="collapse" data-target="#demo<?php echo e($_id); ?>" class="quotation_tbl_header">
+                <tr>
+                    <td>
+                        <i class="fa fa-user-plus pull-left" style="margin-top: 1%"></i>
+                        <div class="toggle_quotation_text">
+                            <?php
+                                if($user_id == $pq->sender){
+                                    ?><span class="badge" style="background: #F1F1F1;color: #666;font-weight: bold">To <?php echo e($product->s_first_name); ?>:</span> <?php echo e(substr($pq->messages,'0','15')); ?>... <?php
+                                }else{
+                                    ?><span class="badge" style="background: #F1F1F1;color: darkred;font-weight: bold">From <?php echo e($product->s_first_name); ?> </span><?php echo e(substr($pq->messages,'0','15')); ?>...<?php
+                                }
+                            ?>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td><span class="toggle_quotation_text">at <?php echo e($pq->created_at); ?></span></td>
+                    <td style="padding:0%"class="text-right"> <i class="fa fa-arrow-circle-down btn btn-xs" style="font-size: 19px;margin-top:1%"></i> </td>
+                </tr>
+            </thead>
+            <tbody style="border:1px solid #dce2e6!important" id="demo<?php echo e($_id); ?>" class="collapse">
+                <tr style="font-size:13px">
+                    <td><a href="" style="border:1px solid #ddd;padding:0%" class="col-xs-2 padding_0"><img src="<?php echo e(URL::asset('uploads/'.$product->image.'',is_secured())); ?>" alt="" class="img-responsive" style="height:52px;width:100%"></a><a href="" class="col-xs-9 btn-link"><?php echo e($product->name); ?></a></td>
+                    <td><input type="text" name="" value="<?php echo e($pq->quantity); ?>" class="form-control"/></td>
+                    <td><?php echo e($product->unit); ?></td>
+                    <td><input type="text" name="" class="form-control" placeholder="Asking Unit Price" value="<?php echo e($pq->unit_price); ?>"></td>
+                    <td><input type="text" name="" class="form-control" value="<?php echo e($pq->total); ?>" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <?php
+                            $person_who_wrote  = ($user_id == $product->sender) ? "<span style='color:#666;font-weight:bold'>You</span>" : "<span style='color:red;font-weight:bold'>Supplier</span>";
+                            if($user_id == $pq->sender){
+                                ?><span class="badge" style="background: #F1F1F1;color: #666;font-weight: bold">You wrote </span><?php
+                            }else{
+                                ?><span class="badge" style="background: #F1F1F1;color: darkred;font-weight: bold">Supplier wrote </span><?php
+                            }
+                        ?>
+                        <span class="badge pull-right">at <?php echo e($pq->created_at); ?></span><div class="prev_msg"><?php echo e($pq->messages); ?></div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <?php $_id++ ?>
+    <?php endforeach; ?>
+
+    <div class="col-sm-12 padding_0">
+        <textarea name="messages" id="" cols="30" rows="2" placeholder="New message" class="form-control"></textarea>
+        <input type="submit" value="Send" class="btn btn-sm btn-primary"/>
+    </div>
+</form>

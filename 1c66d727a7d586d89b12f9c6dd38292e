@@ -1,0 +1,212 @@
+	<?php $__env->startSection('content'); ?>
+	
+    <div class="row" style="background-color:#fff;">
+            <div class="header-images">
+                
+            </div>
+    </div>
+    <div class="row" style="background-color:#fff; margin-bottom:1%;padding-bottom: 5%;">
+        <div class="product">
+                
+                <ul class="product-menu-ul">
+                    <?php foreach($products as $data): ?>
+                       
+                        <li class="product-menu-ul-li"><a href="#<?php echo e($data->category); ?>">    <?php echo e($data->category_name); ?></a></li>
+                        
+                    <?php endforeach; ?>
+                </ul>
+                <?php foreach($products as $data): ?>
+                    <h3 style="padding: 2%;" class="health"><?php echo e($data->category_name); ?></h3>
+                    <div id="<?php echo e($data->category); ?>" class="product-view">
+                        <div class="product-details" style="border-right:0 none;border-bottom:0 none;">
+                                <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/siemens-hearing1.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                              
+                            
+                        </div>
+                         <div class="product-details" style="border-right:0 none;border-bottom:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/phonak-hearing2.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                         <div class="product-details" style="border-right:0 none;border-bottom:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/digital-programmable3.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                         <div class="product-details" style="border-bottom:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/rayovac-extra4.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details" style="border-right:0 none;border-bottom:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/newest-siemens-hearing5.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details" style="border-right:0 none;border-bottom:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/High-Quality-Psyllium6.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details" style="border-right:0 none;border-bottom:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/new-design7.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details" style="border-bottom:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/GMP-Certified8.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details" style="border-right:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/100-Natural-Shilajit9.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details" style="border-right:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/Amplivox-Otowave-10.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details" style="border-right:0 none;">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/siemens-open11.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        <div class="product-details">
+                              <div class="product-pic-div">
+                                    <a href="">
+                                    <img class="product-img" src="<?php echo asset('resources/assets/fontend/product-images/unitron12.jpg',is_secured()); ?>" alt="hearing add">
+                                     </a>
+                                </div>
+                                <h4 class="des-cp"><a href="">siemens hearing aid motion micon</a></h4>
+                               <div class="price">
+                                   <h1 class="price-h1"><label for="" style="color:#333; font-size:18px; font-weight bold;">MOQ: </label>1 Piece </h1>
+                               </div>
+                               <div class="con-btn">
+                                    <button type="button" class="btn btn-primary active" style="border-radius:5px !important;"><a href="#">Contact Supplier</a></button>
+                               </div>
+                            
+                        </div>
+                        
+            
+        </div>
+        
+                <?php endforeach; ?>
+        </div>
+        
+    </div>
+	
+<?php $__env->stopSection(); ?>	
+<?php echo $__env->make('fontend.master4', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

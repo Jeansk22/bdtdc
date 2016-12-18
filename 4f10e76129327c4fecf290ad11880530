@@ -1,0 +1,92 @@
+	<?php $__env->startSection('content'); ?>
+	<br><br>
+		<?php echo $__env->make('fontend.layouts.aside', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+     
+            <div id="item_sha" class="col-sm-8 col-md-9 col-xs-12 padding-right">
+                  
+		<div id="pro_view" class="col-sm-8 col-md-12 col-xs-12 padding-right" data-spm="57">
+    	          <div class="col-sm-12 col-md-12 padding_0">
+	    	            <div class="view-label" style="padding: 8px;">View 
+	    	
+	    				
+	    				
+	        		        	Wholesaler  › Consumer Electronics › "Mobile Phones"  (<strong>20936</strong> Results)
+
+							Product(s) below
+						</div>
+		            </div>
+                </div>
+                            <br>
+                  
+      <div class="col-sm-8 col-md-12 col-xs-12 padding-right" data-spm="57">
+
+			<div class="col-sm-12 padding_0">
+				<div class="col-sm-3 padding_0" style="padding-right: 1%;">
+				<a href="#" class="slidebox-item-list">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1QFP5KXXXXXbDXpXXWvVY6XXX-226-260.png',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Product name light
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				<div class="col-sm-3 padding_0" style="padding-right: 1%;" >
+				<a href="#" class="slidebox-item-list">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1V.HUKXXXXXbxXFXXWvVY6XXX-226-260.png',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Product name light
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-3 padding_0" style="padding-right: 1%;" >
+				<a href="#" class="slidebox-item-list">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1zjG0KFXXXXadXFXXgvtY6XXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Product name light
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-3 padding_0" style="padding-right: 1%;" >
+				<a href="#" class="slidebox-item-list">
+					<img style="height:260px;width:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1CurhKFXXXXauXXXXgvtY6XXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Product name light
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+			
+				
+				
+			
+			</div>
+
+   		</div>
+	
+</div>
+<br>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

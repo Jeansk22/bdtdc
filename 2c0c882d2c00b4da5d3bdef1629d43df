@@ -1,0 +1,1200 @@
+<?php $__env->startSection('content'); ?>
+      <?php echo $__env->make('fontend.layouts.sidebar_wholesale', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      
+     
+<div class="row">
+	                <div class="category-tab"><!--category-tab-->
+						
+							<ul class="nav nav-tab nav-pills trade-show-ul " style="background:none;border-bottom: 1px solid #dae2ed;">
+								<li style="padding-top: 11px;font-size: 15px;font-weight: 600;">Selected Brand</li>
+								<li class="" style="margin-left: 9.5%;"><a class="padding_0" href="#forbuyer" data-toggle="tab">Hot Brands</a></li>
+								<li><a style="font-size: 13px;" class="padding_0" href="#apparel" data-toggle="tab">Apparel</a></li>
+								<li><a style="font-size: 13px;" class="padding_0" href="#electronic" data-toggle="tab">Electronics</a></li>
+								<li><a style="font-size: 13px;" class="padding_0" href="#sport" data-toggle="tab">Sports</a></li>
+								<li><a style="font-size: 13px;" class="padding_0" href="#jewelry" data-toggle="tab">Jewelry & Watches</a></li>
+								<li><a style="font-size: 13px;" class="padding_0" href="#forsupplier" data-toggle="tab">Lights & Lighting</a></li>
+								<li><a style="font-size: 13px;" class="padding_0" href="#forsupplier" data-toggle="tab">Automotive</a></li>
+								   
+							</ul>
+					</div>
+					
+	<div class="tab-content">
+		<input type="hidden" name="section" value="<?php echo e(($section) ? $section:""); ?>">
+		<div class="tab-pane fade" id="forbuyer" >
+			<div class="col-sm-12 padding_0">
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;">
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1QFP5KXXXXXbDXpXXWvVY6XXX-226-260.png',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1V.HUKXXXXXbxXFXXWvVY6XXX-226-260.png',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1zjG0KFXXXXadXFXXgvtY6XXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1CurhKFXXXXauXXXXgvtY6XXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" >
+				<a href="#" class="slidebox-item" >
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/images/TB1TYC7KFXXXXXHXpXXgvtY6XXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/images/TB1Y0YhKFXXXXauXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				
+			
+			</div>
+
+   		</div>
+   		<div class="tab-pane fade" id="apparel" >
+			<div class="col-sm-12 padding_0">
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;">
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1yXgDLXXXXXb0XpXXXXXXXXXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1LTC_LpXXXXbRapXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year 2010
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1wbY0LpXXXXX3XVXXXXXXXXXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1gRNRLFXXXXb5XpXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1UHtNLFXXXXX9XFXXXXXXXXXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1gcWUKFXXXXa3XVXXXXXXXXXX-240-120.jpg',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1VbOPKFXXXXXHaXXXXXXXXXXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1H9DULpXXXXcqXVXXXXXXXXXX-240-120.jpg',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" >
+				<a href="#" class="slidebox-item" >
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB12goXLpXXXXckXpXXXXXXXXXX-226-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1utHMKXXXXXXDXVXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				
+			
+			</div>
+
+   		</div>
+   		<div class="tab-pane fade" id="sport" >
+			<div class="col-sm-12 padding_0">
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;">
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1q.TDKXXXXXXvaXXXXXXXXXXX-225-260.png',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1KF_EKXXXXXc6XVXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year 2010
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1bqbMKXXXXXXrXVXXXXXXXXXX-225-260.png',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1vOTFKXXXXXcaXVXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1qfvMKVXXXXcHaXXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1h2_FKXXXXXc.XFXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1Cyi2KVXXXXc4XpXXrxTjYXXX-225-260.jpeg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB19hHiLpXXXXXDXpXXfPaB_VXX-240-120.jpg',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" >
+				<a href="#" class="slidebox-item" >
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1nKoWLpXXXXaRXpXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1oMFaKVXXXXavXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				
+			
+			</div>
+
+   		</div>
+   		<div class="tab-pane fade" id="electronic" >
+			<div class="col-sm-12 padding_0">
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;">
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1HAhTLpXXXXX5aXXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1h2_FKXXXXXc.XFXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year 2010
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1G5BZLpXXXXXGaXXXXXXXXXXX-220-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1oMFaKVXXXXavXXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1F6WcLpXXXXc0XpXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1XQuDLpXXXXbEXFXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1lY06LpXXXXXyXVXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1vDhjKFXXXXc9XFXXfPaB_VXX-240-120.jpg',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" >
+				<a href="#" class="slidebox-item" >
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1G6SiLpXXXXXbXpXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1w3COLpXXXXXxXpXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				
+			
+			</div>
+
+   		</div>
+   		<div class="tab-pane fade" id="jewelry" >
+			<div class="col-sm-12 padding_0">
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;">
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1PuaZKFXXXXa6XVXXrxTjYXXX-225-260.jpeg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1IPizKFXXXXXRXVXXfPaB_VXX-240-120.jpg',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year 2010
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1ieCVLpXXXXaoaXXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1V35hKXXXXXbNXVXXb9RYIXXX-250-120.jpg',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1G92fKFXXXXa2XpXX1Pwj5pXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1C3T7KXXXXXb5XXXXVPCB_VXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" style="padding-right: 20%;" >
+				<a href="#" class="slidebox-item">
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB1WMDXLpXXXXXSXFXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB19hHiLpXXXXXDXpXXfPaB_VXX-240-120.jpg',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				<div class="col-sm-2 padding_0" >
+				<a href="#" class="slidebox-item" >
+					<img style="height:260px;weight:100%" class="img-responsive" src="<?php echo asset('resources/assets/slider/TB19sq5LpXXXXX7XVXXXXXXXXXX-225-260.jpg',is_secured()); ?>" />
+					<div class="brand-logo">
+						<img src="<?php echo asset('resources/assets/slider/TB1utHMKXXXXXXDXVXXXXXXXXXX-240-120.png',is_secured()); ?>" />
+					</div>
+					<div class="brand-year">
+						Since Year
+					</div>
+					<p class="brand-favorable">
+						Sincerity and quality
+					</p>
+				</a>	
+				</div>
+				
+				
+			
+			</div>
+
+   		</div>
+	</div>
+</div>
+      <br><br>
+      
+      <?php if ($product_categorys) { ?>
+
+            <?php foreach ($product_categorys as $product_category) { ?>
+
+            
+      <div class="row">
+            	<div class="col-md-3">
+				<p class="sale-cat-heading-tit"><?php echo $product_category[ 'wcat_name']; ?></p>	
+			</div>
+			<div class="col-md-3 padding_0"><i class="fa fa-angle-right"></i></div>
+      </div>
+	 <div id="item_sha" class="row">
+	
+		<div class="col-md-3" style="padding-left:0; padding-right:0;">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators" style="bottom:0;">
+				      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				      <li data-target="#myCarousel" data-slide-to="1"></li>
+				      
+				    </ol>
+	
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+	
+				      <div class="item  active" style="background-image:url('resources/assets/fontend/bdtdc-images/sal-bg.jpg');background-repeat:no-repeat;">
+				        	<div class="slider-box-image">
+				        					<a target="_blank" href="<?php echo e(URL::to('profile/template_',566,is_secured())); ?>">
+				        				<div class="w-sale">
+				        					<img class="sal-slide-img-group" style="padding-right:7px;" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product01.png',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Women's Clothing</span>
+				        				</div>
+				        				</a>
+				        					<a target="_blank" href="<?php echo e(URL::to('profile/template_',566,is_secured())); ?>">
+				        			<div class="w-sale">
+				        					<img  class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product02.jpg',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Tutu Dresses</span>
+				        			</div>
+				        		</a>
+	
+				        			<a target="_blank" href="<?php echo e(URL::to('profile/template_',566,is_secured())); ?>">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product03.jpg',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Children party Dress</span>
+				        			</div>
+				        		</a>
+				        			<a target="_blank" href="<?php echo e(URL::to('profile/template_',566,is_secured())); ?>">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product04.jpg',is_secured()); ?>" alt=""/>
+				        					
+				        					<span class="sale-p-title">Women's Dresses</span>
+				        			</div>
+				        		</a>
+				        			<a target="_blank" href="<?php echo e(URL::to('profile/template_',566,is_secured())); ?>">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product05.png',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Sexy Underwear</span>
+				        			</div>
+				        		</a>
+				        			<a target="_blank" href="<?php echo e(URL::to('profile/template_',566,is_secured())); ?>">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product06.jpg',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Men's Clothing</span>
+				        			</div>
+				        		</a>
+				        			
+	
+				        	</div>
+				      </div>
+	
+				      <div class="item" style="background-image:url('resources/assets/fontend/bdtdc-images/sal-bg.jpg');background-repeat:no-repeat;">
+				       		<div class="slider-box-image">
+				        					<a href="#">
+				        				<div class="w-sale">
+				        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product1.png',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Women's Dresses</span>
+				        				</div>
+				        				</a>
+				        				<a href="#">
+				        			<div class="w-sale">
+				        					<img  class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product2.jpg',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Evening Dresses</span>
+				        			</div>
+				        		</a>
+	
+				        		<a href="#">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product3.png',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Sexy Underwear</span>
+				        			</div>
+				        		</a>
+				        		<a href="#">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product4.png',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Girl's Dresses </span>
+				        			</div>
+				        		</a>
+				        		<a href="#">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product5.jpg',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">Cotton Sleepwear</span>
+				        			</div>
+				        		</a>
+				        		<a href="#">
+				        			<div class="w-sale">
+				        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product6.png',is_secured()); ?>" alt=""/>
+				        					<span class="sale-p-title">children's Clothing</span>
+				        			</div>
+				        		</a>
+				        			
+	
+				        	</div>
+				       
+				      </div>
+				  
+				    </div>
+	
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				      
+				      <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				     
+				      <span class="sr-only">Next</span>
+				    </a>
+	 			 </div>	
+	 			 <div class="sale-ppp-title">
+	 			 		<ul class="sale-title-menu">
+	 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Shirts</a></li>
+	 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Casual Dresses</a></li>
+	 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Sexy Underwear</a></li>
+	 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Leggings</a></li>
+	 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Girl's Dresses</a></li>
+	 			 		</ul>
+	 			 </div>
+		</div>
+		<div class="col-md-3" style="padding-left:0;margin:0; padding-right:0;">
+				<div class="sale-big-img-box">
+					<a href="#">
+					<img  class="sale-b-img image-responsive"   src="<?php echo e(URL::to('uploads',$product_category['sin_images'],is_secured())); ?>" alt="" />
+						<div class="sal-image-text">
+								<div style="background: #CC051E;" class="title-bg">
+									<h3 class="sal-tttt">FREE SHIPPING ALL DRESSES</h3>
+								</div>
+						</div>
+					
+					</a>
+	
+				</div>
+		</div>
+		<div class="col-md-6 padding_0" style="padding-left:5px;">
+							
+			<?php if ($product_category[ 'category_products']) { ?>
+            	<?php foreach (array_chunk($product_category[ 'category_products'], ceil(count($product_category[ 'category_products']))) as $category_products) { ?>
+						<?php foreach (array_slice($category_products,1,6,true) as $category_product) { ?>
+							<div class="col-md-2 padding_0" style="width:33%;">
+								<div class="product-image-wrapper-next">
+									<a target="_blank" style="text-align:justify" href="<?php echo e(URL::to('product_details',$category_product['product_id'],is_secured())); ?>">
+									<div class="single-products">
+										<div class="productinfo text-center">
+											<img  style="height:170px; margin-top:5px;"  src="<?php echo e(URL::to('uploads',$category_product['p_image'],is_secured())); ?>" alt="" />
+											<p><?php echo substr($category_product[ 'product_name'], 0,50); ?>... </p>
+											<p style="font-size:14px;color:#2192D9">From US $100/<?php echo e($category_product['unit_name']); ?></p>
+											
+										</div>
+										
+									</div>
+									</a>
+									
+								</div>
+							</div>
+							
+						<?php } ?>
+				<?php } ?>
+			<?php } ?>
+
+					
+							
+				</div>
+						
+	
+	</div>
+<br>
+<?php } ?>
+<?php } ?>
+<br>
+<!--<div class="row">-->
+<!--            	<div class="col-md-3">-->
+<!--				<p class="sale-cat-heading-tit">Apparel & Accessories</p>	-->
+<!--			</div>-->
+<!--			<div class="col-md-3 padding_0"><i class="fa fa-angle-right"></i></div>-->
+<!--      </div>-->
+<!--<div id="item_sha" class="row">-->
+
+<!--	<div class="col-md-3" style="padding-left:0; padding-right:0;">-->
+<!--				<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+			    <!-- Indicators -->
+<!--			    <ol class="carousel-indicators" style="bottom:0;">-->
+<!--			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--			      <li data-target="#myCarousel" data-slide-to="1"></li>-->
+			      
+<!--			    </ol>-->
+
+			    <!-- Wrapper for slides -->
+<!--			    <div class="carousel-inner" role="listbox">-->
+
+<!--			      <div class="item  active" style="background-image:url('resources/assets/fontend/sal-bg.jpg');background-repeat:no-repeat;">-->
+<!--			        	<div class="slider-box-image">-->
+<!--			        					<a href="#">-->
+<!--			        				<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" style="padding-right:7px;" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product01.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Women's Clothing</span>-->
+<!--			        				</div>-->
+<!--			        				</a>-->
+<!--			        				<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img  class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product02.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Tutu Dresses</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product03.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Children party Dress</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product04.jpg',is_secured()); ?>" alt=""/>-->
+			        					
+<!--			        					<span class="sale-p-title">Women's Dresses</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product05.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Sexy Underwear</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product06.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Men's Clothing</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+			        			
+
+<!--			        	</div>-->
+
+			   
+<!--			      </div>-->
+
+<!--			      <div class="item" style="background-image:url('resources/assets/fontend/bdtdc-images/sal-bg.jpg');background-repeat:no-repeat;">-->
+<!--			       		<div class="slider-box-image">-->
+<!--			        					<a href="#">-->
+<!--			        				<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product1.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Women's Dresses</span>-->
+<!--			        				</div>-->
+<!--			        				</a>-->
+<!--			        				<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img  class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product2.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Evening Dresses</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product3.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Sexy Underwear</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product4.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Girl's Dresses </span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product5.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Cotton Sleepwear</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product6.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">children's Clothing</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+			        			
+
+<!--			        	</div>-->
+			       
+<!--			      </div>-->
+			  
+<!--			    </div>-->
+
+			    <!-- Left and right controls -->
+<!--			    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
+			      
+<!--			      <span class="sr-only">Previous</span>-->
+<!--			    </a>-->
+<!--			    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
+			     
+<!--			      <span class="sr-only">Next</span>-->
+<!--			    </a>-->
+<!-- 			 </div>	-->
+<!-- 			 <div class="sale-ppp-title">-->
+<!-- 			 		<ul class="sale-title-menu">-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Shirts</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Casual Dresses</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Sexy Underwear</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Leggings</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Girl's Dresses</a></li>-->
+<!-- 			 		</ul>-->
+<!-- 			 </div>-->
+<!--	</div>-->
+<!--	<div class="col-md-3" style="padding-left:0;margin:0;">-->
+<!--			<div class="sale-big-img-box">-->
+<!--				<a href="#">-->
+<!--				<img  class="sale-b-img image-responsive"   src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/big-sal-img2.jpg',is_secured())); ?>" alt="" />-->
+<!--				<div class="sal-image-text">-->
+<!--							<div style="background: #2192D9;" class="title-bg">-->
+<!--								<h3 class="sal-tttt">HOT AND NEW GADGETS</h3>-->
+<!--							</div>-->
+<!--					</div>-->
+<!--			</a>-->
+<!--			</div>-->
+<!--	</div>-->
+<!--	<div class="col-md-6 padding_0" style="padding-left:5px;">-->
+						
+<!--						<div class="col-md-2" style="width:33%;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px;"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress1.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Free Shipping Princess </p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<h2>$56</h2>-->
+<!--											<p>Free Shipping Princess </p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+						
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress2.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Colorful Hoodies</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Colorful Hoodies</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+						
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress3.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Maxi Dresses</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Maxi Dresses</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress4.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Bras</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Bras</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress5.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Casual Shirts</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Casual Shirts</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress6.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Transparent Nighties</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Transparent Nighties</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+						
+<!--			</div>-->
+					
+
+<!--</div>-->
+<!--<br>-->
+<!--<div class="row">-->
+<!--            	<div class="col-md-3">-->
+<!--				<p class="sale-cat-heading-tit">Apparel & Accessories</p>	-->
+<!--			</div>-->
+<!--			<div class="col-md-3 padding_0"><i class="fa fa-angle-right"></i></div>-->
+<!--      </div>-->
+<!--<div id="item_sha" class="row">-->
+
+<!--	<div class="col-md-3" style="padding-left:0; padding-right:0;">-->
+<!--				<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+			    <!-- Indicators -->
+<!--			    <ol class="carousel-indicators" style="bottom:0;">-->
+<!--			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+<!--			      <li data-target="#myCarousel" data-slide-to="1"></li>-->
+			      
+<!--			    </ol>-->
+
+			    <!-- Wrapper for slides -->
+<!--			    <div class="carousel-inner" role="listbox">-->
+
+<!--			      <div class="item  active" style="background-image:url('resources/assets/fontend/bdtdc-images/sal-bg.jpg');background-repeat:no-repeat;">-->
+<!--			        	<div class="slider-box-image">-->
+<!--			        					<a href="#">-->
+<!--			        				<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" style="padding-right:7px;" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product01.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Women's Clothing</span>-->
+<!--			        				</div>-->
+<!--			        				</a>-->
+<!--			        				<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img  class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product02.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Tutu Dresses</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product03.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Children party Dress</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product04.jpg',is_secured()); ?>" alt=""/>-->
+			        					
+<!--			        					<span class="sale-p-title">Women's Dresses</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product05.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Sexy Underwear</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product06.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Men's Clothing</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+			        			
+
+<!--			        	</div>-->
+
+			   
+<!--			      </div>-->
+
+<!--			      <div class="item" style="background-image:url('resources/assets/fontend/bdtdc-images/sal-bg.jpg');background-repeat:no-repeat;">-->
+<!--			       		<div class="slider-box-image">-->
+<!--			        					<a href="#">-->
+<!--			        				<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product1.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Women's Dresses</span>-->
+<!--			        				</div>-->
+<!--			        				</a>-->
+<!--			        				<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img  class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product2.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Evening Dresses</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product3.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Sexy Underwear</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group"  src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product4.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Girl's Dresses </span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product5.jpg',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">Cotton Sleepwear</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+<!--			        		<a href="#">-->
+<!--			        			<div class="w-sale">-->
+<!--			        					<img class="sal-slide-img-group" src="<?php echo asset('resources/assets/fontend/bdtdc-images/sale-product6.png',is_secured()); ?>" alt=""/>-->
+<!--			        					<span class="sale-p-title">children's Clothing</span>-->
+<!--			        			</div>-->
+<!--			        		</a>-->
+			        			
+
+<!--			        	</div>-->
+			       
+<!--			      </div>-->
+			  
+<!--			    </div>-->
+
+			    <!-- Left and right controls -->
+<!--			    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
+			      
+<!--			      <span class="sr-only">Previous</span>-->
+<!--			    </a>-->
+<!--			    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
+			     
+<!--			      <span class="sr-only">Next</span>-->
+<!--			    </a>-->
+<!-- 			 </div>	-->
+<!-- 			 <div class="sale-ppp-title">-->
+<!-- 			 		<ul class="sale-title-menu">-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Shirts</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Casual Dresses</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Sexy Underwear</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Leggings</a></li>-->
+<!-- 			 			<li class="sale-title-menu-li"><a class="sale-title-menu-li-a" href="#">Girl's Dresses</a></li>-->
+<!-- 			 		</ul>-->
+<!-- 			 </div>-->
+<!--	</div>-->
+<!--	<div class="col-md-3" style="padding-left:0;margin:0;">-->
+<!--			<div class="sale-big-img-box">-->
+<!--				<a href="#">-->
+<!--				<img  class="sale-b-img image-responsive"   src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/big-sal-img3.png',is_secured())); ?>" alt="" />-->
+<!--				<div class="sal-image-text">-->
+<!--							<div style="background: #55A344;" class="title-bg">-->
+<!--								<h3 class="sal-tttt">QUALITY OUTDOORS & ATHLETICS GEAR</h3>-->
+<!--							</div>-->
+<!--					</div>-->
+<!--			</a>-->
+<!--			</div>-->
+<!--	</div>-->
+<!--	<div class="col-md-6 padding_0" style="padding-left:5px;">-->
+						
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress1.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Free Shipping Princess </p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<h2>$56</h2>-->
+<!--											<p>Free Shipping Princess </p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+						
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress2.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Colorful Hoodies</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Colorful Hoodies</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+						
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress3.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Maxi Dresses</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Maxi Dresses</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress4.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Bras</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Bras</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress5.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Casual Shirts</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Casual Shirts</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-2" style="width:33%;padding:0;">-->
+<!--							<div class="product-image-wrapper-next">-->
+<!--								<div class="single-products">-->
+<!--									<div class="productinfo text-center">-->
+<!--										<img style="max-height:170px"  src="<?php echo e(asset('resources/assets/fontend/bdtdc-images/sale-dress6.jpg',is_secured())); ?>" alt="" />-->
+<!--										<p>Transparent Nighties</p>-->
+<!--									</div>-->
+<!--									<div class="product-overlay">-->
+<!--										<div class="overlay-content">-->
+<!--											<p>Transparent Nighties</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="choose">-->
+<!--									<ul class="nav nav-pills nav-justified">-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>-->
+<!--										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+						
+<!--			</div>-->
+					
+
+<!--</div>-->
+<br>
+     
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('scripts'); ?>
+
+		<script type="text/javascript">
+	(function(){
+
+		$('.product-image-wrapper-next').css('margin-bottom','0');
+			
+		$(window).load(function(){
+			$('a[href="#forbuyer"]').click()	
+		})
+		    var section = $('[name="section"]').val();
+		    (section !="") ? $('.nav-tabs li a[href="#'+section+'"]').click() : false;
+			    
+	}
+	);
+</script>
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

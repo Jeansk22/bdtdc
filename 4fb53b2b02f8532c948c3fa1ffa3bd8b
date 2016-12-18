@@ -1,0 +1,220 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temaplate</title>
+	<link href="<?php echo asset('resources/assets/fontend/bootstrap.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+    <link href="<?php echo asset('resources/assets/fontend/bootstrap-theme.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-------------------- ANIMATE CSS -------------------->
+    <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('resources/assets/fontend/css/animate.css',is_secured())); ?>" media="screen" data-name="skins">
+    <!-------------------- HOVER CSS -------------------->
+    <link rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('resources/assets/fontend/css/hover-min.css',is_secured())); ?>" media="screen" data-name="skins">    
+    <!--------------------SWEET ALERT -------------------->
+    <link rel="stylesheet" href="<?php echo e(URL::asset('resources/assets/fontend/css/sweetalert.css',is_secured())); ?>" type='text/css'/>
+    <link href="<?php echo asset('resources/assets/fontend/topbar/css/bootstrap-dropdownhover.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+	<!--------------------TEXT EDITOR CSS -------------------->
+	<link rel="stylesheet" href="<?php echo e(URL::asset('resources/assets/fontend/css/jquery-te-1.4.0.css',is_secured())); ?>" type='text/css'/>
+	<!--------------------SLICK CSS -------------------->
+	<link href="<?php echo asset('resources/assets/fontend/css/slick.css',is_secured()); ?>" rel="stylesheet">
+	<link href="<?php echo asset('resources/assets/fontend/css/slick-theme.css',is_secured()); ?>" rel="stylesheet">
+	<!-----------CUSTOM STYLE FOR THIS SITE;---------->
+	<link href="<?php echo asset('resources/assets/fontend/css/custom_template_style.css',is_secured()); ?>" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!---------HEADER SECTION-------------->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 hidden-sm hidden-xs visible-md visible-lg hidden_collum"></div>
+            <div style="margin-top:1%" class="col-md-10 col-sm-12 padding_0">
+                <div class="col-sm-6 padding_0">
+                    <ul class="list-inline" style="margin-top: 2%;">
+                        <li style="width:120px;padding:0%;margin-left: 1%"><a href="<?php echo e(URL::to('/',null,is_secured())); ?>"><img src="<?php echo e(URL::asset('resources/assets/images/template/bdtdc_template_logo.png',is_secured())); ?>" class="img-responsive logo_icon"></img> </a> </li>
+                        <li><a href="">sign in</a> | <a style="margin-top:2%" href="">Join-free</a></li>
+                        <li><a href="" style="margin-top:2%">My Bdtdc</a></li>
+                    </ul>
+                </div>
+                <div style="margin-top:.5%" class="col-sm-6 form-inline padding_0 text-right">
+                    <div class="input-group">
+                        <div class="btn-group">
+                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                On Bdtdc <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search item">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"><i class="fa fa-search-plus"></i></button>
+                        </span>
+                    </div>
+                    
+                    <div class="input-group pull-right">
+                        <div style="margin-left:4%" class="btn-group">
+                            <button style="border:1px solid #0087CF;height:33px" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Get Quotation <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-1 hidden-sm hidden-xs visible-md visible-lg hidden_collum"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 hidden-sm hidden-xs visible-md visible-lg hidden_collum"></div>
+            <div class="col-sm-10 padding_0">
+                <div class="col-md-8 padding_0">
+                    <ul class="list-inline" style="margin-top: 2%;">
+                        <li style="padding:1%!important;background:#E4E4E4;border-radius: 30px"><a class="btn padding_0" href="">Varified Supplier (<span class="header_user_name"></span>) | <span class="header_company_name"></span></a> </li>
+                        <li class="text-center"><a href="" style="margin-top:2%"><i class="fa fa-thumbs-up text-primary"></i>&nbsp; Add This company to favorite list</a></li>
+                    </ul>
+                </div>
+                <div style="margin-top:.5%" class="col-md-4 form-inline padding_0">
+                    <a href="" class="btn btn-link pull-right padding_0"><i class="fa fa-check-square text-success"></i>&nbsp;Onsite-check</a>
+                </div>
+            </div>
+            <div class="col-md-1 hidden_collum"></div>
+        </div>
+    </div>
+    <!---------MENU BAR-------------->
+    <?php echo $__env->make('fontend.template.header_information', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 pagination">
+                <!------Page pagination------->
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    
+    <?php echo $__env->yieldContent('content'); ?>
+    
+    <!---------------FOOTER SECTION--------------------->
+    <div class="container">
+        <div style="padding-bottom:4%;padding-top:2%" class="row">
+            <div class="col-md-1 hidden_collum"></div>
+            <div class="col-md-10 padding_0">
+                <div style="padding-top:2%;border-top:1px solid #E4E4E4;border-bottom:1px solid #32AFD4;padding-bottom:1%" class="col-md-12 padding_0">
+                    <div class="col-sm-6 col-md-3">
+                        <span class="follow_us_text">Product Alert:</span>
+                        <button style="border:1px solid #32AFD4;height:33px;width:57%" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Enter <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 padding_0">
+                        <ul style="margin-left:6%" class="list-inline padding_0">
+                            <li style="padding:0%!important"><span class="follow_us_text">Follow-Us</span></li>
+                            <li style="padding:0%!important"><i class="fa fa-facebook btn btn-md btn-primary"></i></li>
+                            <li style="padding:0%!important"><i class="fa fa-twitter btn btn-md btn-info"></i></li>
+                            <li style="padding:0%!important"><i class="fa fa-linkedin-square btn btn-md btn-primary"></i></li>
+                            <li style="padding:0%!important"><i class="fa fa-google-plus-square btn btn-md btn-danger"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul style="margin-left:6%" class="list-inline padding_0">
+                            <li class="padding_0"><span class="follow_us_text">App for Free:</span></li>
+                            <li class="padding_0"><i class="fa fa-android btn btn-default btn-md"></i></li>
+                            <li class="padding_0"><i class="fa fa-apple btn btn-default btn-md"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-2 padding_0">
+                         <ul class="list-inline padding_0">
+                            <li class="padding_0"><span class="follow_us_text">TradeMessenger:</span></li>
+                            
+                            <li class="padding_0"><i class="fa fa-circle-o-notch"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-1 padding_0">
+                        <ul class="list-inline padding_0">
+                            <li style="padding:0%!important"><span class="follow_us_text">Contact:</span></li>
+                            
+                            <li style="padding:0%!important"><i class="fa fa-headphones btn btn-info btn-xs"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 padding_0">
+                    <div style="padding-top:2%" class="col-xs-12 text-center">
+                        <ul class="list-inline">
+                            <li><a href="" class="btn-link">Hot Products</a></li>
+                            <li><a href="" class="btn-link">Hot Offers</a></li>
+                            <li><a href="" class="btn-link">China Products</a></li>
+                            <li><a href="" class="btn-link">Chaina Menufactures/Suppliers</a></li>
+                            <li><a href="" class="btn-link">Wholesale Products</a></li>
+                            <li><a href="" class="btn-link">Index Of Products</a></li>
+                        </ul>
+                    </div>
+                    <div style="" class="col-xs-12 text-center">
+                        <ul class="list-inline">
+                            <li><a href="" class="btn-link">Focus Technology</a></li>
+                            <li><a href="" class="btn-link">Made In Chaina.Com</a></li>
+                            <li><a href="" class="btn-link">ttNet.net</a></li>
+                            <li><a href="" class="btn-link">cn.Made In Chaina.Com</a></li>
+                        </ul>
+                    </div>
+                    <div style="" class="col-xs-12 text-center">
+                        <p>Copyright@2015 BDTDC-Technologies Co.,All right reserved.</p>
+                    </div>
+                    <div style="" class="col-xs-12 text-center">
+                        <p>Your use of this website constitutes acknowledgement and acceptence of our terms & Conditions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 hidden_collum"></div>
+        </div>
+    </div>
+   
+    
+    
+    
+    <script src="<?php echo asset('resources/assets/fontend/jquery.min.js',is_secured()); ?>"></script>
+    <script type="text/javascript" src="<?php echo asset('resources/assets/fontend/bootstrap.min.js',is_secured()); ?>"></script>
+    <!----------ANIMATED POP UP SCRIPT----------------------------->
+    <script src="<?php echo e(URL::asset('resources/assets/fontend/js/animatedModal.min.js',is_secured())); ?>"></script>
+    <!----------SWEET ALERT POP-UP SCRIPT------------------------------->
+    <script src="<?php echo e(URL::asset('resources/assets/fontend/js/sweetalert.min.js',is_secured())); ?>"></script>
+    <!----------TEXT EDITOR------------------------------->
+    <script src="<?php echo e(URL::asset('resources/assets/fontend/js/jquery-te-1.4.0.min.js',is_secured())); ?>" charset="utf-8"></script>
+    <!------SLICK JS------->
+    <script type="text/javascript" src="<?php echo asset('resources/assets/fontend/js/slick.min.js',is_secured()); ?>"></script>
+    <!------SMALL WORLD MAP PLUGIN------->
+    <script type="text/javascript" src="<?php echo asset('resources/assets/fontend/js/smallworld.min.js',is_secured()); ?>"></script>
+    <script type="text/javascript" src="<?php echo asset('resources/assets/fontend/js/smallworld.jquery.min.js',is_secured()); ?>"></script>
+    
+    <!------CUSTOM JS FOR THIS TEMPLATE------->
+    <script type="text/javascript" src="<?php echo asset('resources/assets/fontend/js/template_custom.js',is_secured()); ?>"></script>
+    <script type="text/javascript">
+        (function(){
+            var route_arr,company_id,url;
+            route_arr = window.location.href.split('/');
+            company_id = route_arr[route_arr.length-1];
+            url = window.location.origin + "/template/get_header_info/"+company_id;
+            $.get(url, function(r) {
+                var img_name = (r.company_header_info.company_logo == null || r.company_header_info.company_logo == "") ? "no_image.jpg" : r.company_header_info.company_logo;
+                $('.header_user_name').html(r.company_header_info.user_name);
+                $('.header_company_name').html(r.company_header_info.company_name);
+                $('.header_logo_img').attr('src', window.location.origin + '/uploads/' + img_name);
+                $('[data-supplier_id]').attr('data-supplier_id',r.company_header_info.user_id);
+                $('.header_first_name').html(r.company_header_info.user_name);
+                $('.header_last_name').html(r.company_header_info.last_name);
+            })
+        })()
+    </script>
+</body>
+</html>
+
+

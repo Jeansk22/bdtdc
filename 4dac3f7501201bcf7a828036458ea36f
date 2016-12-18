@@ -1,0 +1,186 @@
+
+	<?php $__env->startSection('content'); ?>
+	<br><br>
+	<div>
+		<div class="row header_cont_color">
+			<img class="img-responsive header_img_fix" src="<?php echo asset('resources/assets/helpcenter/02.jpg',is_secured()); ?>" alt="" />
+		</div>
+		<br><br>
+		<div id="item_sha" class="row post_sec">
+			<div class="col-md-4 col-sm-4 border section_padding">
+				<h3>Display your verification status <h3>
+				<p>Easier recognition means suppliers are 63% more likely to contact buyers with a verified Business Identity.</p>
+			</div>
+			<div class="col-md-4 col-sm-4 border section_padding">
+				<h3>Promotional events <h3>
+				<p>Buyers who are verified enjoy more promotional events, held jointly with Alibaba.com’s partners. </p>
+			</div>
+			<div class="col-md-4 col-sm-4 section_padding last_padding">
+				<h3>Faster responses from suppliers when verified <h3>
+				<p>Get noticed quickly by suppliers. Higher chance of getting better and faster responses. </p>
+			</div>
+		</div>
+		<div id="item_sha" class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-2 button_padding">
+				<button type="button" class="btn btn-primary center-block btn-join">Verify Free</button>
+			</div>
+			<div class="col-md-5"></div>
+		</div>
+		<br><br>
+		<div id="item_sha" class="row" style="padding-bottom:30px;">
+			<div class="col-md-3 col-sm-3">
+				<div class="row" style="padding-bottom:20px;">
+					<div class="col-md-4 col-sm-4">
+							<img style="height:90px;width:70px;" src="<?php echo asset('resources/assets/images/app.jpg',is_secured()); ?>" alt="" />
+					</div>
+					<div class="col-md-8 col-sm-8">
+					
+						<p style="font-size: 16px;margin-bottom: 5px;font-weight: bold;color: #333;padding-top:10px;">Apply</p>
+						<p style="font-size: 12px;line-height: 14px;color: #333;">Choose how you want to be verified</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6" style="padding-top:20px;">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="row">
+							<div class="col-md-4 col-md-4">
+								<img style="height:30px;width:30px;" src="<?php echo asset('resources/assets/images/contact.jpg',is_secured()); ?>" alt="" />
+							</div>
+							<div class="col-md-8 col-md-8">
+								<p style="font-size: 12px;line-height: 14px;color: #333;">
+									Verification by contacts
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="row">
+							<div class="col-md-4 col-md-4">
+								<img style="height:30px;width:30px;" src="<?php echo asset('resources/assets/images/laravel.jpg',is_secured()); ?>" alt="" />
+							</div>
+							<div class="col-md-8 col-md-8">
+								<p style="font-size: 12px;line-height: 14px;color: #333;">
+									invite contacts
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="row">
+							<div class="col-md-4 col-md-4">
+								<img style="height:30px;width:30px;" src="<?php echo asset('resources/assets/images/invite.jpg',is_secured()); ?>" alt="" />
+							</div>
+							<div class="col-md-8 col-md-8">
+								<p style="font-size: 12px;line-height: 14px;color: #333;">Get verified by three contacts</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--start-->
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="row">
+							<div class="col-md-4 col-md-4">
+								<img style="height:30px;width:30px;" src="<?php echo asset('resources/assets/images/party.jpg',is_secured()); ?>" alt="" />
+							</div>
+							<div class="col-md-8 col-md-8">
+								<p style="font-size: 12px;line-height: 14px;color: #333;">Verification by third party</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="row">
+							<div class="col-md-4 col-md-4">
+								<img style="height:30px;width:30px;" src="<?php echo asset('resources/assets/images/third.jpg',is_secured()); ?>" alt="" />
+							</div>
+							<div class="col-md-8 col-md-8">
+								<p style="font-size: 12px;line-height: 14px;color: #333;">Complete application</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="row">
+							<div class="col-md-4 col-md-4">
+								<img style="height:30px;width:30px;" src="<?php echo asset('resources/assets/images/party (2).jpg',is_secured()); ?>" alt="" />
+							</div>
+							<div class="col-md-8 col-md-8">
+								<p style="font-size: 12px;line-height: 14px;color: #333;">Get verified by third party</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--ends-->
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<div class="row" style="padding-top:20px;">
+					<div class="col-md-4 col-sm-4">
+						<img style="height90px;width:80px;" src="<?php echo asset('resources/assets/images/enjoy.jpg',is_secured()); ?>" alt="" />
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<p style="font-size: 16px;margin-bottom: 5px;color: #333;font-weight: bold;">Enjoy the benefits</p>
+						<p style="font-size: 12px;line-height: 14px;color: #333;">Business Identity icon displayed</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		
+		<div id="item_sha" class="row">
+			<div class="col-md-8 col-sm-8 border">
+				<div class="row padding-bottom">
+					
+				
+						<div class="col-sm-12" style="padding-top:20px;padding-bottom:20px;">
+						<p style="font-size: 18px;color: #333;font-weight: bold;">
+							Supplier Feedback
+						</p>
+						</div>
+						<div class="col-sm-12">
+							<div class="col-md-2 col-sm-2">
+								<img style="height:13%;width:120%;" class="img-circle" src="<?php echo asset('resources/assets/images/wobu.jpg',is_secured()); ?>" alt="" />
+							</div>
+							<div class="col-sm-4">
+								<p>Name: <span>Kazi Ahmed</span></p>
+								<p>Joined bdtdc.com: <span>2010</span></p>
+								<p>Industry: <span>Painting/Toys</span></p>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<p>Company:<span>Rainbowbrush LLC.</span></p>
+								<p>Company Link:<span><a href="#">http://www.rainbowbrush.com</a></span></p>
+							</div>
+						</div>
+						
+					
+					
+				</div>
+				<div class="row padding-bottom">
+					<p style="margin-left:40px;padding-right:10px;border-top: solid 1px #e9eef4;padding-top: 25px;font-size: 14px;color: #666;font: inherit;vertical-align: baseline;">
+					Business Identity has helped us to save a lot of time when we wanted to get a quicker and 
+					accurate response from our buyers. Through Business Identity, we have managed to build better 
+					long-term relationships with our buyers.</p>
+					
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4" style="padding-bottom:30px;">
+				<h4 style="padding-top:20px;">FAQs:</h4>
+				<ul>
+					<li><a href="#" style="text-decoration: none;color: #333;font-size: 14px;">What do the three types of Business Identity mean? </a></li>
+					<li><a href="#" style="text-decoration: none;color: #333;font-size: 14px;">Where can the supplier see my Business Identity? </a></li>
+					<li><a href="#" style="text-decoration: none;color: #333;font-size: 14px;">Where can I see my Business Identity Icon? </a></li>
+					<li><a href="#" style="text-decoration: none;color: #333;font-size: 14px;">Is there a country limit for Business Identity verification? </a></li>
+					<li><a href="#" style="text-decoration: none;color: #333;font-size: 14px;">Will I receive any notice of upgrading or downgrading of my identity? </a></li>
+				</ul>
+				<a href="#" style="padding-left:78%;text-decoration: none;color: #1686cc;font-size: 13px;">
+					Learn More
+				</a>
+			</div>
+		</div>
+	
+		<div class="row" style="margin-bottom:5%;padding-top:20px;">
+				<p>Any questions, <a href="#">please contact us</a></p>
+		</div>
+	</div>
+   <?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

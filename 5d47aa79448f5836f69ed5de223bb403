@@ -1,0 +1,433 @@
+<?php $__env->startSection('content'); ?>
+
+    <div class="header-bottom"><!--header-bottom-->
+        <div class="row">
+            <div class="col-xs-12">
+                <hr>
+                <div style="margin-top:-2%;" class="col-xs-8 col-xs-offset-2 text-center company_information_area">
+                    <div class="col-xs-12">
+                        <h3 class="text-success">You are allmost done</h3>
+                        <p>Hi, <span class="registered_member_first_name text-primary"></span> Here is your profile information</p>
+                    </div>
+                    <?php /*<div class="col-xs-12">*/ ?>
+                        <?php /*<ul class="list-group pull-left">*/ ?>
+                            <?php /*<li class=""><h4 class="btn btn-md btn-primary">*/ ?>
+                                    <?php /*First Name: <span class="registered_member_first_name">Fuad</span></h4>*/ ?>
+                            <?php /*</li>*/ ?>
+                            <?php /*<li class=""><h4 class="btn btn-md btn-primary">*/ ?>
+                                    <?php /*Last Name: <span class="registered_member_last_name">Fuad</span></h4>*/ ?>
+                            <?php /*</li>*/ ?>
+                        <?php /*</ul>*/ ?>
+                        <?php /*<ul class="list-group pull-right">*/ ?>
+                            <?php /*<li class=""><h4 class="btn btn-md btn-primary">*/ ?>
+                                    <?php /*Email: <span class="registered_member_email_address">Fuad</span></h4>*/ ?>
+                            <?php /*</li>*/ ?>
+                            <?php /*<li class=""><h4 class="btn btn-md btn-primary">*/ ?>
+                                    <?php /*Registration Date: <span class="registered_member_created_at">Fuad</span></h4>*/ ?>
+                            <?php /*</li>*/ ?>
+                        <?php /*</ul>*/ ?>
+                    <?php /*</div>*/ ?>
+                    <div class="col-xs-12 text-primary" style="margin-top:-2%">
+                        <h3 class="">We love to know about your conmpany information</h3>
+                    </div>
+                </div>
+
+                <ul style="display:none" class="nav nav-pills nav-justified tab_list">
+                    <li class="active"><a data-toggle="tab" href="#email_registration">Email Registration</a></li>
+                    <li><a data-toggle="tab" href="#personal_information">Personal Information</a></li>
+                    <li><a data-toggle="tab" href="#company_information">Company Information</a></li>
+                    <li><a data-toggle="tab" href="#confirmation">Confirmation</a></li>
+                </ul>
+
+
+                <div class="tab-content">
+                    <input type="hidden" name="base_url" value="<?php echo e(URL::to('/',null,is_secured())); ?>">
+                    <!--------------TAB CONTENT FOR EMAIL REGISTRATION STEP ONE------------------>
+                    <div id="email_registration" class="input_holder tab-pane fade in active col-xs-8 col-xs-offset-2">
+                        <h3 style="font-weight:bold" class="text-center text-primary">Step One</h3>
+                        <p class="text-primary text-center">Please give an email address to ge get an verified account</p>
+                        <div class="row margin-bottom2">
+                            <div class="col-xs-4">
+                                <label for="Email">Email:</label>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="email" name="prev_email" class="form-control" validation="validated_false" placeholder="Email Address">
+                            </div>
+                            <div class="col-xs-3 validation_status">
+                                <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                <span class="text-danger validation_message"></span>
+                            </div>
+                        </div>
+
+                        <div class="row margin-bottom2 login_link">
+                            <div class="col-xs-12 text-center">
+                                <h4 class="text-primary">This user already exists</h4>
+                                <a href="" class="btn btn-primary login_link_btn">Click here to login</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--------------TAB CONTENT FOR PERSONAL INFORMATION STEP TWO------------------>
+                    <div id="personal_information" class="input_holder tab-pane fade col-xs-8 col-xs-offset-2">
+                        <?php echo Form::open(array('route'=>array('registration.store'),'class'=>'form-horizontal form-row-seperated user_registration_form')); ?>
+
+                        <h3 style="font-weight:bold" class="text-center text-primary">Step Two</h3>
+
+                        <div class="row margin-bottom2">
+                            <div class="col-xs-4">
+                                <label for="Email">Varified Email:</label>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="email"name="email" validation="" class="form-control" value="" readonly>
+                            </div>
+                            <div class="col-xs-3 validation_status">
+                                <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                <span class="text-danger validation_message"></span>
+                            </div>
+                        </div>
+
+                        <div class="row margin-bottom2">
+                            <div class="col-xs-4">
+                                <label for="Email">First Name:</label>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="text"name="first_name" validation="validated_false" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="col-xs-3 validation_status">
+                                <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                <span class="text-danger validation_message"></span>
+                            </div>
+                        </div>
+
+                        <div class="row margin-bottom2">
+                            <div class="col-xs-4">
+                                <label for="Email">Last Name:</label>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="text"name="last_name" validation="validated_false" class="form-control" placeholder="Last Name">
+                            </div>
+                            <div class="col-xs-3 validation_status">
+                                <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                <span class="text-danger validation_message"></span>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom2">
+                            <div class="col-xs-4">
+                                <label for="Email">Password:</label>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="password" name="password" validation="validated_false" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="col-xs-3 validation_status">
+                                <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                <span class="text-danger validation_message"></span>
+                            </div>
+                        </div>
+                        <div class="row margin-bottom2">
+                            <div class="col-xs-4">
+                                <label for="Email">Confirm Password:</label>
+                            </div>
+                            <div class="col-xs-5">
+                                <input type="password" name="password_confirmation" validation="validated_false" class="form-control" placeholder="Confirm password">
+                            </div>
+                            <div class="col-xs-3 validation_status">
+                                <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                <span style="padding:0%" class="text-danger col-xs-12 validation_message"></span>
+                            </div>
+                        </div>
+                        <input type="hidden" name="front_end_registration"placeholder="Confirm password">
+                        <?php echo Form::close(); ?>
+
+
+                    </div>
+
+                    <!--------------TAB CONTENT FOR COMPANY REGISTRATION STEP THREE------------------>
+                    <div id="company_information" class="input_holder tab-pane fade col-xs-8 col-xs-offset-2">
+                        <?php echo Form::open(array('url'=>array('save_company_info',null,is_secured()),'class'=>'form-horizontal form-row-seperated user_company_form')); ?>
+
+                            <input type="hidden" name="user_id" value="">
+                            <h3 style="font-weight:bold" class="text-center text-primary">Step Three</h3>
+                            <div class="row margin-bottom2">
+                                <div class="col-xs-4">
+                                    <label for="Company Location">Company Location:</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <?php echo Form::select('country',\App\Model\BdtdcCountry::lists('name','id'),'',array('class'=>'form-control','id'=>'country','placeholder'=>'select...','validation'=>"validated_false")); ?>
+
+                                </div>
+                                <div class="col-xs-3 validation_status">
+                                    <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                    <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                    <span class="text-danger validation_message"></span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom2">
+                                <div class="col-xs-4">
+                                    <label for="Email">Select Customer Type:</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <label>
+                                        <?php echo Form::radio('customer_type', 'Suppliers', true, array('class'=>'icheck customer_type','id'=>'supplier')); ?> Supplier</label>
+                                    <label>
+                                        <?php echo Form::radio('customer_type', 'Buyers', '', array('class'=>'icheck customer_type','id'=>'buyer')); ?> Buyer</label>
+                                    <label>
+                                        <?php echo Form::radio('customer_type', 'Suppliers', '', array('class'=>'icheck customer_type','id'=>'both')); ?> Both</label>
+                                </div>
+                                <div class="col-xs-3 validation_status">
+                                    <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                    <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                    <span class="text-danger validation_message"></span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom2">
+                                <div class="col-xs-4">
+                                    <label for="Email">Company Name:</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <?php echo Form::text('company_name','',array('class'=>'form-control','id'=>'company','placeholder'=>'Company Name...','validation'=>"validated_false")); ?>
+
+                                </div>
+                                <div class="col-xs-3 validation_status">
+                                    <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                    <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                    <span class="text-danger validation_message"></span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom2">
+                                <div class="col-xs-4">
+                                    <label for="Email">Phone:</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <div style="padding:0" class="col-md-3">
+                                        <?php echo Form::text('phone_country','',array('class'=>'form-control','id'=>'phone_country','placeholder'=>'country','validation'=>'validated_false')); ?>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <?php echo Form::text('phone_area','',array('class'=>'form-control','id'=>'phone_area','placeholder'=>'area','validation'=>'validated_false')); ?>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <?php echo Form::text('phone_number','',array('class'=>'form-control','id'=>'phone_number','placeholder'=>'phone...','validation'=>'validated_false')); ?>
+
+                                        <?php if($errors->has('phone_number')): ?>
+                                            <p class="text-danger error_from_backend"><?php echo e($errors->first('phone_number')); ?></p>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 validation_status">
+                                    <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                    <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                    <span class="text-danger validation_message"></span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom2 business_type_row">
+                                <div class="col-xs-4">
+                                    <label for="Email">Business Type:</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <?php echo Form::select('btype',\App\Model\BdtdcBusinesType::lists('name','id'),'',array('class'=>'form-control','id'=>'btype')); ?>
+
+                                </div>
+                                <div class="col-xs-3 validation_status">
+                                    <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                    <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                    <span class="text-danger validation_message"></span>
+                                </div>
+                            </div>
+
+                            <div class="row margin-bottom2 main_product_row">
+                                <div class="col-xs-4">
+                                    <label for="Email">Main Product:</label>
+                                </div>
+                                <div class="col-xs-5">
+                                    <div style="padding:0" class="col-md-4">
+                                        <?php echo Form::text('p1','',array('class'=>'form-control','id'=>'p1','placeholder'=>'product')); ?>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <?php echo Form::text('p2','',array('class'=>'form-control','id'=>'p2','placeholder'=>'product')); ?>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <?php echo Form::text('p3','',array('class'=>'form-control','id'=>'p3','placeholder'=>'product')); ?>
+
+                                        <?php if($errors->has('phone_number')): ?>
+                                            <p class="text-danger error_from_backend"><?php echo e($errors->first('phone_number')); ?></p>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 validation_status">
+                                    <i class="fa fa-check-square btn btn-lg btn-success hidden_icon validated_true"></i>
+                                    <i class="fa fa-exclamation-triangle btn btn-lg btn-danger hidden_icon validated_false"></i>
+                                    <span class="text-danger validation_message"></span>
+                                </div>
+                            </div>
+                        <?php echo Form::close(); ?>
+
+
+                    </div>
+
+                    <!--------------TAB CONTENT FOR CONFIRMATION STEP FOUR------------------>
+                    <div id="confirmation" class="input_holder tab-pane fade col-xs-8 col-xs-offset-2">
+                        <h3 style="font-weight:bold" class="text-center text-primary">Step Four</h3>
+                        <h3 class="text-center text-primary">Congratulations!!  Your Registration Process Is Done<h3>
+                        <h2 class="text-danger text-center">Sorry but your account is  under review</h2>
+                    </div>
+
+                    <div style="padding: 1%;margin-top:1%" class="col-xs-8 col-xs-offset-2 text-center ">
+                        <a href="" class="btn btn-primary  btn-lg form_slider_btn">Next</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
+
+    <script language="javascript">
+        var nav_tab,check_existing_user,show_prrsonal_info_of_register_member;
+        nav_tab = ['email_registration','personal_information','company_information','confirmation'];
+        function checkEmail(email) {
+            var filter = /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+            if (!filter.test(email)) {
+                alert(email);
+                return false;
+            }
+        }
+
+        show_prrsonal_info_of_register_member = function(data){
+            $('.company_information_area').show().slideDown();
+            $('.registered_member_first_name').html(data.first_name);
+            $('.registered_member_last_name').html(data.last_name);
+            $('.registered_member_email_address').html(data.email);
+            $('.registered_member_created_at').html(data.creted);
+            $('[name="user_id"]').val(data.id);
+        }
+
+        $('document').ready(function(){
+            $('.hidden_icon').hide();
+            $('.login_link').hide();
+            $('.company_information_area').hide();
+            $(document).on({blur:function(){
+                var relative_row = $(this).parent().parent();
+                if(!$.trim(this.value).length){
+                    $(this).attr('validation','validated_false');
+                    relative_row.find('.validated_true').hide(500);
+                    relative_row.find('.validated_false').show(500);
+                }else{
+                    $(this).attr('validation','validated_true');
+                    relative_row.find('.validated_false').hide(500);
+                    relative_row.find('.validated_true').show(500);
+                    $(this).attr('style',"border:1px solid #e5e5e5");
+                }
+                return;
+            }},'.form-control');
+
+            $(document).on({keyup:function(){
+                var url,email;
+                email = $(this).val();
+                url = $('[name="base_url"]').val()+"/check_existing_user/"+email;
+                $.get(url,function(r){
+                    if(typeof r.id !== typeof undefined){
+                        $('.form_slider_btn').hide();
+                        $('.login_link').show();
+                    }else{
+                        $('.form_slider_btn').show();
+                        $('.login_link').hide();
+                    }
+                })
+            }},'[name="prev_email"]');
+
+            $(document).on({blur:function(){
+                var relative_row = $(this).parent().parent();
+                if($('[name="password"]').val() != $(this).val()){
+                    $(this).attr('validation','validated_false');
+                    relative_row.find('.validated_true').hide(500);
+                    relative_row.find('.validated_false').show(500);
+                    relative_row.find('.validation_message').html('<span class="text-danger">Password Could Not Matched!!</span>').show(500);
+                }else{
+                    $(this).attr('validation','validated_true');
+                    relative_row.find('.validated_false').hide(500);
+                    relative_row.find('.validated_true').show(500);
+                    relative_row.find('.validation_message').html('<span class="text-success">Password Matched!!</span>').show(500);
+                    $(this).attr('style',"border:1px solid #e5e5e5");
+                }
+                return;
+            }},'[name="password_confirmation"]');
+
+            $(document).on({click:function(e){
+                e.preventDefault();
+                var cross_brouser_support_animation = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                var current_active_form = $('.tab_list li.active a').attr('href');
+                if(current_active_form == "#email_registration"){
+                    var email = $(current_active_form+' [name="prev_email"]').val();
+                    $('[name="email"]').val(email);
+                }
+                $(current_active_form+' input[validation="validated_true"]').attr('style',"border:1px solid #e5e5e5");
+                if($(current_active_form+' input[validation="validated_false"]').length>0){
+                    $(current_active_form+' input[validation="validated_false"]').attr('style',"border:1px solid red");
+                }else{
+
+                    if(current_active_form == '#personal_information'){
+                        var $_form,url;
+                        $_form = $('.user_registration_form');
+                        url = $_form.attr('action');
+                        $.post(url,$_form.serialize(),function(r){
+                            show_prrsonal_info_of_register_member(r);
+                        })
+                    }
+
+                    if(current_active_form == '#company_information'){
+                        $('.company_information_area').show().slideUp();
+                        var $_form,url;
+                        $_form = $('.user_company_form');
+                        url = $_form.attr('action');
+                        $.post(url,$_form.serialize(),function(r){
+                            //show_prrsonal_info_of_register_member(r);
+                            console.log(r);
+                        })
+                    }
+
+                    var animation_class = 'animated zoomOut';
+                    $(current_active_form).addClass(animation_class).one(cross_brouser_support_animation, function(){
+                        $(this).removeClass(animation_class);
+                        $('.tab_list li.active').next().find('a').click();
+                        var next_active_form = $('.tab_list li.active a').attr('href');
+                        var animation_class_next = "animated bounceIn";
+                        $(next_active_form).addClass(animation_class_next).one(cross_brouser_support_animation,function(){
+                            $(this).removeClass(animation_class_next);
+                        })
+                    });
+                }
+            }},'.form_slider_btn');
+
+            $(document).on({click:function(){
+                if($(this).val() == "Buyers"){
+                    $('.business_type_row,.main_product_row').hide()
+                }
+                else{
+                    $('.business_type_row,.main_product_row').show()
+                }
+            }},'.customer_type');
+        })
+
+
+
+
+
+
+
+    </script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

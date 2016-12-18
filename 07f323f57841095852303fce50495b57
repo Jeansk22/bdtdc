@@ -1,0 +1,61 @@
+
+<?php
+use App\BdtdcInqueryFlag;use App\BdtdcInquerySpam;use App\BdtdcInqueryTrush;use App\Model\BdtdcProductDescription;
+    $user_id = Sentinel::getUser()->id;
+?>
+<?php if(sizeof($message)>0): ?>
+    <?php foreach($message as $m): ?>
+        <?php
+            //$product_name = substr($m->product_name,0,15).'...';
+            $ca_quotation_type  = "single";
+            $product_name       = "";
+            if($m->is_join_quotation != 0){
+                $ca_quotation_type  = "join";
+                $product_name       = "";
+                foreach(explode(',',$m->product_id) as $p_id){
+                    $product_name .= substr(BdtdcProductDescription::where('product_id',$p_id)->first(['name'])->name,0,15) . '...';
+                }
+            }else{
+                $product_name = substr(BdtdcProductDescription::where('product_id',$m->product_id)->first(['name'])->name,0,15) . '...';
+            }
+            if($m->sender == $user_id){
+                ?>
+                    <div class="media message_block">
+                        <div class="media-body">
+                            <div class="col-xs-12 col-sm-9">
+                                <span style="font-size:13px;color:#0087cf"><i class="fa fa-envelope-square message_icon"></i> Inquery Sent about
+                                    <a href="<?php echo e(URL::to('product_details',$m->product_id,is_secured())); ?>" class="btn-link" style="font-style:italic"><?php echo e($product_name); ?></a>
+                                    <a href="#" data-inquery_id="<?php echo e($m->id); ?>" ca_quotation_type="<?php echo e($ca_quotation_type); ?>" ca_action_performed="<?php echo e($group); ?>" data-toggle="modal" data-target="#chat_modal" class="btn btn-primary btn-xs go_to_conversation" >View</a>
+                                </span>
+                                <a target="_blank" href="<?php echo e(URL::to('company_profile',$m->product_owner_id,is_secured())); ?>" class="pull-right btn-link">To : <i class="fa fa-user-md"></i>&nbsp<?php echo e($m->first_name . '-' . $m->last_name); ?></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 text-right">
+                                <p class="">At 7:10 AM 12-10-2015 <a data-inquery_id= "<?php echo e($m->id); ?>" ca_quotation_type="<?php echo e($ca_quotation_type); ?>" ca_action_performed="<?php echo e($group); ?>" data-toggle="modal" data-target="#chat_modal" class="btn btn-primary btn-xs go_to_conversation">Reply</a></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+            }else{
+
+                ?>
+                    <div class="media message_block">
+                        <div class="media-body">
+                            <div class="col-xs-12 col-sm-9">
+                                <span style="font-size:13px;color:red"><i class="fa fa-envelope-square message_icon"></i> Inquery Received About
+                                    <a href="<?php echo e(URL::to('product_details',$m->product_id,is_secured())); ?>" class="btn-link" style="font-style:italic"><?php echo e($product_name); ?></a>
+                                    <a href="#" data-inquery_id="<?php echo e($m->id); ?>" ca_quotation_type="<?php echo e($ca_quotation_type); ?>" ca_action_performed="<?php echo e($group); ?>" data-toggle="modal" data-target="#chat_modal" class="btn btn-primary btn-xs go_to_conversation" >View</a>
+                                </span>
+                                <a target="_blank" href="<?php echo e(URL::to('company_profile',$m->product_owner_id,is_secured())); ?>" class="pull-right btn-link">From : <i class="fa fa-user-md"></i>&nbsp<?php echo e($m->sender_first_name . '-' . $m->sender_last_name); ?></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 text-right">
+                                <p class="">At 7:10 AM 12-10-2015 <a data-inquery_id= "<?php echo e($m->id); ?>" data-toggle="modal" data-target="#chat_modal" ca_action_performed="<?php echo e($group); ?>" ca_quotation_type="<?php echo e($ca_quotation_type); ?>" class="btn btn-primary btn-xs go_to_conversation">Reply</a></p>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+            }
+        ?>
+    <?php endforeach; ?>
+    <?php else: ?>
+    <h2 class="text-success text-center">No Data Found!!!</h2>
+<?php endif; ?>

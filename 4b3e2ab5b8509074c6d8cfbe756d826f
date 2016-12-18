@@ -1,0 +1,10 @@
+ <div class="col-md-6 padding_0">
+      <span class="company_title header_company_name" style="color:#1A4570;font-weight:bold"></span> &nbsp;<i class="fa fa-check-square text-success"></i>
+</div>
+<div class="col-md-6 padding_0">
+      <ul class="list-inline pull-right">
+            <li><a href=""><i class="fa fa-weixin"></i> &nbsp;Ofline</a></li>
+            <li><a href="" class="btn btn-primary btn-sm"><i class="fa fa-envelope" data-supplier_id=""></i>&nbsp; Contact-Supplier</a></li>
+            <li class=""><a class="btn btn-info btn-sm" href="">Start Order</a></li>
+      </ul>
+</div>

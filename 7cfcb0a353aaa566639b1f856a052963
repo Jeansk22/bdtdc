@@ -1,0 +1,769 @@
+	<?php $__env->startSection('content'); ?>
+	<br>
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 padding_0" style="padding-bottom: 1%">
+			<ul style="margin-left: -2%"><li style="float: left"><a itemprop="url" href="<?php echo e(URL::to($parent_cats['slug'],$parent_cats['id'],is_secured())); ?>" style="color: #000"> <?php echo e(isset($parent_cats->name) ? $parent_cats->name : ''); ?> &nbsp;</a></li><li style="float: left"><a itemprop="url" href="<?php echo e(URL::to('category/product',$category_id['id'],is_secured())); ?>" style="color: #000"> <i class="fa fa-angle-right"></i> <?php echo e(isset($category_id->name) ? $category_id->name : ''); ?> <i class="fa fa-angle-right"></i></a></li></ul>
+		</div>
+	</div>
+	<div  class="row item_sha">
+				 <div class="col-sm-3 col-md-2 col-xs-12" style="padding-right: 0px">
+				 	<div class="col-sm-12 col-md-12 col-xs-12 padding_0 bottom-space">
+					        <div class="col-sm-12 col-xs-12 cat-height hr-gap no-padding">
+						
+			            <h3 itemprop="name" style="margin-bottom: 10%;"><a itemprop="url" href="" style="font-size:13px; font-family: verdana;"><i class="fa fa-list-ul"></i>  
+							<?php echo e(isset($category_id->name) ? $category_id->name : ''); ?> 
+			            </a></h3>
+            
+            
+            	
+               
+                 
+			            <ul itemscope itemtype="http://data-vocabulary.org/Product" class="bazar-list pull-left" style="padding:0;">
+			            	
+			            <?php foreach($parent_cats->parent_cat as $data): ?>
+			                
+			                <li  style="padding: 0;width: 100%; margin: 0; overflow: hidden;display: block;line-height: 20px;">              	
+			                     <a itemprop="url"    style="font-size: 12px; line-height: 15px; font-family: verdana;color: #333;" href="<?php echo e(URL::to('category/product',$data['id'],is_secured())); ?>"><span itemprop="name" style="font-size:12px; color:#666; text-align:left; line-height:15px; color:#333; padding:0;">
+			                                <?php echo $data[ 'name']; ?>
+			                            </span></a>
+			                   
+			                    <span style="padding-top: 2%;padding:5px" class="pull-right"><i class="fa fa-angle-right"></i></span>
+			                </li>
+			             <?php endforeach; ?>
+
+			               <li class="bazar-list-li" style="padding-left: 1.3%;;padding-right: 8%;padding-top: 3%;font-weight: 600;">
+			                	
+			                	
+			                     <a itemprop="url"  style="font-size: 11px;" href="<?php echo e(URL::to('online-marketplace',null,is_secured())); ?>">
+			                                All Categories
+			                            </a>
+			                   
+			                    <span style="padding: 9px 8px 9px 0;" class="pull-right"><i class="fa fa-angle-right"></i></span>
+			                </li>
+			               
+			                
+			            </ul>
+            </div>
+        </div>
+        </div>
+        
+<!--/brands_products-->
+
+	<div style="padding-bottom:0.8%" class="col-sm-9 col-md-10 col-xs-12 item_sha padding-right">
+
+		<form method="post" action="<?php echo e(URL::to('country/products',null,is_secured())); ?>" class="filter_by_cat_pro_form">
+		<input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+		<input type="hidden" name="categoryid" value="<?php echo e($categoryid); ?>">
+		<input type="hidden" name="countery" value="<?php echo e($countryid); ?>">
+		<input type="hidden" name="buyer_protection_input_data" value="<?php echo e($buyer_protection); ?>">
+		<input type="hidden" name="gold_supplier_input" value="<?php echo e($gold_supplier); ?>">
+		<input type="hidden" name="assessed_supplier_input" value="<?php echo e($assessed_supplier); ?>">
+			<div class="col-sm-5 col-md-5 col-xs-12">
+			  <div style="font-size:12px;line-height: 32px;"  class="col-sm-4 col-md-4 col-xs-12 title_home padding_0">Supplier Location: &nbsp;&nbsp; &nbsp;</div>
+				<div style="margin-top:5px;padding-left:6px" class="col-sm-8 col-md-8 col-xs-12 padding_0 ">
+
+				
+					<div style="background-color: #fff;border: 1px solid #dae2ed;cursor: pointer;    display: inline-block;height: 22px;    line-height: 22px;padding: 0 0 0 5px;    width: 187px;    vertical-align: middle;color: #333;" class="country_tab">
+					    <span class="replace_name"><?php if($countryid != 0){foreach ($bdtdc_country_list as $value) {
+					    	if($countryid == $value->id){
+					    		echo $value->name. " Selected";
+					    	}
+					    }}else{ echo "All Countries &amp; Regions";} ?></span>
+					    <i style="padding-right:5px;" class="fa fa-angle-down fa_down_show" aria-hidden="true"></i>
+					    <i style="padding-left:5px;padding-right:5px;display:none;" class="fa fa-angle-up fa_up_show" aria-hidden="true"></i>
+
+					</div>
+					<div class="container country_tab_show" style="display: none;">
+					<div style="position:absolute;border: 1px solid #dae2ed;box-shadow: 2px 2px 3px rgba(0,0,0,.13);background-color: #fff;top: 21px;left: -120px;padding: 10px;overflow: auto;height: 250px;width: 300%;z-index: 1;" class="">
+					  <div style="border-bottom: 1px dotted #dae2ed;    padding-bottom: 10px;">
+					  	<div class="replace_name" style="cursor: pointer;background: #7d8ca1;color: #fff;font-size: 12px;    line-height: 26px;width: 162px;padding-left: 7px;    border-radius: 5px !important;"><?php if($countryid != 0){foreach ($bdtdc_country_list as $value) {
+					    	if($countryid == $value->id){
+					    		echo $value->name. " Selected";
+					    	}
+					    }}else{ echo "All Countries &amp; Regions";} ?></div>
+					  </div>
+
+					  <!-- <div style="padding-top: 10px;padding-bottom: 10px;position: relative;">
+					    <input style="box-sizing: border-box;border: 1px solid #dae2ed;color: #333;box-shadow: inset 0 1px 2px rgba(0,0,0,.1);height: 28px;    padding-left: 24px;" class="" type="text" placeholder="Type to find a country">
+					    <i style="position: absolute;left: 7px;    top: 17px;color: #999;" class="fa fa-search" aria-hidden="true"></i>
+					    
+					  </div> -->
+					  <select style="box-sizing: border-box;border: 1px solid #dae2ed;color: #333;box-shadow: inset 0 1px 2px rgba(0,0,0,.1);height: 29px;font-size: 12px;width: 29%;padding-left: 24px;margin-top: 10px;margin-bottom: 10px;" class="form-control filter_by_cat_pro_input" name="country_id_data">
+							<option value="0">Select Country</option>
+							<?php
+								foreach($bdtdc_country_list as $bdtdc_country_list_data){
+									if($countryid == $bdtdc_country_list_data->id){
+									echo '<option value="'.$bdtdc_country_list_data->id.'" selected>'.$bdtdc_country_list_data->name.'</option>';
+									}else{
+									echo '<option value="'.$bdtdc_country_list_data->id.'">'.$bdtdc_country_list_data->name.'</option>';
+									}
+								}
+							?>
+						</select>
+						  <ul class="nav nav-tabs">
+						    <li class="active"><a itemprop="url" data-toggle="tab" href="#all-con">All Countries</a></li>
+						    <?php
+								foreach ($country as $Countries) {
+									echo '<li><a itemprop="url" data-toggle="tab" href="#'.explode(' ', $Countries->name)[0].'">'.$Countries->name.'</a></li>';
+									/*$region = $Countries->name;
+									$counter = 0;
+									foreach($Countries->country_region as $p){
+										$counter = count($p->contry_products);
+										if($counter > 0){
+										echo '<li><a itemprop="url" data-toggle="tab" href="#'.explode(' ', $region)[0].'">'.$region.'</a></li>';
+										break;
+										}
+									}*/
+								}
+							?>
+						  </ul>
+
+						  <div class="tab-content">
+						    <div id="all-con" class="tab-pane fade in active">
+						      <div class="col-md-3 padding_0">
+						      	<label class="country_select" style="cursor:pointer;" data-countryid="0"> All</label>
+						      </div>
+						      <?php
+								foreach ($country as $Countries) {
+										foreach($Countries->country_region as $p){
+											echo '<div class="col-md-3 padding_0"><label class="country_select" style="cursor:pointer;" data-countryid="'.$p->id.'">'.$p->name.'</label></div>';
+										}
+									}
+								?>
+						    </div>
+						    <?php
+							foreach ($country as $Countries) {
+								echo '<div id="'.explode(' ', $Countries->name)[0].'" class="tab-pane fade">';
+								foreach($Countries->country_region as $p){
+									echo '<div class="col-md-3 padding_0"><label class="country_select" style="cursor:pointer;" data-countryid="'.$p->id.'">'.$p->name.'</label></div>';
+								}
+								echo "</div>";
+							}
+							?>
+						  </div>
+					</div>
+					</div>
+
+				<!-- <select class="form-control form_data validate filter_by_cat_pro_input" validation="validated_false" style="height:29px;padding-bottom:1%;padding-top:0px;font-size:12px" id="country" name="country_id">
+				<option value="all">Select Country</option>
+				<?php
+					foreach($bdtdc_country_list as $bdtdc_country_list_data){
+						echo '<option value="'.$bdtdc_country_list_data->id.'">'.$bdtdc_country_list_data->name.'</option>';
+					}
+				?>
+				</select> -->
+					
+					<!-- <input type="hidden" name="country_id" class="filter_by_cat_pro_input" value="all">
+					<input type="hidden" name="cat_name"  value="">
+					<input type="hidden" name="cat_id" class="filter_by_cat_pro_input" value=""> -->
+				</div>
+			</div>
+					
+			<div class="col-sm-7 col-md-7 col-xs-12" style="padding-top:0px; text-align: right;">
+				<label style="font-size:12px" class="ui2-checkbox-customize-label">
+					<span class="ui2-checkbox-customize-txt">Supplier Types: </span>
+				</label>
+				<label title="Buyer Protection: Ensures on-time shipment and pre-shipment product quality" style="font-size:12px;" class="ui2-checkbox-customize-label">
+					<input type="checkbox" class="ui2-checkbox-customize-val cat_filter_check_box" name="buyer_protection" value="false" <?php if($buyer_protection == 'true'){echo 'checked';} ?>>
+					<span class="ui2-checkbox-customize-txt"><img itemprop="image" title="Buyer Protection: Ensures on-time shipment and pre-shipment product quality"  style="height:24px;width:24px;" src="<?php echo asset('resources/assets/gold/Buyer-protection-home.png',is_secured()); ?>" alt="Buyer protection">Buyer Protection</span>
+				</label>
+				<label title="Gold Suppliers:pre-qualified suppliers" style="font-size:12px" class="ui2-checkbox-customize-label">
+					<input type="checkbox" class="ui2-checkbox-customize-val cat_filter_check_box" name="gold_supplier" value="false" <?php if($gold_supplier == 'true'){echo 'checked';} ?>>
+					<span class="ui2-checkbox-customize-txt"><img itemprop="image" title="Gold Suppliers: pre-qualified suppliers"  style="height:24px;width:24px;" src="<?php echo asset('resources/assets/helpcenter/Gold-membership.png',is_secured()); ?>" alt="Gold membership" >Gold Supplier</span>
+				</label>
+				<label title="Assessed Supplier: Supplier assessed by a world-leading inspection company (i.e SGS, Bureau Veritas)." style="font-size:12px" class="ui2-checkbox-customize-label">
+					<input type="checkbox" class="ui2-checkbox-customize-val cat_filter_check_box" name="assessed_supplier" value="false" <?php if($assessed_supplier == 'true'){echo 'checked';} ?>>
+					<span class="ui2-checkbox-customize-txt"><img itemprop="image" title="Assessed Supplier: Supplier assessed by a world-leading inspection company (i.e SGS, Bureau Veritas)."  style="height:24px;width:24px;" src="<?php echo asset('resources/assets/helpcenter/verified-supplier.png',is_secured()); ?>" alt="Supplier assessed by a world-leading inspection company">Assessed Supplier</span>
+				</label>
+			</div>
+		</form>
+		
+	</div>
+	<br>
+		
+                            <br>
+	<div style="padding-bottom:4%" id="pro_v" class="col-sm-9 col-md-10 col-xs-12 padding-right">
+
+	<div id="pro_view" class="col-sm-12 col-md-12 col-xs-12 padding-right" data-spm="57">
+    	<div class="col-sm-4 col-md-4">
+	    	<div class="view-label" style="padding: 8px;">View 
+	    	<?php if(count($products)>=1): ?>
+				<strong><?php echo count($products); ?></strong> 
+	    	<?php else: ?>
+				<strong>0</strong>
+	    	<?php endif; ?>
+				Product(s) below
+			</div>
+		</div>
+		<div class="col-sm-4 col-md-4">
+				<div class="view-label text-center" style="padding: 8px;">Total <?php if(isset($products)): ?>
+					<strong><?php echo e($products->total()); ?></strong> <?php else: ?>
+					<strong>0</strong> <?php endif; ?> Result(s) found
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-4">
+				<div class="view-label text-right" style="padding: 8px;">Page No <?php if(isset($products)): ?>
+					<strong><?php echo e($products->currentPage()); ?></strong> <?php if($products->lastPage() >0 ): ?>
+					of <strong><?php echo e($products->lastPage()); ?></strong> 
+					<?php endif; ?> | 
+					<a href="<?php echo e($products->previousPageUrl()); ?>">prev</a> | 
+					<a href="<?php echo e($products->nextPageUrl()); ?>">next</a>
+					<?php else: ?>
+					<strong>0</strong>
+					<?php endif; ?>
+				</div>
+			</div>	
+				
+    </div>
+
+
+
+	<div class="col-sm-12 col-md-12 col-xs-12 padding-right" data-spm="57">
+	<input type="hidden" name="base_url" value="<?php echo e(URL::to('/',null,is_secured())); ?>">
+	<div style="padding-top: 2%;"  class="features_items row">
+	
+		<?php foreach($products as $p): ?>
+		<div class="list_product col-xs-12 " style="width: 96.7%">
+			<div class="col-xs-12 col-md-2 col-sm-4 padding_0">
+
+				<?php if($p->pro_to_cat_name): ?>
+				<a itemprop="url"  target="_blank" href="<?php echo e(URL::to('product-details/'.preg_replace('/[^A-Za-z0-9\.-]/', '-', $p->pro_to_cat_name->name).'='.mt_rand(100000000, 999999999).$p->product_id,is_secured())); ?>">
+				<?php else: ?>
+				<a itemprop="url" target="_blank" href="<?php echo e(URL::to('product-details/Need to add=232942253'.$p->product_id,is_secured())); ?>">
+				Need to add
+				<?php endif; ?>
+				
+				
+				<?php if($p->pro_images): ?>
+				<img itemprop="image"   title="<?php echo e(isset($p->pro_to_cat_name->name) ? $p->pro_to_cat_name->name : ''); ?>" style="width:100%" class="img-thumbnail pro-imges" src="<?php echo asset('uploads/'.$p->pro_images->image); ?>" alt="<?php echo e(isset($p->pro_to_cat_name->name) ? $p->pro_to_cat_name->name : ''); ?>" />
+				<?php elseif($p->pro_images_new): ?>
+				<img itemprop="image"  title="<?php echo e(isset($p->pro_to_cat_name->name) ? $p->pro_to_cat_name->name : ''); ?>" style="width:100%" class="img-thumbnail pro-imges" src="<?php echo asset('bdtdc-product-image/'.trim($parent_cats->name).'/'.trim($category_id->name).'/'.$p->pro_images_new->image); ?>" alt="<?php echo e(isset($p->pro_to_cat_name->name) ? $p->pro_to_cat_name->name : ''); ?>" />
+				
+				<?php endif; ?>
+
+
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-6 col-sm-8">
+				<div class="col-xs-12 padding_0">
+					<p>
+					<?php if($p->pro_to_cat_name): ?>
+						<a itemprop="url" style="font-size:18px" target="_blank" href="<?php echo e(URL::to('product-details/'.preg_replace('/[^A-Za-z0-9\.-]/', '-', $p->pro_to_cat_name->name).'='.mt_rand(100000000, 999999999).$p->product_id,is_secured())); ?>"><span itemprop="name"><?php echo e(isset($p->pro_to_cat_name->name) ? $p->pro_to_cat_name->name : ''); ?></span>
+						<?php else: ?>
+						Need to add
+						<?php endif; ?>
+						</a>
+					</p>
+					<div class="col-md-6 col-xs-12 padding_0">
+						<p>
+						<?php
+							if ($p->bdtdcProduct) {
+								if ($p->bdtdcProduct->product_prices) {
+									if($p->bdtdcProduct->product_prices->product_FOB){
+										if($p->bdtdcProduct->product_prices->product_FOB=='N/A')
+										{
+											echo "ask current price";
+										}
+										else{
+									echo "<strong>	US $</strong>".$p->bdtdcProduct->product_prices->product_FOB;
+									}
+									}
+
+								}else{echo "Price not available";}
+							}else{echo "product not available";}
+						 /*if($p->bdtdcProduct->product_prices != null){
+								if($p->bdtdcProduct->product_prices->product_FOB != null){
+									echo $p->bdtdcProduct->product_prices->product_FOB;
+								}else{}
+							}else{}*/ ?>/<?php
+							if ($p->bdtdcProduct) {
+								if ($p->bdtdcProduct->ProductUnit) {
+									echo $p->bdtdcProduct->ProductUnit->name;
+								}else{echo "pieces";}
+							}else{echo "price not available";}
+							 /*if($p->bdtdcProduct->ProductUnit != null){
+									echo $p->bdtdcProduct->ProductUnit->name;
+								}else{echo "pieces"; }*/ ?>
+						</p>
+					</div>
+					<div class="col-md-6 col-xs-12 padding_0">
+						<p>
+							<span><?php 
+							if ($p->bdtdcProduct) {
+								if ($p->bdtdcProduct->product_prices) {
+									echo $p->bdtdcProduct->product_prices->product_MOQ;
+								}else{echo "none";}
+							}else{echo "product not available";}
+							/*if($p->bdtdcProduct->product_prices != null){
+								if($p->bdtdcProduct->product_prices->product_MOQ != null){
+									echo $p->bdtdcProduct->product_prices->product_MOQ;
+								}else{}
+							}else{}*/ ?></span>(Min. Order)
+						</p>
+					</div>
+	
+				</div>
+				
+				<div class="col-xs-12 padding_0">
+					<div class="col-sm-6 col-xs-12 padding_0">
+						<p style="margin:0 0 0px;display:block;width:83%" class="summary_pro">Product Type:</p>
+						<p><?php echo e($p->bdtdcCategory->name); ?></p>
+					</div>
+					<div class="col-sm-6 col-xs-12 padding_0">
+						<?php
+						// echo "<pre>";
+						// print_r($p->bdtdcProduct->ProductUnit);
+						// echo "</pre>";
+						?>
+						<ul class="padding_0">
+							<!-- <li class="summary_pro">Supply Type:<span>OEM Service</span></li> -->
+							<li class="summary_pro">Place of Origin:<span><?php
+							if ($p->bdtdcProduct) {
+								if ($p->bdtdcProduct->product_country) {
+									echo $p->bdtdcProduct->product_country->name;
+								}else{echo "not available";}
+							}else{echo "product not available";}
+							 /*if($p->bdtdcProduct->product_country != null){
+									echo $p->bdtdcProduct->product_country->name;
+								}else{}*/ ?> </span></li>
+							<li class="summary_pro">Brand Name:<span> <a class="filter_brand_name" href="#" data-brand-name=<?php echo e(isset($p->bdtdcProduct->brandname) ? $p->bdtdcProduct->brandname : ''); ?>><?php echo e(isset($p->bdtdcProduct->brandname) ? $p->bdtdcProduct->brandname : ''); ?></a></span></li>
+						</ul>
+					</div>
+				</div>
+	
+			</div>
+			<div class="col-xs-5 col-md-4 col-sm-12 padding_0" style="border-left: 1px solid #ddd;">
+				<div style="padding-left: 15px;" style="" class="col-xs-12 left_sh padding_0">
+					<div class="col-sm-10 padding_0">
+						<p class="heading_sup">
+
+							<?php //echo $p->bdtdcProduct->supplier_product->sup_companies->id;
+							// echo "<pre>";
+							
+							// echo $p->bdtdcProduct->supplier_product->sup_companies->location_of_reg_string->name;
+							// print_r($p->bdtdcProduct->supplier_product->sup_companies->location_of_reg_string);
+							// echo "</pre>";
+							 ?>
+							 <?php
+							 if ($p->supp_pro_company) {
+							 	echo '<a itemprop="url" target="_blank" href="'.URL::to('Home/'.preg_replace('/[^A-Za-z0-9\-]/', '-',$p->supp_pro_company_name->name)).'/'.$p->company_id.'">';
+							 }else{echo "company not available";}
+							 ?>
+							  
+									
+									<?php
+									if ($p->supp_pro_company_name) {
+									 	echo $p->supp_pro_company_name->name;
+									 }else{echo "company not available";}
+									/*if($p->bdtdcProduct->supplier_product->sup_companies->name_string->name != null){
+										echo $p->bdtdcProduct->supplier_product->sup_companies->name_string->name;
+									}else{
+										echo "no data";
+									}*/
+									?>
+									
+
+							</a>	
+						</p>
+						<p class="summary">
+						
+						<?php
+						if ($p->cat_country) {
+							if ($p->cat_country->name) {
+								echo $p->cat_country->name;
+							}else{echo "no country";}
+						}else{echo "no country";}
+									/*if($p->bdtdcProduct->supplier_product->sup_companies->location_of_reg_string->name != null){
+										echo $p->bdtdcProduct->supplier_product->sup_companies->location_of_reg_string->name;
+									}else{
+										echo "no data";
+									}*/
+									?>
+						
+						 |
+							<a itemprop="url" href="<?php echo e(URL::to('BuyerChannel/pages/trade_assurance',5,is_secured())); ?>" target="_blank">
+								<i class="fa fa-pie-chart"></i>
+								Buyer Protection
+							</a>
+						</p>
+						<p class="summary">
+							Experiance :<br>
+							Established <?php echo e(date('Y', strtotime($p->year_of_reg))); ?> , 10 years OEM
+						</p>
+					</div>
+					<div style="padding:0px" class="col-sm-2">
+					 <?php if($p->location_of_reg ==18): ?>
+
+                   			<?php elseif($p->supplier_info): ?>
+						<div class="supplier-badge-gold">
+                                          <span class="gs-badge-year" style="margin-top: 21px;">
+                                            <span style="color: #000" class="gs-badge-year-digit"><?php echo e(isset($p->supplier_info->membership_year) ? $p->supplier_info->membership_year : ''); ?></span>
+                                            <span style="color: #000" class="gs-badge-year-ext">YR</span>
+                                          </span> 
+                                          </div>
+
+						<?php else: ?>
+						<?php endif; ?>
+					</div>
+				</div>		
+			</div>
+			<div class="col-sm-12 padding_0">
+				<div class="col-sm-5 choose padding_0">
+					<ul class="nav nav-pills nav-justified padding_0">
+						<li><a itemprop="url" style="float: left;" href="<?php echo e(URL::to('login')); ?>"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+						<li><a itemprop="url" style="float: left;"href="<?php echo e(URL::to('login')); ?>"><i class="fa fa-plus-square"></i>Add to compare</a></li>
+					</ul>
+				</div>
+
+				<div style="float:right" class="col-sm-5 padding_0">
+					<ul style="float:right;margin-right: 5%;" class="list-inline">
+						<li><a itemprop="url" href="#" data-product_id="<?php echo e(isset($p->product_id) ? $p->product_id : ''); ?>" data-supplier_id="<?php echo e($p->bdtdcProduct->supplier_product->supplier_id); ?>" class="btn btn-primary btn-sm contact_supplier"><i class="fa fa-envelope-o"></i>Contact Supplier</a></li>
+						<li><i class="fa fa-weixin"></i><a class="chat_single" data-target-id="
+						<?php if($p->bdtdcProduct): ?>
+							<?php if($p->bdtdcProduct->supplier_product): ?>
+								<?php echo e($p->bdtdcProduct->supplier_product->supplier_id.mt_rand(100000000, 999999999)); ?>
+
+							<?php else: ?>
+								0
+							<?php endif; ?>
+						<?php else: ?>
+						0
+						<?php endif; ?>
+						" itemprop="url" href="">Talk to me</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<?php endforeach; ?>
+
+		
+	</div>
+	
+		<?php echo $products->render(); ?>
+
+	</div>
+
+	
+	</div>
+	<div style="padding-bottom:4%" id="product_view" class="col-sm-8 col-md-10 col-xs-12 padding-right"></div>
+
+	
+	</div>
+	
+	<br>
+	<br>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
+
+<script type="text/javascript">
+
+
+$.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+			var get_cat_filtered_product_list;
+
+			get_cat_filtered_product_list = function(){
+
+					$.ajax({
+			            type: "get",
+			            url: "<?php echo e(URL::to('country/products',null,is_secured())); ?>",
+			            data: $('.filter_by_cat_pro_input').serialize(),
+			            success:function(result){
+				            $("#product_view").html(result);
+				            $("#product_view").focus();
+				           
+		            	}
+		        	})
+
+			}
+
+			$.getJSON(product_view, 
+ 					function(data) 
+    			{
+    			 $('#product_view').html(data.view);
+    			}
+			);
+            
+
+
+            $(function() {
+            	
+            	
+            	/*$('.contact_supplier').animatedModal({
+            		color: "rgba(102, 102, 100, .9)",
+            		animatedIn: "lightSpeedIn",
+            	});*/
+            	/**
+            	 * the element
+            	 */
+            	var $ui = $('#ui_element');
+            
+            	/**
+            	 * on focus and on click display the dropdown, 
+            	 * and change the arrow image
+            	 */
+            	$ui.find('.sb_input').bind('focus click', function() {
+            		$ui.find('.sb_down')
+            			.addClass('sb_up')
+            			.removeClass('sb_down')
+            			.andSelf()
+            			.find('.sb_dropdown')
+            			.show();
+            	});
+            	/**
+            	 * on mouse leave hide the dropdown, 
+            	 * and change the arrow image
+            	 */
+            	$ui.bind('mouseleave', function() {
+            		$ui.find('.sb_up')
+            			.addClass('sb_down')
+            			.removeClass('sb_up')
+            			.andSelf()
+            			.find('.sb_dropdown')
+            			.hide();
+            	});
+            	/**
+            	 * selecting all checkboxes
+            	 */
+            	$ui.find('.sb_dropdown').find('label[for="all"]').prev().bind('click', function() {
+            		$(this).parent().siblings().find(':checkbox').attr('checked', this.checked).attr('disabled', this.checked);
+            	});
+            
+            	$(document).on({
+            		click: function(e) {
+            			e.preventDefault();
+            			$('.modal-content').html('<span class="btn btn-block btn-lg"><i class="fa fa-spinner fa-pulse loading_icon text-primary"></i></span>');
+            			// var base_url = $('[name="base_url"]').val();
+            			var base_url = window.location.origin;
+            			var supplier_id = $(this).data('supplier_id');
+            			var product_id = $(this).data('product_id');
+            			var url = base_url + "/byer/contact_supplier/" + supplier_id + "/" + product_id;
+            			//$('.modal-content').html(" ");
+            			/*$.get(url, function(r) {
+            				$('.modal-content').html(r);
+            				// $('#animatedModal').modal('show', {backdrop: 'static'});
+            			})*/
+            			window.location.href = url;
+            		}
+            	}, '.contact_supplier');
+            
+            	/*$(document).on({
+            		click: function(e) {
+            			e.preventDefault();
+            			var url = $('[name="base_url"]').val() + '/buyer/contact_supplier';
+            			swal({
+            					title: "Are you sure?",
+            					text: "You are going to confirm adding your product !",
+            					type: "warning",
+            					showCancelButton: true,
+            					confirmButtonColor: "#DD6B55",
+            					timer: 6000,
+            					confirmButtonText: "Yes!",
+            					cancelButtonText: "No, Stay hare!",
+            					closeOnConfirm: false,
+            					closeOnCancel: false,
+            					showLoaderOnConfirm: true
+            				},
+            				function(isConfirm) {
+            					if (isConfirm) {
+            						
+            						$.post(url, $('.query_form').serialize(), function(r) {
+            							(parseInt(r) == 1) ? swal("Thank You!!", "Query has been sent successfully!!!", "success"): false;
+            							(parseInt(r) == 0) ? swal({title: "<h2 class='text-danger'>Please Login<h2>",text: "<p class='text-primary'>Login first to send the query</p>",html: true,type:'error'}) : false;
+            							(parseInt(r) !=1 && parseInt(r) !=0) ? swal("Fail!!", "Query Could Not Sent", "error") : false;
+            						})
+            					}
+            					else {
+            						swal("Cancelled", "Sending request is canceled :)", "error");
+            					}
+            				});
+            		}
+            	}, '.query_form_submit_btn');*/
+            });
+
+            $(document).on({click:function(e){
+			  e.preventDefault();
+			  var target_id = $.trim($(this).attr('data-target-id'));
+			  if(parseInt(target_id) == 0){
+			    alert ('Unkonwn error occured.');
+			  }else{
+			    window.open("http://absolutelybest.bdtdc.com/default/chat/"+target_id+"", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=450,width=500,height=500");
+			  }
+			}},'.chat_single');
+
+            
+        </script>	
+    
+        <script>
+
+$(function(){
+        $(".link").button({
+            icons:{
+            secondary:"ui-icon-carat-1-e"
+            }
+        });
+        $(".next, input:submit").button({
+            icons:{
+            secondary:"ui-icon-circle-arrow-e"
+            }
+        });
+
+        function search_data(){
+	        var categoryid = $('input[name="categoryid"]').val();
+	        var country = $('input[name="countery"]').val();
+	        var buyer_protection = $('input[name="buyer_protection_input_data"]').val();
+	        var gold_supplier = $('input[name="gold_supplier_input"]').val();
+	        var assessed_supplier = $('input[name="assessed_supplier_input"]').val();
+	        var url = window.location.origin+'/category/product/category=='+categoryid+'+..+country=='+country+'+..+buyer_protection=='+buyer_protection+'+..+gold_supplier=='+gold_supplier+'+..+assessed_supplier=='+assessed_supplier;
+	        window.location.href = url;
+		}
+
+        $(document).on({change:function(){
+        	$('input[name="countery"]').val($(this).val());
+        	$('.fa_down_show').show();
+			$('.fa_up_show').hide();
+			$('.country_tab_show').hide();
+        	search_data();
+        	/*var value=$("#country").val();
+        	var current_val = $(this).val();
+        	if(!isNaN(current_val) || current_val == 'all'){
+        		$('[name="country_id"]').val(current_val);
+        		var countryText = $('option[value="'+current_val+'"]').html();
+        		if(countryText == 'Select Country'){
+        			$('.replace_name').html('All Countries &amp; Regions');
+        		}else{
+        			$('.replace_name').html(countryText+' selected');
+        		}
+        		$('.fa_down_show').show();
+				$('.fa_up_show').hide();
+				$('.country_tab_show').hide();
+        	}
+            // console.log(value);
+            var url = window.location.href.split('/');
+			var cat_id = url[url.length-1];
+			$('[name="cat_id"]').val(cat_id);
+            $("#product_view").show();
+            $("#pro_v").hide();
+        	get_cat_filtered_product_list();
+	        if(value=="examRoutine"){
+	            $("#eRoutine").show();
+	            $.ajax({
+		            type: "get",
+		            url: "<?php echo e(URL::to('category/products',null,is_secured())); ?>",
+		            data: "type="+this.value+"&option=eRoutine",
+		            success:function(result){
+		            $("#eRoutine").html(result);
+		            $("#eRoutine").focus();
+		            }
+		        })
+
+            }
+            else{ 
+                $("#eRoutine").hide();
+            }*/
+        }},'.filter_by_cat_pro_input');
+
+        $(document).on({click:function(){
+        	var countryid = $(this).attr('data-countryid');
+        	$('[name="countery"]').val(countryid);
+        	/*$('[name="country_id"]').val(countryid);
+        	get_cat_filtered_product_list();
+        	var countryText = $(this).html();
+    		if(countryText == ' All'){
+    			$('.replace_name').html('All Countries &amp; Regions');
+    		}else{
+    			$('.replace_name').html(countryText+' selected');
+    		}*/
+    		$('.fa_down_show').show();
+			$('.fa_up_show').hide();
+			$('.country_tab_show').hide();
+			search_data();
+        }},'.country_select');
+       
+        /*$(".filter_by_cat_pro_input").change(function(){
+
+         	var value=$("#country").val();
+         	$('[name="country_id"]').val($(this).val());
+            // console.log(value);
+            var url = window.location.href.split('/');
+			var cat_id = url[url.length-1];
+			$('[name="cat_id"]').val(cat_id);
+            $("#product_view").show();
+            $("#pro_v").hide();
+        	get_cat_filtered_product_list();
+	        if(value=="examRoutine"){
+	            $("#eRoutine").show();
+	            $.ajax({
+		            type: "get",
+		            url: "<?php echo e(URL::to('category/products',null,is_secured())); ?>",
+		            data: "type="+this.value+"&option=eRoutine",
+		            success:function(result){
+		            $("#eRoutine").html(result);
+		            $("#eRoutine").focus();
+		            }
+		        })
+
+            }
+            else{ 
+                $("#eRoutine").hide();
+            }
+           
+        });*/
+
+        /* ******** Country search ********** */
+			$(document).on({click:function(){
+				$('.fa_down_show').toggle();
+				$('.fa_up_show').toggle();
+				$('.country_tab_show').toggle();
+			}}, '.country_tab');
+
+		$(document).on({
+				click: function(e) {
+				e.preventDefault();
+				// other_filter_search_func();
+				$('.fa_down_show').show();
+				$('.fa_up_show').hide();
+				$('.country_tab_show').hide();
+				var selected = $(this).val();
+				var selected_name = $(this).attr('name');
+				if(selected_name == 'buyer_protection'){
+					if ($('input[name="buyer_protection"]').is(':checked')) {
+						$('input[name="buyer_protection_input_data"]').val('true');
+					}else{
+						$('input[name="buyer_protection_input_data"]').val('false');
+					}
+				}else if(selected_name == 'gold_supplier'){
+					if ($('input[name="gold_supplier"]').is(':checked')) {
+						$('input[name="gold_supplier_input"]').val('true');
+					}else{
+						$('input[name="gold_supplier_input"]').val('false');
+					}
+				}else if(selected_name == 'assessed_supplier'){
+					if ($('input[name="assessed_supplier"]').is(':checked')) {
+						$('input[name="assessed_supplier_input"]').val('true');
+					}else{
+						$('input[name="assessed_supplier_input"]').val('false');
+					}
+				}
+				search_data();
+			}
+		}, '.cat_filter_check_box');
+
+		$('ul.pagination').css('margin-top','5px');
+
+
+
+
+
+   
+
+    });
+</script>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master_dynamic', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

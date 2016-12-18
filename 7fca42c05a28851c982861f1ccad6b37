@@ -1,0 +1,36 @@
+<div id="item_sha" class="row">
+	 <div class="col-sm-4 col-md-3 col-xs-12">
+	     <div class="col-sm-12 col-xs-12 mobo-categories hr-gap no-padding">
+	         <h3><a href="#"><i class="fa fa-list-ul"></i> Main Market</a></h3>
+	         <form action="<?php echo e(URL::to('filter_by_main_market',null,is_secured())); ?>" method="post" id="search_by_main_market_form">
+    	         <?php foreach($main_market_status as $m): ?>
+    	             <p style="margin-bottom: 0px;font-size:11px"><input type="checkbox" name="filter_by_main_market[]" value="<?php echo e($m->main_market_zone_id); ?>">&nbsp;<?php echo e(trim($m->market_name)); ?> (<?php echo e($m->number_of_used_by_company); ?>)</p>  
+    	         <?php endforeach; ?>
+    	         <div class="button_holder col-md-9">
+    	             <input type="submit" value="Search" class="btn btn-xs btn-primary search_by_main_market_btn" style="margin-top: 2%;padding-bottom:1%">
+    	             <a href="" class="btn btn-xs btn-danger pull-right" style="margin-top: 2%">Cancel</a>
+    	         </div>
+	         </form>
+	         <div class="col-md-12 ">
+	             <h4 style="margin-bottom:3%;margin-top:6%">Total Revenue</h4>
+    	         
+    	         <?php foreach($revanue as $r): ?>
+    	             <p style="margin-bottom:5px;font-size:11px"><a href="<?php echo e(URL::to('filter_by_total_revanue',$r->revanue_id,is_secured())); ?>" class="text-muted filter_by_total_revanue_btn"><?php echo e(trim($r->revanue_name)); ?> (<?php echo e($r->number_of_used); ?>)</a></p>
+    	         <?php endforeach; ?>
+    	         <h4 style="margin-bottom:3%;margin-top:6%">No Of Employe</h4>
+    	         <?php foreach($total_employe as $e): ?>
+    	             <p style="margin-bottom:5px;font-size:11px"><a href="<?php echo e(URL::to('filter_by_employe',$e->total_employe_id,is_secured())); ?>" class="text-muted filter_by_total_employe_btn"><?php echo e(trim($e->total_employe)); ?> (<?php echo e($e->number_of_use); ?>)</a></p>
+    	         <?php endforeach; ?>
+	         </div>
+	         
+	     </div>
+	     <br>
+	     <br>
+	     <br>
+	     <div class="shipping text-center">
+	         <!--shipping-->
+	         <img src="http://localhost/bdtdc.com/resources/assets/dashboard/images/home/shipping.jpg" alt="">
+	     </div>
+	     <!--/shipping-->
+	 
+	 </div>

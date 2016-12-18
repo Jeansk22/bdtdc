@@ -1,0 +1,139 @@
+	<?php $__env->startSection('content'); ?>
+	<br><br>
+		<div class="row padding_0">
+				<img class="img-responsive header_img_fix" src="<?php echo asset('resources/assets/helpcenter/03.jpg',is_secured()); ?>" alt="" />
+		</div>
+		<div style="padding: 20px;" class="row">
+			<div class="col-md-12">
+				<h2 class="text-center">Choose an Membership Package</h2>
+			</div>
+	</div>
+	<!--Pricing Table Starts Emam-->
+		<div class="row">
+			<div class="pricetable pricingtable55">
+				<div class="pricetable-inner">
+					<div class="pricetable-column labeling" style="width:20%">
+						<div class="pricetable-column-wall">
+							<div class="pricetable-header">
+							  <div class="pricetable-fld-name">Labels</div>
+							  <div class="pricetable-header-inner">
+								<div class="pricetable-fld-price"><span class="cur">$</span>0</div>
+								<p>none</p>
+							  </div>
+							</div>
+							<ul class="features">
+								<li>Priority Ranking</li>
+								<li>Product Posting</li>
+								<li>Product Showcases</li>
+								<li>Ability to quote Buying Requests</li>
+								<li>Verified Icon</li>
+								<li>Customized Website</li>
+								<li>Personalized Customer Service</li>
+								<li>--</li>
+								<li>Other</li>
+							</ul>
+							<div class="pricetable-feature-lbl">Features &raquo;</div>
+							<div class="pricetable-button-container"> <a href="-"> <span class="pricetable-gradient"><span class="pricetable-noise">choose</span></span></a></div>
+							<div class="labelTitle">Main Features</div>
+						</div>
+					  </div>
+					 
+					 <?php foreach($supplier_memberships as $supplier_membership): ?>
+					  
+					<div class="pricetable-column highlight" style="width:20%">
+					  <div class="pricetable-column-wall">
+						<div class="pricetable-header">
+						  <div class="pricetable-fld-name"><?php echo e($supplier_membership->descriptions->name); ?></div>
+						  
+						  
+						  <div class="pricetable-header-inner">
+							<div class="pricetable-button-container"> 
+								 <?php
+							        $user_id = \Sentinel::getUser()->id;
+							        $company = App\Model\BdtdcCompany::where('user_id',$user_id)->first(['id']);
+    ?>
+								<a href="<?php echo e(URL::to('user/upgrade',$company->id)); ?>">Apply Now</a> </div>
+							<div class="ribbon-wrapper-green"><div class="ribbon-green"><?php echo e($supplier_membership->id); ?>th</div></div>
+						 </div>
+						</div>
+						<ul class="features">
+							<li><span>Bandwidth</span>
+							<?php if($supplier_membership->id==1): ?>
+							<?php echo e($supplier_membership->id); ?>st
+							<?php elseif($supplier_membership->id==2): ?>
+							<?php echo e($supplier_membership->id); ?>nd
+							<?php elseif($supplier_membership->id==3): ?>
+							<?php echo e($supplier_membership->id); ?>rd
+							<?php else: ?>
+							<?php echo e($supplier_membership->id); ?>th
+							<?php endif; ?>
+							</li>
+							<li class="hasToolTip">
+								<span>Database Size</span>
+								<?php if($supplier_membership->product_quantity==0): ?>
+								unlimited
+								<?php else: ?>
+								<?php echo e($supplier_membership->product_quantity); ?>
+
+								<?php endif; ?>
+								<small style="width:150%;height:170%; font-size:100%; padding:1% 5% 10% 3%; float:left; border-radius:10px;"><p style="font-size:100%;padding-right:32%;margin-top:3%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras libero lacus, elementum nec elementum et, rhoncus at neque. </p></small>
+							</li>
+							<li><span>Disk Capacity</span>25</li>
+							<li><span>CPU Speed</span>Y</li>
+							<li><span>Memory</span>Y</li>
+							<li><span>SSL</span>Y</li>
+							<li><span>cPanel</span>Y</li>
+							<li><span>PHP</span>&nbsp;<div class='yn_basic yi'></div></li>
+							<li><span>Linux OS</span>&nbsp;<div class='yn_basic ni'></div></li>
+						</ul>
+						<div class="ribbon">HOT</div>
+						<div class="pricetable-button-container"> <a href="<?php echo e(URL::to('user/upgrade')); ?>">Apply Now</a> </div></div>
+					</div>
+			
+				<?php endforeach; ?>
+					
+					
+					<div class="pricetable-clear"></div>
+				</div>
+			</div>
+		</div>
+<br>
+	<!--pricing table ends Emam-->
+	<div id="item_sha" class="row">
+		<center>
+			<h2 class="text-center">Showcase function is awesome!</h2>
+		</center>
+		<div class="row cont_margin">
+			<div id="footer-shadow" class="col-md-6">
+				<div class="col-md-12">
+					<p><b>"We joined Gold Supplier because it can assure buyers we are credible and gets us more inquires. Moreover, Gold Supplier makes it very easy to contact buyers directly. My favorite benefit is the Showcase function. It shows our products more frequently on the website. It is awesome."</b></p>
+				</div>
+			
+					<div class="col-md-6">
+						<h4><b>Mr.Kazi Ahmed</b></h4>
+						<p>
+							<b>
+							Company: Rainbowbrush LLC.<br/>
+							Location: USA<br/>
+							Industry: Painting & Toys<br/>
+							</b>
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img class="img-responsive img-circle" style="padding-bottom:10px;" src="<?php echo asset('resources/assets/fontend/img/kazi.jpg',is_secured()); ?>" alt="" />
+						
+					</div>
+				
+			</div>
+			<div class="col-md-6">
+				<img class="img-responsive header_img_fix" src="img/stats.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<p>To learn more about our Gold Supplier,<a href="#">Click Here</a></p>
+		<p>Contact bdtdc.com staff at <a href="#">goldsupplier@bdtdc.com</a>.</p>
+	</div>
+	
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,27 @@
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="<?php echo asset('resources/assets/global/plugins/simple-line-icons/simple-line-icons.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/plugins/bootstrap/css/bootstrap.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/plugins/uniform/css/uniform.default.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css',is_secured() ); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/plugins/fullcalendar/fullcalendar.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/plugins/jqvmap/jqvmap/jqvmap.css',is_secured() ); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/admin/pages/css/tasks.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/css/components.css',is_secured() ); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/global/css/plugins.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/admin/layout2/css/layout.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/admin/layout2/css/themes/grey.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link href="<?php echo asset('resources/assets/admin/layout2/css/custom.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+
+
+<link href="<?php echo asset('resources/assets/admin/admin.css',is_secured() ); ?>" media="all" rel="stylesheet" type="text/css" />
+<link href="<?php echo asset('resources/assets/admin/stylesheet.css',is_secured() ); ?>" media="all" rel="stylesheet" type="text/css" />
+
+
+
+<?php $__env->startSection('styles'); ?>
+  <?php /* custom css style goes here */ ?>
+<?php echo $__env->yieldSection(); ?>

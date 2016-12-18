@@ -1,0 +1,294 @@
+	<?php $__env->startSection('content'); ?>
+	
+	<div class="row">
+		<div class="col-sm-12" style="padding-top:1%">
+			<a href="">Home</a> > Get Quatations
+		</div>
+	</div>
+		      <div style="padding-top:2%" class="row">
+				<div class="row">
+					<div class="category-tab"><!--category-tab-->
+						
+							<ul class="nav nav-tabs details_tab" style="background:none;">
+								<li style="margin-left: 26.5%;"><a href="#details" data-toggle="tab">Buying request Form</a></li>
+								<li><a href="#companyprofile" data-toggle="tab">From Other Websites</a></li>
+							</ul>
+					</div>
+						<div class="tab-content">
+							<div class="tab-pane fade" id="details" >
+								<form action="<?php echo URL::to('get_qutations',null,is_secured()); ?>" method="post">
+		                              	<div class="col-sm-12 padding_0">
+									<p class="form-title" style="padding-left:316px;">Complete Your Buying Request</p> 
+							
+								    <div align="right" class="col-sm-3 padding_0">
+								    <span class="ui2-form-required">*</span>
+                                                    <label class="form-level" for="product">Product Name:</label>
+                                                    </div>
+                                                    <div class="col-sm-9" style="padding-bottom:30px">
+                                                    <input name="product_name" style="height: 45px;" type="text" class="form-control" placeholder="Key words of products you are looking for" required="">
+                                                    </div>
+                                                   
+                                                
+                                                   <div align="right" class="col-sm-3 padding_0">
+                                                         <span class="ui2-form-required">*</span>
+                                                    <label class="form-level" for="quantity">Quantity:</label>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                    <input name="quantity" style="height:45px" type="quantity" class="form-control" placeholder="Estimated Order Quantity" required>
+                                                    </div>
+                                                    
+                                                     <div class="col-sm-3" style="padding-bottom:30px"> 
+                                                            <select name="unit" style="height: 45px;" class="form-control" id="price">
+                                                                <option>pieces</option>
+                                                                <option>20' container</option>
+                                                                <option>40' container</option>
+                                                                <option>40' HQ container</option>
+                                                                <option>Acre/ Acres</option>
+                                                                <option>Ampere/Amperes</option>
+                                                                <option>Bags</option>
+                                                                <option>Barrel/ Barrels</option>
+                                                                <option>Carat/Carats</option>
+                                                                <option>Carton/Cartons</option>
+                                                              </select>
+                                                      </div>
+                                                    
+                                               </div>
+                                               
+                                               
+                                                <br>
+                                                      <div align="right" class="col-sm-3 padding_0">
+                                                      <span class="ui2-form-required">*</span> 
+                                                      <label class="form-level" for="details">Details:</label>
+                                                      </div>
+                                                      <div class="col-sm-9" style="padding-bottom:30px" > 
+                                                    <textarea  style="height: 100px;" class="form-control" name="details" >Dear Sir/Madam,I'm looking for products with the following specifications:
+                                                    </textarea> 
+                                                    <div id ="upload" align="left" class="col-md-12" style="background:#cecece;height:40px;font-size:15px;">
+                                                    	
+                                                    	<a href="#"> <i class="fa fa-paperclip"></i> upload attachments</a>
+                                                    </div>
+                                                  
+                                                    </div>
+                                                     <div class="col-md-3">
+                                                    	
+                                                    </div>
+                                                     
+                                                    <div class="row">
+                                                    	<div align="right" class="col-sm-3"></div>
+                                                    	 <div style="padding-left: 330px;" class="col-sm-7">
+                                                    	    <h5><b>Tell us your requirements of suppliers</b></h5>
+                                                       </div>
+                                                       <div align="right "class="col-sm-2" style="padding-left:76px; float:right;">
+                                                       	<a href="#">Filter suppliers</a>
+                                                       </div>
+                                                    </div>
+                                                   <hr>
+                                                   <div class="row">
+                                                   	<div class="col-sm-3"></div>
+                                                   	<div style="padding-left:22px;" class=col-sm-6>
+                                                   		<h5><b>Other Requirements</b>	Include unit price, payment terms, etc.</h5>
+                                                      </div>
+                                                   	<div class="col-sm-3"  style="padding-left:238px; float:right;">
+                                                   		<a id="hide" href="#hide" onclick="toggle_visibility('showe');">show</a>
+                                                   	</div>
+                                                   </div>
+                                                   <div id="showe" class="row">
+                                                   
+                                                   	<div class="col-sm-3"></div>
+                                                   	<div class="col-sm-3" style="padding-left: 20px;">
+                                                   		
+                                                   		   <div class="input-group">
+											     
+											      <input style="height: 45px;" type="text" class="form-control" aria-label="...">
+											       <div class="input-group-btn">
+											        <button style="height: 45px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FOB<span class="caret"></span></button>
+											        <ul class="dropdown-menu">
+											          <li><a href="#">USD</a></li>
+											          <li><a href="#">GBP</a></li>
+											          <li><a href="#">RMB</a></li>
+											         <li><a href="#">EUR</a></li>
+											        </ul>
+											      </div><!-- /btn-group -->
+											    </div><!-- /input-group -->
+                                                   	</div>
+                                                   	<div class="col-sm-3">
+                                                   		
+                                                   		 <input style="height: 45px;" type="text" class="form-control" placeholder="preferred unit price">
+                                                   	</div>
+                                                   	<div class="col-sm-3" style="padding-right: 23px;">
+                                                   		
+                                                   		   <div class="input-group">
+											      
+											      <input style="height: 45px;" type="text" class="form-control" aria-label="...">
+											      <div class="input-group-btn">
+											        <button style="height: 45px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD<span class="caret"></span></button>
+											        <ul class="dropdown-menu">
+											          <li><a href="#">FOB</a></li>
+											          <li><a href="#">EXW</a></li>
+											          <li><a href="#">FAS</a></li>
+											          <li><a href="#">FOB</a></li>
+											          
+											        </ul>
+											      </div><!-- /btn-group -->
+											    </div><!-- /input-group -->
+                                                   	</div>
+                                                   </div>
+                                                   
+                                                   
+                                                   <br>
+                                                   <div id="showe" class="row">
+                                                   	<div class="col-md-3"></div>
+                                                   	<div class="col-sm-5"  style="padding-left: 20px;">
+                                                   		
+                                                   		 <input style="height:45px; " type="text" class="form-control" placeholder="Destination Port">
+                                                   	</div>
+                                                   </div>
+                                                   <br>
+                                                   <div id="showe" class="row">
+                                                   	<div class="col-sm-3"></div>
+                                                   	<div class="col-sm-5"  style="padding-left: 20px;">
+                                                   		
+                                                   		   <div class="input-group">
+											      
+											      <input style="height: 45px;" type="text" class="form-control" aria-label="...">
+											      <div class="input-group-btn">
+											        <button style="height: 45px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD<span class="caret"></span></button>
+											        <ul class="dropdown-menu">
+											          <li><a href="#">FOB</a></li>
+											          <li><a href="#">EXW</a></li>
+											          <li><a href="#">FAS</a></li>
+											          <li><a href="#">FOB</a></li>
+											          
+											        </ul>
+											      </div><!-- /btn-group -->
+											    </div><!-- /input-group -->
+                                                   	</div>
+                                                   </div>
+                                                   <hr>
+                                                    
+                                                <div  style="padding-left:30px;" align="center" class="col-sm-8">
+                                                     <button  type="submit" class="btn btn-primary">submit Buying Request</button>
+                                                </div>
+                                            
+                                            </form>    
+								<hr>
+								<br>
+								
+                                                	    <div  align="center" class="checkbox"style="padding-right: 131px;">
+										  <label><input type="checkbox" value="" >
+										  I agree to share my <a href="#">Business Card</a> with quoted suppliers.
+										  </label>
+									    </div>
+									    	
+									    <div  align="center" class="checkbox"style="padding-left: 42px;" >
+										  <label><input type="checkbox" value="">
+										  I have read, understood and agree to abide by<a href="#"> the Buying Request Posting Rules.</a>
+										  </label>
+									     </div>
+                                                
+                                                
+                                           </div>    
+						
+							<div class="tab-pane fade" id="companyprofile" >
+								<div class="ls-icon ls-company">
+								
+									<div class="col-sm-12">
+										 <div class="col-sm-3"  style="padding-left: 110px;">
+											 <label for="#" class="form-level">
+											        <span class="ui2-form-required">*</span>
+											        Product page URL:
+											 </label>
+										 </div>
+										 <div style="padding-left: 10px;" class="col-sm-7">
+										       <input  style="height: 45px;" type="text" class="form-control" placeholder="http://" aria-describedby="basic-addon2">
+										 </div>
+										 <div class="col-sm-2">
+										       <button style="height: 45px;" type="button" class="btn btn-primary">Load Product Info</button>
+										 </div>
+									</div>
+								</div>
+							</div>
+<?php $__env->stopSection(); ?>
+				
+<?php $__env->startSection('scripts'); ?>
+<script type="text/javascript">
+
+    function toggle_visibility(id) {
+var e = document.getElementById(id);
+e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+}
+//-->
+</script>
+<script type="text/javascript">
+		
+		$("#hide").click(function(){
+		 $('showe').hide();
+			});
+
+			$("#show").click(function(){
+			 $('showe').show();
+			});
+
+
+	jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 350,
+								thumb_image_height: 350,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+	
+</script>
+<script type="text/javascript">
+            $(function() {
+				/**
+				* the element
+				*/
+				var $ui 		= $('#ui_element');
+				
+				/**
+				* on focus and on click display the dropdown, 
+				* and change the arrow image
+				*/
+				$ui.find('.sb_input').bind('focus click',function(){
+					$ui.find('.sb_down')
+					   .addClass('sb_up')
+					   .removeClass('sb_down')
+					   .andSelf()
+					   .find('.sb_dropdown')
+					   .show();
+				});
+				
+				/**
+				* on mouse leave hide the dropdown, 
+				* and change the arrow image
+				*/
+				$ui.bind('mouseleave',function(){
+					$ui.find('.sb_up')
+					   .addClass('sb_down')
+					   .removeClass('sb_up')
+					   .andSelf()
+					   .find('.sb_dropdown')
+					   .hide();
+				});
+				
+				/**
+				* selecting all checkboxes
+				*/
+				$ui.find('.sb_dropdown').find('label[for="all"]').prev().bind('click',function(){
+					$(this).parent().siblings().find(':checkbox').attr('checked',this.checked).attr('disabled',this.checked);
+				});
+            });
+        </script>	
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

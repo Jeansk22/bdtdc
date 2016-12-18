@@ -1,0 +1,284 @@
+<?php $__env->startSection('content'); ?>
+<div class="row" style="margin-top:20px;">
+    <div class="col-sm-6">
+       <p><a href="#">Home </a> <i class="fa fa-angle-double-right"></i> Easy Sourcing</p>
+        
+    </div>
+    <div class="col-sm-6">
+        <a href="<?php echo e(URL::to('Sourcing/Requests/info/buyer',null,is_secured())); ?>"  style="float:right;color: #246bb3;font-size: 14px;font: 12px/1.5 Arial,sans-serif;font-weight: bold;">
+        I am Buyer</a>
+    </div>
+</div>
+
+<div class="row" style="margin-top:10px;">
+       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item"><img src="<?php echo asset('resources/assets/fontend/bdtdc-images/buyer1-big-pic2.jpg',is_secured()); ?>" alt="seller1" style="width=100%; min-height:400px;"></div>
+                <div class="item"><img src="<?php echo asset('resources/assets/fontend/bdtdc-images/buyer-big-pic2.jpg',is_secured()); ?>" alt="seller2" style="width:100%; min-height:400px;"></div>
+                <div class="item"><img src="<?php echo asset('resources/assets/fontend/bdtdc-images/buyer-big-pic3.jpg',is_secured()); ?>" alt="seller3" style="width:100%; min-height:400px;"></div>
+            </div>
+            <!-- Carousel nav -->
+            <!--<a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>-->
+            <!--<a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>-->
+</div>
+
+</div>
+<div class="row parent" style="background-color:#fff; padding-bottom:20px;">
+        <div class="title-h3">
+            <p style="margin-top: 30px;margin-bottom: 5px;font-size: 16px;color: #222;font-weight: 700;text-align: left;padding-left:10px;">
+                Urgent Sourcing Requests
+            </p>
+        </div>
+        <div class="product-title">
+            <ul class="title-name">
+                <li style="margin-left:5%;">Product Name</li>
+                <li>Purchase Quantity</li>
+                <li>Country/Region</li>
+                <li> Expired Date</li>
+                <li>Quote Left</li>
+            </ul>
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des chield" style="margin-bottom:20px;">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+       
+        
+</div>
+ <a href="#" style="float:right  ;">View More></a>
+<div id="sou" class="row" style="background-color:#fff; padding-bottom:20px;">
+        <div class="title-h3">
+            <p style="margin-top: 30px;margin-bottom: 5px;font-size: 16px;color: #222;font-weight: 700;text-align: left;padding-left:10px;">
+                Latest Sourcing Requests
+            </p>
+        </div>
+        <div class="product-title">
+            <ul class="title-name">
+                <li style="margin-left:5%;">Product Name</li>
+                <li>Purchase Quantity</li>
+                <li>Country/Region</li>
+                <li>Date Posted</li>
+                <li>Quote Left</li>
+            </ul>
+        </div>
+        
+        <div class="product-des">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+        <div class="product-des" style="margin-bottom:20px;">
+            <ul class="title-name">
+                <li class="product-des-li" style="margin-left:5%;font-size:12px; color:#000; cursor:pointer;"><a href="#">Baby Pamper Diapers</a></li>
+                <li class="product-des-li">1.5 Tons</li>
+                <li class="product-des-li"><img class="li-img" src="<?php echo asset('resources/assets/fontend/bdtdc-images/bangladesh.jpg',is_secured()); ?>" alt="trade answer">Bangladesh</li>
+                <li class="product-des-li">2016-01-04</li>
+                <li class="product-des-li">20</li>
+            </ul>
+            
+        </div>
+         <a href="#" style="padding-left:93%;">View More></a>
+</div>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('scripts'); ?>
+    <script>
+        (function(){
+            setInterval(function(){
+    	    	$(".parent .chield:first").slideUp(200, function () {
+    	            $(this).appendTo($(".parent")).slideDown();
+    	        });
+    	    },2000);
+            
+        })()
+    </script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

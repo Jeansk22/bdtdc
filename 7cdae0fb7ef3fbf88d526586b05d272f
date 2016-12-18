@@ -1,0 +1,56 @@
+
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery-migrate.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery-ui/jquery-ui.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/bootstrap/js/bootstrap.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery.blockui.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery.cokie.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/uniform/jquery.uniform.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js'); ?>"></script>
+
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/flot/jquery.flot.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/flot/jquery.flot.resize.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/flot/jquery.flot.categories.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery.pulsate.min.js'); ?>"></script>
+<!-- <script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/bootstrap-daterangepicker/moment.min.js'); ?>"></script>
+ --><script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js'); ?>"></script>
+<!-- <script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/fullcalendar/fullcalendar.min.js'); ?>"></script>
+ --><script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/plugins/jquery.sparkline.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/global/scripts/metronic.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/admin/layout2/scripts/layout.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/admin/layout2/scripts/quick-sidebar.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/admin/layout2/scripts/demo.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo asset('resources/assets/custom.js'); ?>"></script>
+
+
+<!-- <script type="text/javascript" src="<?php echo asset('resources/assets/admin/pages/scripts/index.js'); ?>"></script>
+ --><script type="text/javascript" src="<?php echo asset('resources/assets/admin/pages/scripts/tasks.js'); ?>"></script>
+
+
+
+
+<?php echo $__env->yieldContent('shortlistJS'); ?>
+
+<script>
+jQuery(document).ready(function() {    
+   Metronic.init(); // init metronic core componets
+   Layout.init(); // init layout
+   Demo.init(); // init demo features 
+   QuickSidebar.init(); // init quick sidebar
+     
+   //Index.initDashboardDaterange();
+  // Index.initJQVMAP(); // init index page's custom scripts
+   //Index.initCalendar(); // init index page's custom scripts
+   // Index.initCharts(); // init index page's custom scripts
+   // Index.initChat();
+   // Index.initMiniCharts();
+   // Tasks.initDashboardWidget();
+});
+</script>
+
+<?php $__env->startSection('scripts'); ?>
+    <?php /*custom js goes here*/ ?>
+<?php echo $__env->yieldSection(); ?>

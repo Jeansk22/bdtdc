@@ -1,0 +1,172 @@
+<?php $__env->startSection('content'); ?>
+<br>
+
+<div class="row" style="margin-top:15px;">
+       <ul class="nav nav-tabs">
+          <li><a href="<?php echo URL::to('SupplierChannel/pages/seller_channel',40,is_secured()); ?>">Home</a></li>
+          <li><a href="#">Seller Memberships</a></li>
+          <li><a href="#">Value Added Services</a></li>
+          <li><a href="<?php echo URL::to('FooterPage/pages/Training_Center',33,is_secured()); ?>">Training</a></li>
+         <!-- <li class = "dropdown">-->
+         <!--   <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">-->
+         <!--     Learning Center-->
+         <!--      <b class = "caret"></b>-->
+         <!--   </a>-->
+            
+         <!--   <ul class = "dropdown-menu">-->
+         <!--      <li><a href = "#">Quick Start</a></li>-->
+         <!--      <li><a href = "#">Advanced Tips</a></li>-->
+         <!--      <li><a href="#">Safe Trading Tips</a></li>-->
+         <!--   </ul>-->
+            
+         <!--</li>-->
+          <li class="active"><a style="border-radius: 5px !important;" href="<?php echo URL::to('FooterPage/pages/Learning_Center',32,is_secured()); ?>">Learning Center</a></li>
+          <li><a href="#">Success Stories</a></li>
+          <li><a href="#">Buyer Demand Report</a></li>
+       </ul>
+</div>
+<div class="row" style="margin-top:10px;">
+      <div class="up" style="padding-bottom:10px;">
+            <a href="#">Home</a><div style="margin-left:47px; color:#000; font-weight:700 bold;"> >Learning</div>
+      </div>
+</div>
+<!-- first content start -->
+<div class="row learn-head-row">
+        <p class="head-start"><a href="#" >
+Quick Start</a>The basic steps you should start with,while you newly join Gold Suppliers.</p>
+    </div>
+        <div class="row learn-cont-row" style="padding-bottom:40px;">
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image1.jpg',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn"><a href="#">Multi-Language Posting<img src="<?php echo asset('resources/assets/fontend/bdtdc-images/l-new.gif',is_secured()); ?>"></a><br>
+            What are Multi-language sites</p>
+            <h4 class="p-video"><a href="#">video >></a></h4>
+</div>
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image3.jpg',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn" style="text-align:left;"><a href="#">High Quality Posting</a><br></p>
+           <p class="cont-right">Product information quality is one of the factors influencing product ranking. Making high quality products can help you get more exposure from potential buyers.</p>
+            <h4 class="p-video-second"><a href="#">video | Text>></a></h4>
+</div>
+            
+        </div> 
+        
+<div class="row learn-cont-row2" style="padding-bottom:40px;">
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image2.jpg',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn" style="text-align:left;"><a href="#">Create a Company Profile on bdtdc.com</a><br>
+            our Company Profile tells potential customers your business type, products/services you offer, and other background information. </p>
+            <h4 class="p-video-second"><a href="#">video | Text>></a></h4>
+</div>
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image4.png',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn" style="text-align:left;"><a href="#">Selling Opportunities with Buying Requests </a><br></p>
+           <p class="cont-right">Make use of the Buying Requests to look for buyers and their sourcing needs and get in touch with buyers directly. </p>
+            <h4 class="p-video-second"><a href="#">video | Text>></a></h4>
+</div>
+            
+        </div> 
+
+<!-- first content end -->
+<!-- second content start -->
+<div class="row learn-head-row" style="margin-top:28px">
+        <p class="head-start"><a href="#" >
+Advanced Tips</a> Learn ways to search for buyers and promote products,etc.,on bdtdc.com</p>
+    </div>
+        <div class="row learn-cont-row" style="padding-bottom:40px;">
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image5.jpg',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn"><a href="#">How to Reply RFQs Better<img src="<?php echo asset('resources/assets/fontend/bdtdc-images/l-new.gif',is_secured()); ?>"></a><br>
+            Buyers like the quotations with high quality. It is important to reply RFQs better to get buyers' response quickly. </p>
+            <h4 class="p-video-second"><a href="#">video | Text>></a></h4>
+</div>
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image6.jpg',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn" style="text-align:left;"><a href="#">Biz Trends<img src="<?php echo asset('resources/assets/fontend/bdtdc-images/hot.jpg',is_secured()); ?>"></a><br></p>
+           <p class="cont-right">Product information quality is one of the factors influencing product ranking. Making high quality products can help you get more exposure from potential buyers.</p>
+            <h4 class="p-video-second"><a href="#">video | Text>></a></h4>
+</div>
+            
+        </div> 
+        
+<div class="row learn-cont-row2" style="padding-bottom:40px;">
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image7.png',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn" style="text-align:left;"><a href="#">Understanding the Buyers </a><br>
+           Keep up with the buyers' purchase behaviors and expectations so that you can maximize your business opportunities.  </p>
+            <h4 class="p-video-second"><a href="#">video | Text>></a></h4>
+</div>
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image8.png',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn" style="text-align:left;"><a href="#">How to Respond to Buyer Inquiries </a><br></p>
+           <p class="cont-right">In case you receive many inquiries but not knowing who to reply first, let's see how we can screen and classify the inquiries so that we can set different.. </p>
+            <h4 class="p-video-second"><a href="#">video | Text>></a></h4>
+</div>
+            
+        </div> 
+<!-- second content end -->
+<!-- Third content start -->
+<div class="row learn-head-row" style="margin-top:28px;">
+        <p class="head-start"><a href="#" >
+Safe Trading Tips</a>  Key information about account security,our posting policies and guidelines.
+  </p>
+    </div>
+        <div class="row learn-cont-row2" style="padding-bottom:35px;margin-bottom:1.4%">
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image9.png',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn"><a href="#">How to Deal with Phishing Emails?</a><br>
+           Phishing messages are usually sent by email or by instant messenger. How to Recognize and Deal with Phishing Emails? Here are some guidelines for you.  </p>
+            <h4 class="p-video-second"><a href="#">More >></a></h4>
+</div>
+                <div class="col-sm-2">
+                    <div class="learn-image">
+                    <img src="<?php echo asset('resources/assets/fontend/bdtdc-images/learn-image10.png',is_secured()); ?>">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+            <p class="p-learn" style="text-align:left;"><a href="#">How to Use Complaint Center</a><br></p>
+           <p class="cont-right">How to report suspected transaction disputes, product information in violation of our policies on Complaint Center. </p>
+            <h4 class="p-video-second"><a href="#"> Text >></a></h4>
+</div>
+            
+        </div> 
+        
+<!-- third content end -->
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.master3', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

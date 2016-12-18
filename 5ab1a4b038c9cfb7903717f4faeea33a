@@ -1,0 +1,436 @@
+<?php $__env->startSection('content'); ?>
+
+<br>
+<div style="clear:both"></div>
+<div id="item_sha" class="row">
+
+	<div class="col-md-3 padding_0">
+		<div id="whole" class="col-xs-12 col-fixed-m-12 padding_0">
+			<div class="title">
+				Wholesaler 
+			</div>
+			<div style="padding-left:14px" class="sub-title">
+				
+				Low MOQs
+			</div>
+			<div style="padding-left:14px;margin-bottom:15%" class="summary hidden-xs hidden-s">
+				Secure Online Transactions<br>Buy It Now for Fast Dispatch		
+			</div>
+			<a style="padding-left:15px" class="more hidden-xs hidden-s" href="<?php echo e(URL::to('wholesale',null,is_secured())); ?>" rel="nofollow">Learn More...<span class="action-sign">&nbsp;›</span></a>
+		</div>
+	</div>
+	<div style="border-left:1px solid rgba(0,0,0,.1);padding-top: 30px;" class="recommended_items product_slide_area">
+		<!--recommended_items-->
+	
+		<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<?php foreach(array_chunk($products,4) as $pro): ?>
+				<div class="item">
+					<?php foreach($pro as $pr): ?>
+					<div class="col-sm-3">
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								<a style="text-align:justify" href="<?php echo e(URL::to('product_details',$pr->id,is_secured())); ?>">
+									<div class="productinfo text-center">
+										<img style="width:100%;height:170px;margin-left:0" src="<?php echo e(URL::to('uploads',$pr->image,is_secured())); ?>" alt="" class="img-responsive">
+										<a class="pro_name" style="text-align:justify" href="<?php echo e(URL::to('product_details',$pr->id,is_secured())); ?>">
+											<p><?php echo e(substr($pr->name, 0, 50)); ?>..</p>
+										</a>
+										<p style="font-size:14px;color:#2192D9">US $<?php echo e(isset($pr->price) ? $pr->price : ''); ?>/<?php echo e($pr->unit); ?></p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<?php endforeach; ?>
+				</div>
+				<?php endforeach; ?>
+			</div>
+			<a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<!--/recommended_items-->
+</div>
+<br>
+<br>
+<div style="clear:both"></div>
+<div id="item_sha" class="row">
+
+	<div class="col-md-3 padding_0">
+		<div id="whole" class="col-xs-12 col-fixed-m-12 padding_0">
+			<div class="title">
+				Verified Suppliers
+			</div>
+			
+			<div style="padding-left:12px" class="summary">
+				Selected suppliers from around the world.
+			</div>
+			<div style="padding-left:10px;margin-bottom: 15%;" class="summary">
+				<a href="#" title="Gold Suppliers:pre-qualified suppliers" class="gs"><img style="height:30px" src="<?php echo e(asset('resources/assets/helpcenter/golden_icon.gif')); ?>" /></a>
+				<a href="#" title="Gold Suppliers:pre-qualified suppliers" class="gs"><img style="height:25px;width:30px" src="<?php echo e(asset('resources/assets/helpcenter/verified_icon.png')); ?>" /></a>
+				<a href="#" title="Gold Suppliers:pre-qualified suppliers" class="gs"><img style="height:35px" src="<?php echo e(asset('resources/assets/helpcenter/Hand-Shake-Icon.png')); ?>" /></a>
+
+			</div>
+			<a class="more hidden-xs hidden-s" href="<?php echo e(URL::to('verified/suppliers/info',null,is_secured())); ?>" rel="nofollow">Learn More <span class="action-sign">&nbsp;›</span></a>
+		</div>
+	</div>
+
+	<div class="col-md-9" style="padding-top:15px;border-left:1px solid rgba(0,0,0,.1);" style="">
+
+					<div align="center" class="col-sm-3">
+						<a href="<?php echo e(URL::to('recommended_suppliers/products',18,is_secured())); ?>">
+						<span class="count" style="color: #FF6A00;font-size: 22px;height: 31px;">50+ </span>
+						<span class="supplier-type">Verified Suppliers</span>
+							
+							<div style="padding-bottom:15px" align="center" class="summary hidden-xs hidden-s">
+								from Bangladesh
+							</div>
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								
+								<div class="productinfo text-center">
+									<img style="width:100%;height:170px;" src="<?php echo e(asset('resources/assets/slider/export_4.png')); ?>" alt="" class="img-responsive">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+				</div>
+				</a>
+			</div>
+			
+			
+					<div align="center" class="col-sm-3">
+						<a href="<?php echo e(URL::to('recommended_suppliers/products',99,is_secured())); ?>">
+						<span class="count" style="color: #FF6A00;font-size: 22px;height: 31px;">50+ </span>
+							<span class="supplier-type">Verified Suppliers</span>
+							
+							<div style="padding-bottom:15px" align="center" class="summary hidden-xs hidden-s">
+									from India
+									</div>
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								
+								<div class="productinfo text-center">
+									<img style="width:100%;height:170px;" src="<?php echo e(asset('resources/assets/slider/TB1UHtNLFXXXXX9XFXXXXXXXXXX-226-260.jpg')); ?>" alt="" class="img-responsive">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+					
+					
+				</div>
+				</a>
+
+			</div>
+			
+			
+					<div align="center" class="col-sm-3">
+						<a href="<?php echo e(URL::to('recommended_suppliers/products',44,is_secured())); ?>">
+						<span class="count" style="color: #FF6A00;font-size: 22px;height: 31px;">50+ </span>
+							<span class="supplier-type">Verified Suppliers</span>
+						
+							<div style="padding-bottom:15px" align="center" class="summary hidden-xs hidden-s">
+									from China
+									</div>
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								
+								<div class="productinfo text-center">
+									<img style="width:100%;height:170px;" src="<?php echo e(asset('resources/assets/slider/TB12goXLpXXXXckXpXXXXXXXXXX-226-260.jpg')); ?>" alt="" class="img-responsive">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+					
+					
+				</div>
+					</a>
+			</div>
+		
+		
+		
+					<div align="center" class="col-sm-3">
+						<a href="<?php echo e(URL::to('recommended_suppliers/products',107,is_secured())); ?>">
+						<span class="count" style="color: #FF6A00;font-size: 22px;height: 31px;">50+ </span>
+						<span class="supplier-type" style="height: 31px;">Verified Suppliers</span>
+							
+							<div style="padding-bottom:15px" align="center" class="summary hidden-xs hidden-s">
+									from Japan
+									</div>
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								
+								<div class="productinfo text-center">
+									<img style="width:100%;height:170px;" src="<?php echo e(asset('resources/assets/slider/TB1lY06LpXXXXXyXVXXXXXXXXXX-225-260.jpg')); ?>" alt="" class="img-responsive">
+									<h4></h4>
+									<p></p>
+								</div>
+							</div>
+				</div>
+				</a>
+			</div>
+	</div>
+	
+</div>
+<div style="background:#fafafa; padding-bottom:20px;padding-top:20px;border-top: 0px;" id="item_sha" class="row">
+		
+		<div class="col-sm-10 region-container util-clearfix">
+      <ul class="util-clearfix padding_0">
+        <li style="margin:0" class="title_home padding_0">Source by Region:</li>
+        <li>
+          <a rel="nofollow" href=" <?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/us.gif&quot;);">US</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/in.gif&quot;);">India</a>
+        </li>	
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/cn.gif&quot;);">China</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/my.gif&quot;);">Malaysia</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/th.gif&quot;);">Thailand</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/tr.gif&quot;);">Turkey</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/uk.gif&quot;);">UK</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/jp.gif&quot;);">Japan</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/vn.gif&quot;);">Vietnam</a>
+        </li>
+        <li>
+          <a rel="nofollow" href="<?php echo e(URL::to('recommended_suppliers/products',1,is_secured())); ?>" data-image-src="<?php echo e(asset('resources/assets/global/img/us.png',is_secured())); ?>" style="background-image: url(&quot;//is.alicdn.com/simg/single/nflag/tw.gif&quot;);">Taiwan</a>
+        </li>       				
+      </ul>
+    </div>
+    <div class="col-sm-2 action-container">
+    <a rel="nofollow" class="action_home" href="#">More Regions <span class="action-sign">&nbsp;›</span></a>
+  </div>
+</div>
+<br>
+<br>
+<div style="clear:both"></div>
+
+
+<div id="item_sha" class="row">
+
+	
+	<div class="recommended_items product_slide_area">
+		<!--recommended_items-->
+		<h2 class="title text-left padding_0">Hot Products</h2>
+
+		<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+			<div class="col-sm-12 ">
+				<div class="col-sm-1">
+					<a style="padding-top: 30%;" class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+				</div>
+					<?php foreach($product_homes as $product): ?> 
+              				<?php if($product->hot == 1 ): ?>	
+							<div class="col-sm-2">
+								<div class="product-image-wrapper">
+									<div class="single-products">
+									<a style="text-align: justify;text-justify: inter-word;" target="_blank" href="<?php echo e(URL::to('product_details',$product->product_id,is_secured())); ?>">
+										<div class="productinfo text-center">
+											<img style="width:100%;height:170px;" src="<?php echo e(URL::to('uploads',$product->image,is_secured())); ?>" alt="" class="img-responsive">
+											<h4 class="hot_title">
+											<a style="text-align: justify;text-justify: inter-word;" target="_blank" href="<?php echo e(URL::to('product_details',$product->product_id,is_secured())); ?>"><p><?php echo e(substr($product->product_name, 0, 30)); ?></p></a>
+											</h4>
+										</div>
+										</a>
+										</div>
+									</div>
+								</div>
+						    <?php endif; ?>
+					<?php endforeach; ?>
+				
+					
+		
+			<div class="col-sm-1">
+					<a style="padding-top: 30%;" class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+			</div>
+				</div>
+		</div>
+	</div>
+	<!--/recommended_items-->
+</div>
+<br>
+
+
+
+
+<div style="clear:both"></div>
+<br>
+<div id="item_sha" class="row">
+
+	
+	<div class="recommended_items product_slide_area">
+		<!--recommended_items-->
+		<h2 class="title text-left padding_0"><a style="color:#000" href="<?php echo e(URL::to('selected/supplier_products')); ?>">Trending Products</a><span style="padding-left:10px" class="summary"> Exhibitor and Advertiser products with highest growth in buyer interest</span></a></h2>
+
+		<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+			<div class="col-sm-12 ">
+				<div class="col-sm-1">
+					<a style="padding-top: 30%;" class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+				</div>
+				
+				<?php foreach($product_homes as $product): ?> 
+              <?php if($product->h_trade == 1 ): ?>
+				
+					<div class="col-sm-2">
+						<div class="product-image-wrapper">
+							<div class="single-products">
+								<div class="productinfo text-center">
+									<img style="width:100%;height:170px;" src="<?php echo e(URL::to('uploads',$product->image,is_secured())); ?>" alt="" class="img-responsive">
+									<h4 class="hot_title"><a style="text-align: justify;text-justify: inter-word;" target="_blank" href="<?php echo e(URL::to('product_details',$product->product_id,is_secured())); ?>"><p><?php echo e(substr($product->product_name, 0, 30)); ?></p></a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<?php endif; ?>
+					<?php endforeach; ?>
+			<div class="col-sm-1">
+					<a style="padding-top: 30%;" class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+			</div>
+				</div>
+		</div>
+	</div>
+	<!--/recommended_items-->
+</div>
+<br>
+
+
+
+
+<div style="clear:both"></div>
+<br>
+<div id="item_sha" class="row">
+
+	
+	<div class="recommended_items product_slide_area">
+		<!--recommended_items-->
+		<div class="col-md-12">
+			<div class="col-md-3 padding_0">
+				<h2 class="title text-left padding_0"><a style="color:#000" href="<?php echo e(URL::to('limited/offers',null,is_secured())); ?>">Limited Time Offers</a></h2>
+			</div>
+			<div class="col-md-8 padding_0">
+				<span style="padding-left:10px" class="summary"><div class="clock" style="margin:-2em;"></div>
+				<div class="message"></div></span>
+			</div>
+		</div>
+
+		<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+			<div class="col-sm-12 ">
+				<div class="col-sm-1">
+					<a style="padding-top: 30%;" class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+				</div>
+				
+					<?php foreach($product_homes as $product): ?> 
+             		 <?php if($product->h_choice == 1 ): ?>
+				
+					<div class="col-sm-2">
+						<div class="product-image-wrapper">
+							<div class="single-products">
+							<a target="_blank" href="<?php echo e(URL::to('product_details',$product->product_id,is_secured())); ?>">
+								<div class="productinfo text-center">
+									<img style="width:100%;height:170px;" src="<?php echo e(URL::to('uploads',$product->image,is_secured())); ?>" alt="" class="img-responsive">
+									<h4 class="hot_title"><a style="text-align: justify;text-justify: inter-word;" target="_blank" href="<?php echo e(URL::to('product_details',$product->product_id,is_secured())); ?>"><p><?php echo e(substr($product->product_name, 0, 30)); ?></p></a></h4>
+									<p style="font-size:14px;color:#2192D9">
+										US $<?php echo e($product->price); ?>/<?php echo e($product->unit); ?>
+
+									</p>
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+						<?php endif; ?>
+					<?php endforeach; ?>
+			<div class="col-sm-1">
+					<a style="padding-top: 30%;" class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+			</div>
+				</div>
+		</div>
+	</div>
+	<!--/recommended_items-->
+</div>
+<br>
+
+
+
+
+<div style="clear:both"></div>
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
+
+<script type="text/javascript">
+		var clock;
+		
+		$(document).ready(function() {
+			var clock;
+
+			clock = $('.clock').FlipClock({
+		        clockFace: 'DailyCounter',
+		        autoStart: false,
+		        callbacks: {
+		        	stop: function() {
+		        		$('.message').html('The clock has stopped!')
+		        	}
+		        }
+		    });
+				    
+		    clock.setTime(220880);
+		    clock.setCountdown(true);
+		    clock.start();
+
+		});
+	</script>
+
+<script type="text/javascript">
+	(function() {
+		$('.product_slide_area .item:eq(0)').addClass('active');
+	    if($('.parent .chield').length>1){
+	    	
+	    }
+	    setInterval(function(){
+	    	$(".parent .chield:first").slideUp(200, function () {
+	            $(this).appendTo($(".parent")).slideDown();
+	        });
+	    },2000);
+	    
+		
+	})()
+</script>
+
+
+<script type='text/javascript' src='<?php echo asset('resources/assets/slider/jquery.flexslider-min.js',is_secured()); ?>'></script>
+
+<script type='text/javascript' src='<?php echo asset('resources/assets/slider/jquery.elastislide.js',is_secured()); ?>'></script>
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('fontend.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

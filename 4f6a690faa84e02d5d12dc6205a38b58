@@ -1,0 +1,656 @@
+<?php $__env->startSection('content'); ?>
+
+      
+      <div class="container">
+            <div style="margin-top:1%" class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10 padding_0">
+                        <div class="col-md-3 padding_left_0">
+                              <?php echo $__env->make('fontend.template.product_category_nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                        </div>
+                        <div class="col-md-9">
+                              <div class="row" style="border-bottom:1px solid #32AFD4;margin-bottom:2%">
+                                    <div class="col-md-4 padding_left_0">
+                                          <p style="font-weight:bold;font-size:18px;line-height:0px;margin-top:9%" class="logo_color">All Products</p>
+                                    </div>
+                                    <div class="col-md-8 text-right padding_right_0">
+                                          <nav>
+                                                <ul style="margin-top:0%;margin-bottom:0%" class="pagination pagination-sm">
+                                                      <li><a href="#">1</a></li>
+                                                      <li><a href="#">2</a></li>
+                                                      <li><a href="#">3</a></li>
+                                                      <li><a href="#">4</a></li>
+                                                </ul>
+                                          </nav>
+                                    </div>
+                              </div>
+                              <div class="row" style="margin-bottom:2%">
+                                    <div class="col-md-9 col-xs-12 padding_0">
+                                          <p style="font-weight:bold;margin-top:4%;line-height:0px" class="logo_color text-muted">Selected Products (0/20)</p>
+                                    </div>
+                                    <div class="col-md-3 padding_right_0">
+                                          <a class="btn btn-primary btn-block" href=""><i class="fa fa-envelope"></i>&nbsp; Contact-Supplier</a>
+                                    </div>
+                              </div>
+                              <div class="row" style="margin-bottom:1%;border:1px solid #32AFD4;padding:2%">
+                                    <div style="font-size:12px" class="col-md-12 col-xs-12 padding_0 text-muted">
+                                          Click<i class="fa fa-shopping-basket add_product_icon"></i> to select products and contact the supplier.
+                                    </div>
+                              </div>
+                              <div class="row">
+                                    
+                                    <?php foreach(array_chunk($products_results->all(),3) as $products): ?>
+                                          <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                                <?php $i=0; ?>
+                                                <?php foreach($products as $p): ?>
+                                                      <?php if($i==0): ?>
+                                                            <div class="col-md-4 padding_left_0 product_box">
+                                                                  <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('uploads/'.$p->image_name,is_secured())); ?>">
+                                                                        </div>
+                                                                  </div>
+                                                                   <div class="col-md-12 padding_0 text-muted">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <p style="font-size:12px"><?php echo e($p->product_name); ?>...</p>
+                                                                        </div>
+                                                                        <div class="col-md-9 padding_0">
+                                                                              <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: <?php echo e($p->product_MOQ); ?> </p>
+                                                                              <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: <?php echo e($p->product_FOB); ?> </p>
+                                                                        </div>
+                                                                        <div class="col-md-3 text-right padding_0">
+                                                                              <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      <?php elseif($i==1): ?>
+                                                            <div class="col-md-4 product_box">
+                                                                  <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('uploads/'.$p->image_name,is_secured())); ?>">
+                                                                        </div>
+                                                                  </div>
+                                                                   <div class="col-md-12 padding_0 text-muted">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <p style="font-size:12px"><?php echo e($p->product_name); ?>...</p>
+                                                                        </div>
+                                                                        <div class="col-md-9 padding_0">
+                                                                              <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: <?php echo e($p->product_MOQ); ?> </p>
+                                                                              <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: <?php echo e($p->product_FOB); ?> </p>
+                                                                        </div>
+                                                                        <div class="col-md-3 text-right padding_0">
+                                                                              <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      <?php elseif($i==2): ?>
+                                                            <div class="col-md-4 padding_right_0 product_box">
+                                                                  <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('uploads/'.$p->image_name,is_secured())); ?>">
+                                                                        </div>
+                                                                  </div>
+                                                                   <div class="col-md-12 padding_0 text-muted">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <p style="font-size:12px"><?php echo e($p->product_name); ?>...</p>
+                                                                        </div>
+                                                                        <div class="col-md-9 padding_0">
+                                                                              <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: <?php echo e($p->product_MOQ); ?> </p>
+                                                                              <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: <?php echo e($p->product_FOB); ?> </p>
+                                                                        </div>
+                                                                        <div class="col-md-3 text-right padding_0">
+                                                                              <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      <?php endif; ?>
+                                                      <?php $i++; ?>
+                                                <?php endforeach; ?>
+                                          </div>
+                                    <?php endforeach; ?>
+                                    <!-- <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                          <div class="col-md-4 padding_left_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_4.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_5.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 padding_right_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_6.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                          <div class="col-md-4 padding_left_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_7.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_8.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 padding_right_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_1.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                          <div class="col-md-4 padding_left_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_1.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_2.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 padding_right_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_3.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                          <div class="col-md-4 padding_left_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_4.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_5.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 padding_right_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_6.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                          <div class="col-md-4 padding_left_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_8.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/product_7.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 padding_right_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/pro_handbag_1.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                          <div class="col-md-4 padding_left_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/pro_handbag_5.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/pro_handbag_2.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-4 padding_right_0 product_box">
+                                                <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                      <div class="col-md-12 padding_0">
+                                                            <img class="img-responsive" alt="" style="height:189px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/pro_handbag_3.jpg',is_secured())); ?>">
+                                                      </div>
+                                                </div>
+                                                 <div class="col-md-12 padding_0 text-muted">
+                                                      <div class="col-md-12 padding_0">
+                                                            <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                      </div>
+                                                      <div class="col-md-9 padding_0">
+                                                            <p style="font-size:11px;line-height:0px;margin-top:5%;font-weight:bold">Min. Order: 200 Pieces </p>
+                                                            <p style="font-size:11px;line-height:11px;margin-top:6%;font-weight:bold">FOB Price: US $ 1 - 7 / Piece </p>
+                                                      </div>
+                                                      <div class="col-md-3 text-right padding_0">
+                                                            <i class="fa fa-shopping-basket btn btn-primary"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div> -->
+                              </div>
+                              <div class="row" style="background:#F5F5F5;margin-bottom:3%;padding-top:.8%;padding-left:1%;margin-top: 2%">
+                                    <div class="col-md-7 padding_left_0">
+                                         <!-- <nav>
+                                            <ul style="margin:0" class="pagination">
+                                              <li>
+                                                <a href="#" aria-label="Previous">
+                                                  <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                              </li>
+                                              <li class="active"><a href="#">1</a></li>
+                                              <li><a href="#">2</a></li>
+                                              <li><a href="#">3</a></li>
+                                              <li><a href="#">4</a></li>
+                                              <li><a href="#">5</a></li>
+                                              <li>
+                                                <a href="#" aria-label="Next">
+                                                  <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </nav> -->
+                                          <?php echo $products_results->render(); ?>
+
+                                    </div>
+                                    <div class="col-md-5 text-right padding_right_0">
+                                          <div class="input-group">
+                                                <span style="font-weight:bold;color:#666;line-height:0px;margin-right:5%;margin-top:7%;display:inline-block">Go to page</span>
+                                                <input style="width:50%" type="text" class="form-control pull-right" placeholder="Search page">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button"><i class="fa fa-search-plus"></i></button>
+                                                </span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="row" style="border-bottom:1px solid #32AFD4;margin-bottom:2%;margin-top:5%">
+                                    <div class="col-md-12 padding_0">
+                                          <p class="logo_color" style="font-size:16px;font-weight:bold;line-height:5px">Main Products</p>
+                                    </div>
+                              </div>
+                              <div class="row" style="margin-bottom:2%">
+                                    <div class="col-md-12 padding_0">
+                                          <?php if(sizeof($main_products_results)>0): ?>
+                                          <?php foreach(array_chunk($main_products_results->all(),3) as $products): ?>
+                                                <div style="margin-bottom:2%" class="col-md-12 padding_0">
+                                                      <?php $i=1; ?>
+                                                      <?php foreach($products as $p): ?>
+                                                            <?php if($i==1): ?>
+                                                            <div class="col-md-3 padding_left_0">
+                                                                  <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('uploads/'.$p->product_image,is_secured())); ?>">
+                                                                        </div>
+                                                                  </div>
+                                                                   <div class="col-md-12 padding_0 text-muted">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <p style="font-size:12px"><?php echo $p->product_name; ?></p>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <?php elseif($i==4): ?>
+                                                            <div class="col-md-3 padding_right_0">
+                                                                  <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('uploads/'.$p->product_image,is_secured())); ?>">
+                                                                        </div>
+                                                                  </div>
+                                                                   <div class="col-md-12 padding_0 text-muted">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <p style="font-size:12px"><?php echo $p->product_name; ?></p>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <?php else: ?>
+                                                            <div class="col-md-3">
+                                                                  <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('uploads/'.$p->product_image,is_secured())); ?>">
+                                                                        </div>
+                                                                  </div>
+                                                                   <div class="col-md-12 padding_0 text-muted">
+                                                                        <div class="col-md-12 padding_0">
+                                                                              <p style="font-size:12px"><?php echo $p->product_name; ?></p>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <?php endif; ?>
+                                                            <?php $i++; ?>
+                                                      <?php endforeach; ?>
+                                                      <!-- <div class="col-md-3">
+                                                            <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                  <div class="col-md-12 padding_0">
+                                                                        <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_1.jpg',is_secured())); ?>">
+                                                                  </div>
+                                                            </div>
+                                                             <div class="col-md-12 padding_0 text-muted">
+                                                                  <div class="col-md-12 padding_0">
+                                                                        <p style="font-size:12px">NANO ITX wtih Intel Atom Dual Core N2800 P...</p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-md-3">
+                                                            <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                  <div class="col-md-12 padding_0">
+                                                                        <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_2.jpg',is_secured())); ?>">
+                                                                  </div>
+                                                            </div>
+                                                             <div class="col-md-12 padding_0 text-muted">
+                                                                  <div class="col-md-12 padding_0">
+                                                                        <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-md-3 padding_right_0">
+                                                            <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                                  <div class="col-md-12 padding_0">
+                                                                        <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_3.jpg',is_secured())); ?>">
+                                                                  </div>
+                                                            </div>
+                                                             <div class="col-md-12 padding_0 text-muted">
+                                                                  <div class="col-md-12 padding_0">
+                                                                        <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                                  </div>
+                                                            </div>
+                                                      </div> -->
+                                                </div>
+                                                <?php echo $main_products_results->render(); ?>
+
+                                          <?php endforeach; ?>
+                                          <!-- <div style="margin-bottom:2%;margin-top:2%" class="col-md-12 padding_0">
+                                                <div class="col-md-3 padding_left_0">
+                                                      <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_5.jpg',is_secured())); ?>">
+                                                            </div>
+                                                      </div>
+                                                       <div class="col-md-12 padding_0 text-muted">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                      <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_6.jpg',is_secured())); ?>">
+                                                            </div>
+                                                      </div>
+                                                       <div class="col-md-12 padding_0 text-muted">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <p style="font-size:12px">NANO ITX wtih Intel Atom Dual Core N2800 P...</p>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                      <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_7.jpg',is_secured())); ?>">
+                                                            </div>
+                                                      </div>
+                                                       <div class="col-md-12 padding_0 text-muted">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="col-md-3 padding_right_0">
+                                                      <div style="border:1px solid #ddd;padding:5%" class="col-md-12">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <img class="img-responsive" alt="" style="height:126px;width:100%" src="<?php echo e(URL::asset('resources/assets/images/template/bedroom_8.jpg',is_secured())); ?>">
+                                                            </div>
+                                                      </div>
+                                                       <div class="col-md-12 padding_0 text-muted">
+                                                            <div class="col-md-12 padding_0">
+                                                                  <p style="font-size:12px">NANO ITX Industrial Motherboard wtih Intel Atom Dual Core N2800 P...</p>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div> -->
+                                          <?php else: ?>
+                                                <h2 class="text-success text-muted text-center">Main products is not added yet....</h2>
+                                          <?php endif; ?>
+                                    </div>
+                              </div>
+                        </div>    
+                  </div>
+                  <div class="col-md-1"></div>
+            </div>  
+      </div>
+      
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('fontend.template.template_layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,39 @@
+
+	<div class="col-xs-12 text-center"  style="background-color:#fff;padding-top:10%;padding-bottom:13%; margin-bottom: 1.4%;">
+	    <div class="col-md-12 no-padding">
+	            <div class="sucess-header bg-success">
+	                <h3 class="cong-h3"><img class="suc-img" src="<?php echo asset('resources/assets/fontend/product-images/success.1.png',is_secured()); ?>" alt="sucess">Congratulations! </h3>
+	                <h4 class="cong-h4"> Your registration is complete.</h4>
+                <p class="summery"> Sign-in Account: Shofiqul<br>
+Note: you can use this account to sign in to both bdtdc.com and Aliexpress.com.
+</p>
+	            </div>
+	    </div>
+	        <div class="col-md-12 no-padding" style="margin-top:5%;">
+	            
+	                <div class="col-md-8" style="padding-right:0;">
+	                        
+	                        <div class="trade-head">
+	                      <h1 class="td-h1"><i class="fa fa-check-square-o" style="font-size:22px;padding:-3px;"></i>Trade Assurance</h1> 
+                              <h2 class="td-h2"><i class="fa fa-check-square-o" style="font-size:22px;padding:-3px;"></i>
+Enabling businesses to trade with confidence.</h2>
+                              <h3 class="td-h3"><i class="fa fa-check-square-o" style="font-size:18px;padding:-3px;"></i>
+Order quality and on-time shipment safeguards</h3>
+                              <h3 class="td-h3"><i class="fa fa-check-square-o" style="font-size:18px;padding:-3px;"></i>
+100% payment refund up to Trade Assurance Amount</h3>
+                              <div class="learn">
+                                  <label for="" style="margin-top:6px;font-size:16px;color:#8C3A05;">learn More</label>
+                              </div>
+	                        </div>
+	                        <div class="home-page">
+	                        		<h1><a href="<?php echo e(URL::to('/',null,is_secured())); ?>">Home View >></a></h1>
+	                        </div>
+	                </div>
+	                <div class="col-md-4" style="padding-left:0;">
+	                   <div class="suces-img">
+	                           <img class="suces-img-img" src="<?php echo asset('resources/assets/fontend/product-images/success.png',is_secured()); ?>" alt="success">
+	                       
+	                   </div>
+	                </div>
+	        </div>
+	</div>

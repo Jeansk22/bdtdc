@@ -1,0 +1,102 @@
+
+
+<?php $__env->startSection('title', 'Admin Dashboard'); ?>
+
+<?php $__env->startSection('content'); ?>
+
+    <?php if(session()->has('flash_message')): ?>
+            <p><?php echo e(session()->get('flash_message')); ?></p>
+    <?php endif; ?>
+
+
+
+				  
+				<div class="row">
+          
+                   <?php if ($modules) { ?> 
+                         
+                     <?php foreach ($modules as $module) { ?>
+					<div class="col-md-6 col-sm-6">
+						<!-- BEGIN REGIONAL STATS PORTLET-->
+						<div class="portlet light ">
+							<div class="portlet-title">
+								<div class="caption">
+									<span class="caption-subject font-red-sunglo bold uppercase"><?php echo $module['parent_icon1']; ?>
+                       <?php echo $module['name']; ?></span>
+								</div>
+								<div class="actions">
+									<a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+									<i class="icon-cloud-upload"></i>
+									</a>
+									<a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+									<i class="icon-wrench"></i>
+									</a>
+									<a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;">
+									</a>
+									<a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+									<i class="icon-trash"></i>
+									</a>
+								</div>
+							</div>
+							<div class="portlet-body">
+								<div class="resp-tabs-container dashboard-icon">                                                        
+                <div>
+                  <?php if ($module['childrens']) { ?>
+   					 <?php foreach (array_chunk($module['childrens'], ceil(count($module['childrens']))) as $childrens) { ?>
+
+                         
+                    <fieldset>
+                    <?php foreach ($childrens as $children) { ?> 
+						                              	
+                            <div class="tools-icon">
+                            	<a href="<?php echo e(URL::to($children['slug'],null,is_secured())); ?>">
+                            		<div class="<?php echo e($children['css_class']); ?>">
+                            			<?php echo $children['icon1']; ?>
+                                	</div>
+                                	<?php echo $children['icon2']; ?>
+                                   <?php echo $children['name']; ?>
+                                                                  </a>
+                          	</div>
+                        
+        
+                                        <?php } ?>        	
+                            
+                                        	</fieldset>
+                                      <?php } ?>
+								<?php } ?>
+							</div>
+						</div>
+						<!-- END REGIONAL STATS PORTLET-->
+					</div>
+					</div>
+				</div>
+				<?php } ?>
+				<?php } ?>
+				<div class="clearfix">
+				</div>
+				
+			</div>
+			</div>
+			<!-- END QUICK SIDEBAR -->
+
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('script'); ?>
+
+<script>
+jQuery(document).ready(function() {    
+   Metronic.init(); // init metronic core componets
+   Layout.init(); // init layout
+   Demo.init(); // init demo features 
+   QuickSidebar.init(); // init quick sidebar
+   Index.init();   
+   Index.initDashboardDaterange();
+   Index.initJQVMAP(); // init index page's custom scripts
+   Index.initCalendar(); // init index page's custom scripts
+   Index.initCharts(); // init index page's custom scripts
+   Index.initChat();
+   Index.initMiniCharts();
+   Tasks.initDashboardWidget();
+});
+</script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('protected.admin.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

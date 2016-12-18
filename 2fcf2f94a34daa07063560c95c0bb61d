@@ -1,0 +1,103 @@
+
+	<link rel="stylesheet" property='stylesheet' href="<?php echo asset('resources/assets/fontend/box.css',is_secured()); ?>" media="all"  hreflang="en" type="text/css">
+	<link rel="stylesheet" property='stylesheet' href="<?php echo asset('resources/assets/fontend/bootstrap.min.css',is_secured()); ?>" media="all"  type="text/css" />
+	<link  rel="stylesheet" property='stylesheet' href="<?php echo asset('resources/assets/fontend/bootstrap-theme.min.css',is_secured()); ?>" media="all"  type="text/css" />
+	<link  rel="stylesheet" property='stylesheet' href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+<link  rel="stylesheet" property='stylesheet' href="<?php echo URL::to('resources/assets/fontend/css/style.css',null,is_secured()); ?>" media="all"  type="text/css" />
+  <link property='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Latest compiled and minified JavaScript -->
+
+
+<!--<link href="<?php echo asset('resources/assets/fontend/css/owl.carousel.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />-->
+<!--<link href="<?php echo asset('resources/assets/fontend/css/owl.theme.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />-->
+<link property='stylesheet' href="<?php echo asset('resources/assets/sass/extra.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+
+<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/css/themes.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/custom.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link property='stylesheet' href="<?php echo asset('resources/assets/global/css/components.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+
+<link property='stylesheet' rel="stylesheet" type="text/css" href="<?php echo e(URL::asset('resources/assets/fontend/css/animate.css',is_secured())); ?>" media="screen" data-name="skins">
+
+<link property='stylesheet' rel="stylesheet" href="<?php echo e(URL::asset('resources/assets/fontend/css/sweetalert.css',is_secured())); ?>" type='text/css'/>
+
+<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/topbar/css/bootstrap-dropdownhover.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/topbar/css/animate.min.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<!--<link href="<?php echo asset('resources/assets/fontend/listing.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />-->
+<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/grey.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />
+<!--<link href="<?php echo asset('resources/assets/fontend/layout.css',is_secured()); ?>" media="all" rel="stylesheet" type="text/css" />-->
+
+
+    <link property='stylesheet' href="<?php echo asset('resources/assets/dashboard/css/prettyPhoto.css',is_secured()); ?>" rel="stylesheet">
+    <link property='stylesheet' href="<?php echo asset('resources/assets/dashboard/css/price-range.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/dashboard/css/main.css',is_secured()); ?>" rel="stylesheet">
+	<!--<link href="<?php echo asset('resources/assets/dashboard/css/responsive.css',is_secured()); ?>" rel="stylesheet">-->
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/page/profile.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/page/profile-old.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' rel="stylesheet" href="<?php echo e(URL::asset('resources/assets/fontend/css/jquery-te-1.4.0.css',is_secured())); ?>" type='text/css'/>
+	
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/css/pricing.css',is_secured()); ?>" rel="stylesheet">
+	
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/css/slick.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/css/slick-theme.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' rel="stylesheet" href="<?php echo e(URL::asset('resources/assets/fontend/css/hover-min.css',is_secured())); ?>" media="all">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/css/custom_style.css',is_secured()); ?>" rel="stylesheet">
+	
+	<link property='stylesheet' href="<?php echo asset('resources/assets/helpcenter/etalage.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/helpcenter/help.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/helpcenter/businessidentity.css',is_secured()); ?>" rel="stylesheet">
+	
+		
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/source-view.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/buyer-bdtdc.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/sust-manufacture.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/trade-answer.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/about-bdtdc.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/why-bdtdc.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/trade-assurance.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/user-guide.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/trade_show.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/seller_channel.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/training.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/learning-center.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/online-market-place.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/m-category.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/product-wholesale.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/whole-sale-category-product.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/supplier-product-view-style.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/buyer-request-style.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/new-user-guide-style.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/businessmatching-style.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/media-room-style.css',is_secured()); ?>" rel="stylesheet">
+	<!-- <link href="<?php echo asset('resources/assets/fontend/bdtdccss/glDatePicker.default.css',is_secured()); ?>" rel="stylesheet"> -->
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/bangladesh-business-style.css',is_secured()); ?>" rel="stylesheet">
+	<!-- <link href="<?php echo asset('resources/assets/fontend/bdtdccss/bangladesh-advisory-style.css',is_secured()); ?>" rel="stylesheet"> -->
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/bdtdc-sme-center-style.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/bdtdccss/wholesale-user-guide.css',is_secured()); ?>" rel="stylesheet">
+
+	
+
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/productcss/product-show.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/productcss/list-ex-sell.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/productcss/marketing-website.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/fontend/page/success.css',is_secured()); ?>" rel="stylesheet">
+	<link property='stylesheet' href="<?php echo asset('resources/assets/captcha/jquery.realperson.css',is_secured()); ?>" rel="stylesheet">
+	
+	<link property='stylesheet' href="<?php echo asset('resources/assets/slider/dynamic-captions.css',is_secured()); ?>" rel="stylesheet">
+		<link property='stylesheet' href="<?php echo asset('resources/assets/slider/settings.css',is_secured()); ?>" rel="stylesheet">
+
+    <link property='stylesheet' href="<?php echo asset('resources/assets/slider/flipclock.css',is_secured()); ?>" rel="stylesheet">
+
+    <link property='stylesheet' href="<?php echo asset('resources/assets/dashboard/css/spectrum.css',is_secured()); ?>" rel="stylesheet">
+    <link property='stylesheet' href="<?php echo asset('resources/assets/fontend/css/stikynav.css',is_secured()); ?>" rel="stylesheet">
+    <link property='stylesheet' href="<?php echo asset('resources/assets/dashboard/css/simplePagination.css',is_secured()); ?>" rel="stylesheet">
+    <!-- <link href="<?php echo asset('resources/assets/fontend/css/jquery-ui-timepicker-addon.css',is_secured()); ?>" rel="stylesheet"> -->
+    <!-- <link href="<?php echo asset('resources/assets/fontend/css/jquery.bxslider.css',is_secured()); ?>" rel="stylesheet"> -->
+
+    
+
+	
+
+		 

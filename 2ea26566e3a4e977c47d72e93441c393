@@ -1,0 +1,43 @@
+
+			<?php echo $__env->make('fontend.layouts.topbar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+			<div class="row">
+				<div class="logo_search_area solve">
+					<div class="logo floatleft">
+						<a href="<?php echo e(URL::to('/')); ?>"><img src="<?php echo asset('resources/assets/fontend/img/logo.png'); ?>" alt="BDITDC" /></a>
+					</div>
+					<div class="form_area solve">
+						<form action="#">
+							<select class="form-control" style="float:left">
+							  <option value="products">Products</option>
+							  <option value="suppliers">Suppliers</option>
+							  <option value="news">News</option>
+							</select>
+							<input style="float:left" class="form-control" type="text" placeholder="Enter English Keyword to Search . . ."/>
+							<input style="float:right" type="submit" value="Search" />
+						</form>
+					</div>
+					
+					<div class="search_bottom solve">
+						<p>Hot Products:</p>
+						<div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div style="float:right" class="mainmenu pull-left">
+              <ul class="nav navbar-nav collapse navbar-collapse" style="float:right">
+							<li><a style="padding:1px" href="<?php echo e(URL::route('category.product',20)); ?>">Garments & Textiles</a></li>
+							<li><a style="padding:1px" href="">Leather Products</a></li>
+							<li><a style="padding:1px" href="">Jute Products</a></li>
+							<li><a style="padding:1px" href="">Manpower</a></li>
+							<li><a style="padding:1px" href="">Software Development</a></li>
+							<li><a style="padding:1px" href="">Call Centre support</a></li>
+						</ul>
+						</div>
+				</div>
+			</div>
+
+		</div>

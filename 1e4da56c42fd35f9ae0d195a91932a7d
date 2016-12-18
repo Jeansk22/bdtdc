@@ -1,0 +1,91 @@
+<div id="topbar_sha" class="row">
+  <div class="col-sm-5">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="mainmenu pull-left">
+      <ul class="nav navbar-nav collapse navbar-collapse pull-right">
+        <li><a href="<?php echo e(URL::to('Marketplace',null,is_secured())); ?>" class="active">Online Market Place</a></li>
+        <li><a href="<?php echo e(URL::to('tradeshow',null,is_secured())); ?>">Trade Shows</a></li>
+        <?php if(Sentinel::check()): ?>
+        <li class="dropdown"><a href="#">My Bdtdc<i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <?php
+              $role = App\Model\Role_user::where('user_id',Sentinel::getUser()->id)->first();
+              $dashboard_route = ($role->role_id ==3) ? "company/dashboard" : 'buyer/dashbord';
+            ?>
+            <li><a href="<?php echo e(URL::to($dashboard_route,null,is_secured())); ?>">Dash Board</a></li>
+            
+            <li><a href="<?php echo e(URL::to('dashboard','product',is_secured())); ?>">Manage Products</a></li>
+            <li><a href="<?php echo e(URL::to('dashboard','message',is_secured())); ?>">Manage Inquery</a></li>
+            <li><a href="<?php echo e(URL::to('dashboard','company_site',is_secured())); ?>">Company & Site</a></li>
+            <li><a href="<?php echo e(URL::to('dashboard','account',is_secured())); ?>">Account</a></li>
+          </ul>
+        </li>
+        <li><a class="btn" href="<?php echo e(URL::to('logout',null,is_secured())); ?>"> Logout </a> </li>
+        <?php else: ?>
+        <li><a href="<?php echo e(URL::to('join',null,is_secured())); ?>" class="active join_btn">Join Now</a></li>
+        <li><a href="<?php echo e(URL::to('login',null,is_secured())); ?>" class="" data-toggle="">Sign In</a></li>
+        <?php endif; ?>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-7 padding_0">
+    <div class="mainmenu pull-right padding_0">
+      <ul class="nav navbar-nav collapse navbar-collapse padding_0">
+        <li class="dropdown"><a href="#">For Buyers<i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <p class="sub-split" style="margin-top:0; padding-top:0;padding-left:8%; border-top:none;background: #fff none repeat scroll 0 0;height: 18px;margin-bottom: 0;">
+								Source Products
+									<?php
+							
+							foreach(array_slice([$pages],6,7) as $data){
+							
+							  echo $data;
+							  
+							}
+							
+							?>
+								
+							</p>
+						
+							
+            <?php foreach($pages as $page): ?> 
+              <?php if($page->prefix == 'BuyerChannel' ): ?>
+              
+            
+                <li><a href="<?php echo e(URL::to($page->prefix.'/pages/'.$page->sort_name,$page->id,is_secured())); ?>" class="prefix_url"><?php echo e($page->name); ?></a></li>
+
+              <?php endif; ?> 
+            <?php endforeach; ?>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">For Suppliers<i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <?php foreach($pages as $page): ?> <?php if($page->prefix == 'SupplierChannel' ): ?>
+            <li><a href="<?php echo e(URL::to($page->prefix.'/pages/'.$page->sort_name,$page->id,is_secured())); ?>" class="prefix_url"><?php echo e($page->name); ?></a></li>
+            <?php endif; ?> <?php endforeach; ?>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">Customer Service<i class="fa fa-angle-down"></i></a>
+          <ul role="menu" class="sub-menu">
+            <?php foreach($pages as $page): ?> <?php if($page->prefix == 'ServiceChannel' ): ?>
+            <li><a href="<?php echo e(URL::to($page->prefix.'/pages/'.$page->sort_name,$page->id,is_secured())); ?>" class="prefix_url"><?php echo e($page->name); ?></a></li>
+            <?php endif; ?> <?php endforeach; ?>
+          </ul>
+        </li>
+        <li><a style="margin-right:-1%" target="_blanck" class="pull-right" href="https://aboutus.example.com/product/id">About BDTDC</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <p class="shadow"></p>
+  </div>
+</div>
+
+<!----------------MODEL BOX FOR SIGN IN AND JOIN BUTTON;------------------------->

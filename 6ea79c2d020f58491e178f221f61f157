@@ -1,0 +1,18 @@
+<?php $__env->startSection('title', 'View Profile'); ?>
+
+<?php $__env->startSection('content'); ?>
+
+    <h1><?php echo e($user->first_name); ?>'s Profile</h1>
+    <ul>
+        <li>Account Type: <?php echo e($user_role); ?></li>
+        <li>Email Address: <?php echo e($user->email); ?></li>
+        <li>First Name: <?php echo e($user->first_name); ?></li>
+        <li>Last Name: <?php echo e($user->last_name); ?></li>
+    </ul>
+
+    <?php if(Sentinel::check()): ?>
+        <a href='<?php echo e($user->id); ?>/edit' class='btn btn-primary'>Edit Profile</a>
+    <?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('protected.admin.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
